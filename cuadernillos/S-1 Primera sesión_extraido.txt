@@ -1,0 +1,2259 @@
+Prueba 
+Preguntas 
+No. Total de 
+preguntas 
+Tiempo Total 
+Matemáticas 
+25 
+120 
+4 horas y 30 minutos 
+Lectura crítica 
+41 
+Sociales y ciudadanas 
+25 
+Ciencias naturales 
+29 
+PRUEBA S-1 
+PRIMERA SESIÓN 
+Matemáticas 
+1.a sesión
+1 
+MATEMÁTICAS 
+1. ¿Cuál es el valor de la expresión
+cuando X=3? 
+A. 0,07
+B. 0,16
+C. 0,08
+D. 0,10
+2. Una empresa registra en la gráfica el promedio de las ventas, durante los primeros meses del año, de
+cuatro de sus productos: agua, gaseosa, cerveza y jugos.
+Teniendo en cuenta esto, ¿cuál producto obtuvo la mayor venta acumulada durante los meses 
+reportados? 
+A. Gaseosa.
+B. Agua.
+C. Cerveza.
+D. Jugos.
+3. Una caja de cartón para empaque se diseña con todas sus caras rectangulares. La figura muestra el área
+superficial de tres de sus caras.
+¿Cuál es el área superficial de la caja? 
+A. 52 cm2
+B. 48 cm2
+C. 26 cm2
+D. 24 cm2
+Matemáticas 
+1.a sesión 
+ 
+ 
+2 
+4. La gráfica muestra la cantidad de pacientes que asistieron a un consultorio en una mañana. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Para el día siguiente, se espera que el número de pacientes se duplique en la hora que hubo menos 
+pacientes, sin alterar la cantidad observada para el resto de las horas de la mañana. ¿Cuál de las 
+siguientes gráficas representa la cantidad de pacientes en el consultorio, en el siguiente día? 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5. Un empresario compró un lote rectangular de 50 metros de ancho y 120 metros de largo, para repartirlo 
+en partes iguales entre sus 8 hijos. Con base en esta información, ¿Cuál de las siguientes preguntas NO 
+es posible responder? 
+A. ¿Cuál es el área del lote del empresario? 
+B. ¿Cuál es la ubicación que le corresponde a cada hijo dentro del lote? 
+C. ¿Cuál es el perímetro del lote del empresario? 
+D. ¿Cuál es la fracción del lote que le corresponde a cada hijo? 
+ 
+A. 
+ 
+ 
+ 
+B.  
+C.  
+D.  
+Matemáticas 
+1.a sesión
+3 
+6. Una inmobiliaria pone en venta dos terrenos, cuyos planos se muestran en la figura; el precio depende
+únicamente del área de cada terreno. Cada metro cuadrado tiene un costo de $1.000.000.
+Un cliente de la inmobiliaria afirma que el precio del terreno Z debe ser el doble del precio del terreno X, 
+porque el área del terreno Z es el doble del área del terreno X. ¿Es verdadera la afirmación del cliente? 
+A. Sí, porque el perímetro del terreno Z es el doble del perímetro del terreno X.
+B. No, porque se duplicaron todas las dimensiones; entonces, el área se cuadruplica.
+C. Sí, porque se duplicaron todas las dimensiones; entonces, el área se duplica.
+D. No, porque el perímetro del terreno X es la cuarta parte del perímetro del terreno Z.
+7. El piloto de un avión de acrobacias comenta cómo fue su última presentación:
+“Durante los primeros 30 segundos, aumenté la altura de manera constante y, luego, realicé una pirueta
+en la que descendí de manera constante durante 5 segundos. Después del descenso, comencé a girar
+en torno al eje del avión durante 20 segundos, manteniendo la misma altura. Para finalizar, aterricé
+reduciendo la altura de manera constante durante 25 segundos”
+¿Cuál de las siguientes gráficas representa de forma correcta la información dada por el piloto?
+A. 
+B. 
+C.  
+D. 
+Matemáticas 
+1.a sesión
+4 
+8. Se llama par al lanzamiento en el cual dos dados, cada uno de seis caras numeradas del 1 al 6, muestran
+el mismo número. Un estudiante afirma que es más probable obtener un once (sumando lo obtenido en
+cada uno de los lados) que un par en un lanzamiento de dos dados. ¿Es verdadera la afirmación del
+estudiante?
+A. Sí, pues como hay dos formas de obtener once, pero solo una forma de obtener cada par, entonces
+esta última probabilidad es menor.
+B. Sí, pues la probabilidad es mayor cuando los dados muestran distintos números que cuando
+muestran el mismo número.
+C. No, pues sin importar el resultado que se pida, la probabilidad siempre será la misma para cualquier
+tipo de resultado que se espere obtener sea un par o un once.
+D. No, pues solo hay dos formas de obtener once mientras que hay más formas de obtener par; por
+tanto, esta probabilidad debe ser mayor.
+9. Una agencia de viajes utiliza la siguiente fórmula para calcular el costo de un tiquete de avión:
+Donde: 
+•
+T es el costo total del pasaje.
+•
+e es el número de escalas de vuelo.
+•
+m el número de maletas que llevará el pasajero.
+•
+s el número de días que durará el viaje.
+•
+k es un valor fijado por cada aerolínea.
+Isabella, cliente de la agencia, hará un viaje para el cual lleva 5 maletas, prefiere hacer solamente una 
+escala y estará dos semanas en el sitio de llegada. ¿Qué información le falta conocer a Isabella para 
+calcular el costo de su pasaje? 
+A. El valor de e, es decir, el número posible de escalas.
+B. La cantidad de m de maletas que puede llevar.
+C. El número s de días que durará su viaje.
+D. El valor de k fijado por cada aerolínea.
+10. Una empresa oferta una vacante de empleo en la que se ofrece un salario básico de $950.000 y $75.000
+adicionales por cada año de experiencia que tenga el aspirante. ¿Cuál de los siguientes procedimientos
+permite calcular el salario de un aspirante cualquiera?
+A. Multiplicar $950.000 por $75.000 y sumar los años de experiencia.
+B. Multiplicar $950.000 por los años de experiencia y adicionar $75.000.
+C. Sumar $950.000 al resultado de multiplicar $75.000 por los años de experiencia.
+D. Sumar $950.000 y $75.000, y multiplicar el resultado por los años de experiencia.
+Matemáticas 
+1.a sesión 
+ 
+ 
+5 
+11.  En clase de Estadística, el profesor planteó el siguiente procedimiento para saber si un conjunto de 
+números tiene una única moda: 
+ 
+Paso 1. Determinar el número de veces que se repite cada uno de los números del conjunto. 
+Paso 2. Elegir el número que se repite la mayor cantidad de veces. 
+ 
+De acuerdo con el procedimiento planteado, ¿cuál de los siguientes conjuntos de números tiene una 
+única moda? 
+A. {2, 3, 4, 4, 5, 5} 
+B. {2, 3, 4, 5, 5, 6} 
+C. {1, 2, 3, 4, 5, 6} 
+D. {1, 1, 3, 3, 5, 5} 
+ 
+12. En Economía Básica se supone que una empresa, con un único producto, logra su mayor ganancia 
+cuando produce el promedio entre las producciones mínima y máxima. 
+ 
+Si una empresa, que obedece a esta descripción, tiene como producción máxima 1.000 unidades más 
+que la mínima, y la mayor ganancia ocurre cuando la producción es de 800 unidades, ¿cuál es la 
+producción máxima de esta empresa? 
+ 
+A. 300 unidades. 
+B. 1.300 unidades 
+C. 1.400 unidades. 
+D. 1.800 unidades. 
+ 
+13. Una persona debe realizar una presentación de magia compuesta por tres actos. El primer acto debe ser 
+de tipo desaparición, el segundo de tipo hipnosis, y el tercero de tipo adivinanza. La tabla muestra los 
+actos que sabe hacer la persona. 
+  
+ 
+ 
+ 
+Para calcular el número de formas distintas de hacer su presentación, la persona efectúa la operación 
+3+2+4=9 y afirma que existen 9 maneras distintas de hacer la presentación. ¿Es verdadera esta 
+afirmación? 
+A. Sí, porque basta con sumar la cantidad de actos de cada tipo que conoce la persona para calcular 
+todas las maneras distintas de hacer la presentación. 
+B. Sí, porque la persona debe presentar 3 actos de 3 diferentes tipos, es decir, tiene 3 x 3= 9 maneras 
+distintas de hacer su presentación. 
+C. No, porque se debe multiplicar la cantidad de actos de cada tipo que la persona sabe hacer, es decir, 
+3 x 2 x 4 = 24. 
+D. No, porque se debe sumar la cantidad de actos que sabe hacer la persona y el tipo de actos que se 
+le piden hacer. 
+Matemáticas 
+1.a sesión 
+ 
+ 
+6 
+14. En un colegio, un grupo de tres estudiantes se reúne para comparar las cantidades de sus nuevos útiles 
+escolares. 
+La tabla 1 muestra la cantidad de borradores de cada estudiante para cada tipo. 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+La tabla 2 muestra la cantidad de cuadernos de cada estudiante para cada tipo. 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+La tabla 3 muestra la cantidad de lápices de cada estudiante para cada tipo. 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+De acuerdo con la información anterior, ¿cuál de las siguientes gráficas permite conocer la cantidad total 
+de útiles que tiene cada estudiante? 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A. 
+ 
+ 
+ 
+B.  
+C.   
+D.  
+Matemáticas 
+1.a sesión 
+ 
+ 
+7 
+15. En un bulto de café hay granos con diferentes niveles de cafeína: bajo, medio y alto. 
+ 
+Si al extraer un grano de café del bulto, la probabilidad de que este sea un grano con nivel bajo de cafeína 
+es 0,27, ¿cuál es la probabilidad de que, al extraer un grano, este tenga un nivel medio o alto de cafeína? 
+ 
+A. 0,09 
+B. 0,73 
+C. 0,54 
+D. 0,37 
+ 
+16. Una ciudad tiene un proyecto para recuperar sus humedales. La inversión que debe realizarse para 
+recuperar las hectáreas de humedales está modelada por una función lineal, como se muestra en la 
+gráfica. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Para determinar la inversión necesaria para recuperar 8,7 hectáreas de humedales, se calcula la 
+inversión para recuperar una hectárea, y ese valor se multiplica por 8,7. Este procedimiento es: 
+ 
+A. Correcto, porque la inversión es directamente proporcional a la cantidad de hectáreas por recuperar. 
+B. Incorrecto, porque solo aparece la inversión hasta seis hectáreas de humedal por recuperar. 
+C. Correcto, porque a medida que aumenta la cantidad de hectáreas, aumenta la inversión. 
+D. Incorrecto, porque se espera que cuantas más hectáreas se recuperen, la inversión empiece a 
+disminuir. 
+ 
+17.  Una empresa de compra y venta de mercancía vende regularmente 40 piezas por un precio unitario de 
+$30. Cuando se venden más de 40, y menos de 80 piezas, se usa el siguiente procedimiento para 
+determinar el porcentaje correspondiente a las ventas por encima de la cantidad regular: 
+ 
+Paso 1. Calcular el valor regular de las ventas; precio unitario multiplicado por 40, que es la cantidad de 
+piezas vendidas regularmente. 
+Paso 2. Calcular el valor de ventas de piezas adicionales; el total de piezas vendidas menos 40 y este 
+resultado multiplicado por $30, que es el precio unitario. 
+Paso 3. Dividir el resultado del paso 2 entre el resultado del paso 1. 
+ 
+¿Qué características tienen los resultados que se pueden obtener al usar este procedimiento? 
+A. Son valores negativos. 
+B. Son valores mayores que 1.200. 
+C. Son valores entre 0 y 1. 
+D. Son valores entre 1 y 40. 
+Matemáticas 
+1.a sesión 
+ 
+ 
+8 
+ 
+18. La gráfica presenta la probabilidad de que una variable tome los valores 𝑥1, 𝑥2, 𝑥3, 𝑥4, 𝑥5, 𝑥6, 𝑥7 y 𝑥8. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+¿Cuál tabla muestra los valores que tiene asociada una probabilidad menor que 0,1? 
+   
+19. Luego de que una empresa lanzara a la venta un nuevo producto en el mes de agosto, el gerente afirmó 
+que los ingresos por la venta del producto aumentaron de manera creciente en los siguientes 3 meses y 
+presentó la siguiente gráfica. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+¿Por qué la gráfica presentada es inconsistente con respecto a la afirmación del gerente? 
+ 
+A. Porque el orden de los meses debería ser noviembre, septiembre, octubre y agosto. 
+B. Porque en el mes de octubre se indican ingresos menores al mes inmediatamente anterior. 
+C. Porque los ingresos del mes de septiembre deberían ser menores que los de agosto y octubre. 
+D. Porque debió incluirse julio en la gráfica, para comparar con los ingresos anteriores a la venta del 
+producto. 
+Matemáticas 
+1.a sesión 
+ 
+ 
+9 
+20. Para capacitar en informática básica a los trabajadores de algunas dependencias de una empresa, se 
+contrata una institución que ofrece un plan educativo de 4 módulos (ver tabla 1): 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                                                                                                    
+La capacitación de cada módulo se hace con cursos de mínimo 20 y máximo 30 personas, de la misma 
+dependencia. 
+ 
+El valor de cada módulo se registra en la tabla 2.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                                                                                Tabla 2 
+ 
+Si se pagó cada módulo para 30 trabajadores, el módulo que más le costó a la empresa fue: 
+A. I. 
+B. II. 
+C. III. 
+D. IV. 
+ 
+ 
+21. Por cada moneda que Miguel introduce en su alcancía en un día, al siguiente introduce el doble. El 
+viernes, Miguel insertó 512 monedas. ¿Cuántas monedas introdujo en su alcancía el miércoles de esa 
+misma semana? 
+ 
+A. 32. 
+B. 64. 
+C. 128. 
+D. 508. 
+Matemáticas 
+1.a sesión 
+ 
+ 
+10 
+22. En un campeonato de fútbol, un equipo está en primera ronda y necesita 25 puntos para clasificar a la 
+siguiente ronda. En la ronda actual cada equipo juega 10 partidos. Los puntos se reparten de la siguiente 
+manera: 3 puntos por ganar, 1 punto por empatar y 0 puntos por perder. 
+ 
+¿Cuál de las siguientes se puede responder con la información dada? 
+ 
+A. ¿Cuál es el mínimo de partidos que se deben ganar para clasificar? 
+B. ¿Cuántos partidos deben perder los contrincantes para que el equipo clasifique? 
+C. ¿Cuál es el total de partidos que se juega en todo el torneo? 
+D. ¿Cuántos equipos clasifican a la ronda? 
+ 
+ 
+23. La alcaldía de un municipio realizó un concierto en el parque principal. Debido a la lluvia, el 50% de los 
+asistentes se retiró después de una hora, 30% del total de asistentes después de dos horas y los 100 
+asistentes restantes se quedaron hasta que finalizó el evento. ¿Cuántos asistentes había al comienzo? 
+ 
+A. 500. 
+B. 400. 
+C. 330. 
+D. 180. 
+ 
+ 
+24. El triángulo de las Bermudas está formado entre Miami, Bermuda y San Juan de Puerto Rico, con las 
+distancias mostradas en la figura: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Si una milla son 1,6 kilómetros, ¿cuál es la distancia en kilómetros que separa Miami de Bermuda en el 
+triángulo? 
+ 
+A. 625 km. 
+B. 646,9 km. 
+C. 1.036,6 km. 
+D. 1.656 km. 
+  
+ 
+25. Se necesita encontrar el área del triángulo sombreado:  
+¿Cuál es el área del triángulo? 
+ 
+A. 15 m2 
+B. 12 m2 
+C. 6 m2 
+D. 5𝜋 m2 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+11 
+LECTURA CRÍTICA 
+ 
+RESPONDE LAS PREGUNTAS 26 A 30 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN 
+ 
+Desde principios de la década de 1960 hasta aproximadamente 1980, la República de Sudáfrica aplicó uno de 
+los sistemas de censura más exhaustivos del mundo. Dicho sistema trataba de controlar la propagación de 
+signos en cualquiera de sus formas. No solo los libros, las revistas, las películas y las obras teatrales, sino también 
+las camisetas, los llaveros, las muñecas, los juguetes y los letreros de las tiendas - en realidad, cualquier cosa 
+portadora de un mensaje que pudiera ser “indeseable”- tienen que someterse al análisis de los censores antes 
+de poder hacerse públicos. En la Unión Soviética había unas setenta mil personas que supervisaban las 
+actividades de unos siete mil escritores. Sin embargo, la proporción entre censores y escritores en Sudáfrica 
+era, en todo caso, superior a diez a uno.  
+Los paranoicos se comportan como si el ambiente estuviera repleto de mensajes codificados. Durante décadas, 
+el Estado sudafricano vivió inmerso en un estado de paranoia. La paranoia es la enfermedad de los gobiernos 
+inseguros y, en particular, de las dictaduras. Uno de los rasgos distintivos de las dictaduras modernas respecto 
+a las anteriores ha sido la amplitud y la rapidez con que la paranoia puede extenderse. Pero Sudáfrica y la Unión 
+Soviética no eran casos únicos, Reinaldo Arenas escribió sobre la existencia en Cuba de un ambiente de 
+“amenaza oficial” que hacía del ciudadano “no solo una persona objeto de represión, sino también 
+autorreprimida, no solo una persona censurada, sino autocensurada, no solo vigilada, sino que se vigila a sí 
+misma”.  
+ 
+Tomado y adaptado de: Coetzee J.M. (2014). Contra la censura. Ensayo sobre la pasión por silenciar, pp, 54-55 Bogotá, D.C. 
+ 
+26. Considere el siguiente fragmento del texto.  
+ 
+“En la Unión Soviética había unas setenta mil personas que supervisaban las actividades de unos siete mil 
+escritores. Sin embargo, la proporción entre censores y escritores en Sudáfrica era, en todo caso, superior 
+a diez a uno”.  
+ 
+¿Qué indica, en este fragmento, la expresión “Sin embargo”?  
+ 
+A. Que lo que viene a continuación de la expresión en cuestión es un argumento a favor de lo dicho en 
+la oración que está antes de la expresión.  
+B. Que, a pesar de la cantidad de censores existentes en la Unión Soviética, en Sudáfrica la censura 
+era más intensa en términos proporcionales.  
+C. Que, a pesar de la enorme cantidad de escritores existentes en la Unión Soviética, en Sudáfrica el 
+número era mayor en términos proporcionales.  
+D. Que la oración que está antes de la expresión en cuestión es un argumento a favor de lo dicho, en la 
+oración que está después de la expresión. 
+ 
+27. ¿Cuál es el propósito del autor al citar a Reinaldo Arenas? 
+ 
+A. Argumentar que, en Sudáfrica, como en Cuba, existen casos de autocensura y autorrepresión.  
+B. Señalar que, en la Unión Soviética, como en Cuba, existía la autocensura y la autorrepresión.  
+C. Argumentar que los sistemas de censura no eran exclusivos de Sudáfrica y la Unión Soviética.  
+D. Señalar que en Sudáfrica y la Unión Soviética la censura es mucho menos fuerte que en Cuba. 
+Lectura crítica 
+1.a sesión
+12 
+28. ¿Cómo se califican los hechos narrados en el texto?
+A. Como reales, ya que se narra una serie de situaciones de tipo histórico.
+B. Como fantásticos, ya que hacen parte de las narraciones de escritores.
+C. Como irreales, debido a que han pasado por el examen de una censura.
+D. Como periodísticos, porque hacen parte de lo narrado en una crónica.
+29. De acuerdo con el texto, ¿por qué en Cuba había un ambiente de “amenaza oficial”?
+A. Porque los individuos no solo eran objeto de represión, sino que se autoreprimían.
+B. Porque allí aplicó uno de los sistemas de censura más exhaustivos del mundo.
+C. Porque las personas no solo eran atacadas, sino también censuradas.
+D. Porque este país estaba repleto de mensajes codificados.
+30. Considere el siguiente fragmento del texto:
+“No solo los libros, las revistas, las películas y las obras teatrales, sino también las camisetas, los
+llaveros, las muñecas, los juguetes y los letreros de las tiendas - en realidad, cualquier cosa portadora
+de un mensaje que pudiera ser “indeseable” - tenían que someterse al análisis de los censores antes
+de poder hacerse públicos”.
+¿Cuál es la función que cumple este fragmento en el primer párrafo?
+A. Exponer la tesis central del texto según la cual las personas no son solo censuradas sino también
+autocensuradas.
+B. Mostrar ejemplos para ilustrar por qué la paranoia es uno de los rasgos más distintivos de las
+dictaduras modernas.
+C. Mostrar ejemplos que ilustren por qué el sistema de censura sudafricano fue uno de los más
+severos del mundo.
+D. Exponer la tesis central del texto según la cual la paranoia es la enfermedad de los gobiernos
+inseguros.
+RESPONDE LAS PREGUNTAS 31 A 35 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN 
+Tener una alucinación es tener una experiencia de algo (ver, oír o sentir algo) que realmente no existe. Descartes 
+en el siglo XVll, analizó el fenómeno de las extremidades fantasma: la alucinación sorprendente, aunque bastante 
+común, que experimentan los amputados cuando sienten no sólo la presencia del miembro amputado, sino 
+también picores y dolores en esa parte del cuerpo. 
+Descartes utilizó la campanilla como una analogía para explicar esta alucinación. Antes de que hubiera timbres 
+eléctricos, intercomunicadores o teléfonos celulares, las grandes casas poseían unos complejos sistemas de 
+cables y poleas que permitían llamar a los sirvientes desde cualquiera de las habitaciones de la casa. Un firme 
+tirón del cordón de terciopelo que colgaba de un agujero en la pared era suficiente para tirar de un cable que, 
+gracias a un sistema de poleas, estaba conectado a una campanilla numerada en los cuartos del servicio. Cada 
+vez que una de esas campanillas sonaba, el mayordomo sabía que se requería de sus servicios en el dormitorio 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+13 
+del señor, en el salón o en la sala de billar. Estos sistemas funcionaban muy bien, pero estaban hechos a la 
+medida de cualquier bromista; un tirón al cable del salón en cualquier punto de su recorrido era suficiente para 
+que el mayordomo corriera hacia allí, comprobará que la habitación estaba vacía y se quedara con la duda de si 
+había sido llamado o no; una especie de pequeña alucinación. 
+Similarmente, Descartes pensó que, dado que las experiencias son causadas por complicadas cadenas de 
+eventos en el sistema nervioso que terminan en el centro de control de la mente consciente, si fuera posible 
+intervenir en algún punto de esta cadena, un tirón en el punto apropiado de los nervios produciría exactamente 
+la cadena de eventos que causaría la experiencia real de algo, lo cual, a su vez, produciría en el punto de 
+recepción de la mente exactamente los mismas efectos que una percepción consciente. El cerebro, en un 
+descuido, engaña a la mente. Esta fue la explicación que dio Descartes al fenómeno de los miembros fantasma 
+y, en general, a cualquier alucinación. 
+Tomado y adaptado de Dennett, D, (1995), La conciencia explicada. Una teoría interdisciplinar. Barcelona. 
+31. Considere los siguientes dos enunciados del texto:  
+ 
+1) Estos sistemas funcionaban muy bien, pero estaban hechos a la medida de cualquier bromista.  
+2) Un tirón al cable del salón en cualquier punto de su recorrido era suficiente para que el mayordomo 
+corriera hacia allí, comprobara que la habitación estaba vacía y se quedara con la duda de si había 
+sido llamado o no.  
+ 
+¿Cuál de las siguientes opciones expresa la relación entre 1 y 2?  
+A. 1 explica la idea expresada por 2.  
+B. 2 cuestiona la idea expresada por 1.  
+C. 2 desarrolla la idea expresada por 1.  
+D. 1 contradice la idea expresada por 2. 
+ 
+32. ¿Cuál de las siguientes opciones presenta una idea similar a la expuesta en el último párrafo del texto?  
+ 
+A. El uso de sustancias psicoactivas puede alterar la capacidad de controlar nuestra propia mente.  
+B. Algunos estudios sugieren que las experiencias alucinatorias son comunes en la población general. 
+C. Las personas que tienen defectos en la visión pueden tener aumentos en su capacidad auditiva.  
+D. A veces el cerebro construye sensaciones erróneas cuando no hay un estímulo físico que las 
+produzca. 
+ 
+33. De acuerdo con el texto, ¿cuál de las siguientes estrategias emplea Descartes para defender su 
+explicación de las alucinaciones? 
+ 
+A. Una deducción a partir de algunos principios generales sobre el cerebro humano.  
+B. Una generalización a partir de la observación de numerosos ejemplos de experiencias alucinatorias. 
+C. Una comparación de los complejos sistemas de cables de las casas grandes con el sistema nervioso. 
+D. Un análisis de diversos estudios científicos sobre la estructura y funcionamiento del cerebro. 
+ 
+ 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+14 
+34. ¿Cuál de las siguientes opciones presenta la conclusión del texto?  
+ 
+A. Según Descartes, la experiencia de una extremidad fantasma es un error producido por el cerebro. 
+B. La sensación de dolor en las extremidades amputadas puede producir alucinaciones.  
+C. Según Descartes, la analogía de la campanilla solo se aplica al fenómeno de las extremidades 
+fantasma.  
+D. La mente consciente es capaz de alterar el correcto funcionamiento del cerebro humano. 
+ 
+35. De acuerdo con el segundo párrafo del texto, cuando la campanilla de una casa se hacía sonar tirando 
+de un cordón de terciopelo, esto significaba normalmente que  
+ 
+A. El dormitorio del señor, el salón o la sala de billar estaban vacíos.  
+B. El señor necesitaba del mayordomo en cualquier punto de la casa.  
+C. El mayordomo era requerido en el dormitorio, el salón o la sala de billar.  
+D. El dueño de casa la había activado con el fin de engañar al mayordomo. 
+ 
+RESPONDE LAS PREGUNTAS 36 A 39 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN 
+ 
+ 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+15 
+36. Teniendo en cuenta el contenido y la forma del texto leído, ¿en qué tipo de contexto se inscribe?  
+ 
+A. En un contexto académico, pues explica de manera detallada un proceso complejo a una audiencia 
+especializada.  
+B. En un contexto artístico, porque contiene ilustraciones de alta calidad para una audiencia especializada.  
+C. En un contexto publicitario, ya que ofrece un producto para una audiencia general.  
+D. En un contexto periodístico, dado que informa sobre un proceso químico a una audiencia general. 
+ 
+ 
+37. Teniendo en cuenta el siguiente fragmento de la infografía, ¿qué función cumple la imagen con 
+respecto al texto escrito? 
+ 
+ 
+ 
+A. La imagen tiene la función de adornar, pues no aporta ninguna información nueva con respecto al 
+texto escrito.  
+B. La imagen constituye una parte del argumento, ofreciendo evidencias que permiten llegar a una 
+determinada conclusión.  
+C. La imagen tiene la función de ilustrar, pues aporta información que permite representar el texto 
+escrito.  
+D. La imagen permite ejemplificar la información textual, demostrando los argumentos presentados 
+durante todo el escrito.  
+ 
+38.  ¿Cuál es el propósito comunicativo del autor del texto “Petricor: el olor de la lluvia”?  
+ 
+A. Ofrecer información precisa sobre el proceso de formación del petricor.  
+B. Advertir al lector sobre los riesgos asociados al aroma llamado petricor.  
+C. Entretener al lector a través del uso de ilustraciones llamativas y coloridas.  
+D. Recomendar qué hacer cuando se produce el olor a tierra mojada. 
+ 
+39.  En el segundo cuadro, donde se explica “Estas burbujas “atrapan” partículas de la tierra (aceites y 
+químicos producidos por bacterias)”, ¿qué relación hay entre la información contenida entre los 
+paréntesis y la oración anterior?  
+ 
+A. La información entre paréntesis precisa a qué tipo de partículas se refiere la oración anterior.  
+B. La información entre paréntesis aporta nuevos elementos sin relación con la frase anterior.  
+C. La información entre paréntesis ofrece una nueva perspectiva para entender la frase anterior.  
+D. La información entre paréntesis presenta una contradicción con respecto a la oración anterior. 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+16 
+RESPONDA LAS PREGUNTAS 40 A 43 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN 
+ 
+Permítaseme detenerme un momento en una novela que ha hecho soñar a varias generaciones de lectores. 
+Pienso en "Cien años de soledad" de Gabriel García Márquez. Quizá sea posible reencontrar en la lúcida locura 
+de Aureliano Buendía la fecunda inutilidad de la literatura. Encerrado en su taller secreto, el coronel 
+revolucionario fabrica pescaditos de oro a cambio de monedas de oro que después se funden para producir de 
+nuevo otros pescaditos. Círculo vicioso que no escapa a las críticas de Úrsula, a la mirada afectuosa de la madre 
+que se preocupa por el futuro del hijo:  
+Con su terrible sentido práctico, ella [Úrsula] no podía entender el negocio del coronel, que cambiaba los 
+pescaditos por monedas de oro, y luego convertía las monedas de oro en pescaditos, y así sucesivamente, de 
+modo que tenía que trabajar cada vez más a medida que más vendía, para satisfacer un círculo vicioso 
+exasperante. En verdad lo que le interesaba a él no era el negocio sino el trabajo (p. 184).  
+Por lo demás, el coronel mismo confiesa que <<sus únicos instantes felices, desde la tarde remota en que su 
+padre lo llevó a conocer el hielo, habían transcurrido en el taller de platería, donde se le iba el tiempo armando 
+pescaditos de oro>>: 
+Había tenido que promover treinta y dos guerras-sigue aclarando García Márquez-, y había tenido que violar 
+todos sus pactos con la muerte y revolcarse como un cerdo en el muladar de la gloria, para descubrir con casi 
+cuarenta años de retraso los privilegios de la simplicidad (p. 158). 
+Es probable que el acto creativo que da vida a lo que denominamos literatura se base precisamente en esta 
+simplicidad, motivada tan solo por un auténtico gozo y ajena a cualquier aspiración al beneficio. Un acto gratuito, 
+exento de finalidad precisa. Capaz de eludir cualquier lógica comercial. Inútil, por lo tanto, porque no puede ser 
+monetizado. Pero necesario para expresar con su misma existencia un valor alternativo a la supremacía de las 
+leyes del mercado y el lucro. 
+Tomado de: Ordine, N. (2013), La utilidad de lo inútil, p 30. Madrid, Acantilada. 
+40. Considere el siguiente fragmento del texto:  
+"Con su terrible sentido práctico, ella [Úrsula) no podía entender el negocio del coronel, que cambiaba los 
+pescaditos por monedas de oro, y luego convertía las monedas de oro en pescaditos, y así sucesivamente, 
+de modo que tenía que trabajar cada vez más a medida que más vendía". 
+En este fragmento, el término "de modo que” tiene la función de  
+A. Contradecir el hecho de que el coronel tuviese que trabajar más.  
+B. Concluir que el coronel tenía que trabajar más entre más pescaditos vendiera.  
+C. Introducir la premisa de que el coronel convertía las monedas de oro en nuevos pescaditos.  
+D. Explicar que el coronel convertía las monedas de oro que obtenía de sus pescaditos en nuevos 
+pescaditos de oro. 
+ 
+ 
+ 
+ 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+17 
+41. La tesis central del texto se encuentra enunciada en 
+ 
+A. El primer párrafo.  
+B. El segundo párrafo.  
+C. El último párrafo.  
+D. El penúltimo. 
+ 
+42. La oración "Es probable que el acto creativo que da vida a lo que denominamos literatura se base 
+precisamente en esta simplicidad, motivada tan solo por un auténtico gozo y ajena a cualquier aspiración 
+al beneficio”, expresa  
+ 
+A. La tesis central del texto.  
+B. La antítesis de la tesis central del texto,  
+C. Una razón a favor de la tesis central del texto.  
+D. Una razón en contra de la tesis central del texto. 
+ 
+43. Considere los siguientes fragmentos del texto:  
+ 
+1) Con su terrible sentido práctico, ella [Úrsula] no podía entender el negocio del coronel, que 
+cambiaba los pescaditos por monedas de oro, y luego convertía las monedas de oro en 
+pescaditos, y así sucesivamente, de modo que tenía que trabajar cada vez más a medida que 
+más vendía, para satisfacer un círculo vicioso exasperante.  
+2) El coronel mismo confiesa que <<sus únicos instantes felices, desde la tarde remota en que su 
+padre lo llevó a conocer el hielo, habían transcurrido en el taller de platería, donde se le iba el 
+tiempo armando pescaditos de oro>> 
+ 
+La relación entre la perspectiva de Úrsula y la de Aureliano, presentadas en ambos pasajes, se puede 
+definir como  
+ 
+A. Compatible, pues la perspectiva de Úrsula no es opuesta a la de Aureliano.  
+B. Una ejemplificación, pues el segundo fragmento ilustra la perspectiva de Úrsula.  
+C. Una oposición, pues la perspectiva de Úrsula es opuesta a la de Aureliano. 
+D. Complementaria, pues el primer fragmento apoya lo dicho en el segundo.  
+ 
+RESPONDA LAS PREGUNTAS 44 A 47 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN 
+COMER CARNE ES UN ALARDE BESTIAL DE PODER 
+En las últimas décadas el consumo de carne aumentó el doble que la población, el consumo de huevos tres 
+veces más. Hacia 1950 el mundo comía unas 50 millones de toneladas de carne por año, ahora, casi seis veces 
+más y se prevé que vuelva a duplicarse en 2030.  
+La ganadería ya usa el 80 por ciento de la superficie agrícola del mundo, el 40 por ciento de la producción 
+mundial de cereales, el 10 por ciento del agua del planeta. La carne es fuerte.  
+La carne es la metáfora perfecta de la desigualdad. Pero el momento de la carne puede estar terminando. Lester 
+Brown, pionero ecólogo, dice que cuando le preguntan cuánta gente puede alimentar nuestro planeta, él 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+18 
+pregunta a su vez con qué dieta. «Si todos comiéramos como los estadounidenses, que se tragan entre 800 y 
+1.000 kilos de granos al año por persona, sobre todo a través de las carnes que esos granos produjeron, la 
+cosecha mundial de cereales podría alimentar a 2.500 millones de personas. Si todos comiéramos como los 
+italianos, que consumen dos veces menos carne, unos 400 kilos de cereales por año, se podría alimentar a 5.000 
+millones de personas. Si todas comiéramos el régimen vegetariano de los indios podríamos alimentar a 10.000 
+millones de personas». 
+La carne es estandarte y es proclama: el mundo solo se puede usar así si lo usamos unos pocos. El mundo no 
+funciona si todos quieren usarlo por igual. La exclusión es una condición necesaria –y nunca suficiente.  
+Pero en la India la mayoría de vegetarianos se cree que lo elige. Los indios consumen cinco kilos de carne por 
+año y por persona: cinco kilos, diez veces menos que los chinos. Y se creen que lo eligen: son los milagros de 
+las ideologías.  
+Tomado y adaptado de: Caparrós, M. (2005). El Hambre. Editorial Anagrama 
+ 
+44. ¿Qué evidencias presenta el autor para mostrar que "La carne es estandarte y es proclama"? 
+ 
+A. Cifras sobre el aumento exponencial del consumo de carne en Estados Unidos.  
+B. Indicadores sobre las creencias relacionadas con el consumo de carne en países como la India.  
+C. Datos sobre el impacto que tienen las distintas dietas nacionales en relación con la alimentación 
+mundial.  
+D. Información sobre la historia del consumo de carne en China. 
+ 
+ 
+ 
+45. ¿Cuál de las siguientes opciones presenta un juicio de valor del autor del texto? 
+ 
+A. Si todos comiéramos el régimen vegetariano de los indios podríamos alimentar a 10.000 millones de 
+personas.  
+B. Los indios consumen cinco kilos de carne por año y por persona: cinco kilos, diez veces menos que 
+los chinos.  
+C. El consumo de carne es un acto que trae consigo una exhibición bestial de poder.  
+D. La ganadería ya usa alrededor del 80 por ciento de la superficie agrícola del mundo. 
+ 
+ 
+46. ¿Qué significa la frase "en la India la mayoría de vegetarianos se cree que lo elige"?  
+ 
+A. La mayoría de la población en la India es vegetariana porque está convencida de su elección.  
+B. La mayoría de vegetarianos en la India cree que no comer carne es su decisión.  
+C. La mayoría de vegetarianos en la India es engañada para que decida no comer carne.  
+D. La mayoría de vegetarianos en la India cree que el consumo de carne es una ideología. 
+ 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+19 
+47. ¿En cuál de los siguientes países se consumen anualmente entre 800 y 1.000 kilos de cereales por 
+persona?  
+ 
+A. Italia. 
+B. Estados Unidos.  
+C. India.  
+D. China. 
+ 
+RESPONDE LAS PREGUNTAS 48 A 52 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN  
+MUERTOS DE HAMBRE 
+Me hacen falta muchas cosas, pero no sé cuáles son. Desconecté, como un módulo desprendido de una nave, 
+y orbito un planeta que soy yo misma, mudo, sordo, a veces ciego. Con un núcleo en llamas. 
+Ayer bajé a la calle. Tapabocas, carro de compras, zapatos de andar por ahí. En el umbral del edificio había un 
+hombre desastroso, con varias bolsas en las que llevaba lo que tenía para vivir en la calle. Conozco a los 
+mendigos del barrio. Este era uno de los nuevos. Lo saludé, le pregunté qué necesitaba. Me dijo: "Nada, estoy 
+bien". Me quedé confundida. ¿De verdad estaba bien?, ¿cómo era posible? No insistí y me fui a hacer las 
+compras. Cuando volví, el hombre ya no estaba. 
+Oxfam Internacional publicó un informe según el cual la pobreza causada por la pandemia será más mortífera 
+que el virus: "Según las estimaciones, en 2019 había 821 millones de personas en situación de inseguridad 
+alimentaria, de las cuales aproximadamente 149 millones sufrían hambrunas de nivel de crisis (...) El Programa 
+Mundial de Alimentos estima que el número de personas que sufren hambrunas de nivel de crisis se incremente 
+hasta alcanzar los 270 millones antes de que acabe el año. Esto significa que, antes de 2021, podrían morir de 
+hambre entre 6.000 y 12.000 personas al día a consecuencia de los impactos sociales y económicos de la 
+pandemia".  
+He escuchado demasiadas veces esa frase de ceguera descomunal: "Esta pandemia demuestra que el virus no 
+discrimina". ¿No discrimina? El nuevo mendigo no ha vuelto a aparecer. Yo sigo haciendo mis compras. Con 
+tarjeta de crédito y sumida en la patética nostalgia por todo lo que era demasiado, que a veces parecía tan poco 
+y a veces incluso parecía molesto, supongo que olvidaré al hombre mañana, como olvidaré las cifras de los 
+muertos de hambre  
+Tomado y adaptado de: Guerriero, L. (6 de septiembre de 2020). Muertos de hambre. El País, Recuperado de: 
+https://elpais.com/elpais/2020/09/01/eps/1598963025_857480.htm 
+48. La narradora del texto es  
+ 
+A. Una testigo, porque a pesar de que el texto está narrado en primera persona, es objetivo en sus 
+observaciones y nos cuenta la historia con pocas referencias a sí misma.  
+B. Omnisciente, porque conoce todo lo que pasa, desde los millones de personas que están muriendo 
+de hambre hasta los pensamientos más íntimos del mendigo.  
+C. La protagonista, porque se sitúa a sí misma en el centro de la acción, habla en primera persona y 
+cuenta los hechos desde su propio punto de vista.  
+D. Observadora porque hace una descripción de los hechos en segunda persona, con un conocimiento 
+limitado a lo que puede percibir de un personaje. 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+20 
+49. Considere los siguientes fragmentos del texto:  
+Fragmento 1: Esta pandemia demuestra que el virus no discrimina. 
+Fragmento 2: El nuevo mendigo no ha vuelto a aparecer. Yo sigo haciendo mis compras. Con tarjeta de 
+crédito.  
+¿Cuál es la relación entre los fragmentos 1 y 2? 
+A. 2 es una razón a favor de lo dicho en 1.  
+B. 1 es una conclusión que se sigue de lo dicho en 2.  
+C. 2 presenta una razón en contra de lo dicho en 1.  
+D. 1 presenta una afirmación similar a lo dicho en 2. 
+ 
+ 
+50. La pregunta central que responde el texto es: 
+ 
+A. ¿Cuántas personas sufrirán hambrunas en 2020?  
+B. ¿Cómo afecta la pandemia a ricos y a pobres? 
+C. ¿Por qué la pandemia afecta más a ricos que a pobres?  
+D. ¿Por qué el mendigo dijo que no necesitaba nada? 
+ 
+51. ¿Cuál de los siguientes fragmentos del texto contiene una crítica de la autora sobre la desigualdad social 
+durante la pandemia?  
+ 
+A. "Me hacen falta muchas cosas, pero no sé cuáles son. Desconecté, como un módulo desprendido de 
+una nave, y orbito un planeta que soy yo misma, mudo, sordo, a veces ciego. Con un núcleo en 
+llamas". 
+B. "En el umbral del edificio había un hombre desastroso, con varias bolsas en las que llevaba lo que 
+tenía para vivir en la calle. Conozco a los mendigos del barrio. Este era uno de los nuevos”.  
+C. "Según las estimaciones, en 2019 había 821 millones de personas en situación de inseguridad 
+alimentaria, de las cuales aproximadamente 149 millones sufrían hambrunas de nivel de crisis".  
+D. "He escuchado demasiadas veces esa frase de ceguera descomunal: “Esta pandemia demuestra que 
+el virus no discrimina”. ¿No discrimina? El nuevo mendigo no ha vuelto a aparecer. Yo sigo haciendo 
+mis compras. Con tarjeta de crédito". 
+ 
+52. Teniendo en cuenta su estructura, tono y estilo, ¿en qué tipo de publicación podría aparecer el texto? 
+ 
+A. En un libro de historia sobre los impactos sociales y económicos de la pandemia.  
+B. En la sección de opinión de un periódico o revista. 
+C. En una pieza publicitaria que promociona una nueva tarjeta de crédito.  
+D. En la sección de noticias de un medio de comunicación. 
+ 
+ 
+ 
+ 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+21 
+ 
+RESPONDE LAS PREGUNTAS 53 A 55 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN 
+Cuidado con lo que yo llamo feminismo Light. Es la idea de la igualdad femenina condicional. Recházala de 
+plano, por favor. Es una idea vacua, fallida y tranquilizadora. Ser feminista es como estar embarazada. Lo estás 
+o no lo estás. O crees en la plena igualdad entre hombres y mujeres o no. El feminismo Light emplea analogías 
+como "Él es la cabeza y tú el cuello". O “Él conduce, pero tú viajas en el asiento delantero”. Aún más preocupante 
+es que dentro del feminismo Light está la idea de que los hombres son superiores por naturaleza, pero deben 
+"tratar bien" a las mujeres. No. No. No. 
+El bienestar de una mujer debe basarse en algo más que la benevolencia masculina. El feminismo Light recurre 
+al lenguaje de la "permisión". Theresa May es la primera ministra británica y un diario progresista de su país 
+describía así a su marido: "Philip May es conocido en la política por ser un hombre que ha dado un paso atrás 
+para permitir que sea su mujer, Theresa, quien brille". Permitir. Démosle la vuelta. Theresa May ha permitido a 
+su marido brillar. ¿Tiene sentido? Si Philip May fuera primer ministro quizá oiríamos que su esposa le ha 
+"apoyado" desde un segundo plano o que está "detrás de él" o "a su lado", pero jamás que le ha "permitido" 
+brillar [...] La triste verdad es que nuestro mundo está repleto de hombres y mujeres a quienes no les gustan las 
+mujeres poderosas. Nos han condicionado tanto con que el poder es masculino, que una mujer poderosa nos 
+parece una aberración. Y como tal la vigilan. De una mujer poderosa nos preguntamos: ¿Es humilde? ¿Sonríe? 
+¿Es lo bastante agradecida? ¿Tiene también su lado doméstico? Preguntas que no nos planteamos de los 
+hombres poderosos, lo cual prueba que no nos incomoda el poder en sí, sino las mujeres. Juzgamos más 
+duramente a las mujeres poderosas que a los hombres poderosos. Y el feminismo Light lo hace posible.  
+Ngozi Adichie, Ch. (2017). Querida ljeawele. Cómo educar en el feminismo. Colombia: Literatura Random House 
+ 
+53. ¿Cuál de las siguientes opciones sintetiza mejor el contenido del primer párrafo?  
+ 
+A. El feminismo Light es un tipo de feminismo según el cual las mujeres sirven de apoyo fundamental 
+para que los hombres ejerzan adecuadamente el poder. Por esto, afirma que la mujer solo está en 
+ciertas condiciones en igualdad con el hombre, quien tiene el deber de ser benevolente con ella.  
+B. El feminismo Light no es realmente una idea feminista. Esto porque ser feminista es creer en la 
+igualdad incondicional entre hombres y mujeres; pero el feminismo Light no afirma esto, pues dice 
+que el hombre es superior y emplea analogías en las que se presenta a la mujer como un apoyo.  
+C. El feminismo es una idea que no admite grados, pues consiste en creer en la igualdad plena entre 
+hombres y mujeres. Si se cree que esta igualdad está restringida o es relativa, no se es feminista. El 
+feminismo Light no debe ser rechazado, pues supone que el hombre no es superior.  
+D. El feminismo Light es una idea machista y no feminista. Ser feminista implica creer en la igualdad 
+condicionada entre hombres y mujeres, y el feminismo Light niega cualquier tipo de igualdad, pues 
+emplea analogías en las que la mujer no es más que el apoyo de un hombre poderoso. 
+ 
+54. El enunciado “ser feminista es como estar embarazada” quiere decir que  
+ 
+A. No hay un término medio entre ser o no ser feminista.  
+B. Las mujeres embarazadas pueden ser feministas.  
+C. Ser feminista implica estar en una posición embarazosa.  
+D. Una mujer es feminista solo si está embarazada. 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+22 
+55. De acuerdo con el texto, es válido afirmar que el feminismo Light 
+ 
+A. Legítima comportamientos de desigualdad hacia las mujeres.  
+B. Defiende a las mujeres poderosas de las preguntas basadas en prejuicios. 
+C. Sostiene que se juzga menos a las mujeres poderosas que muestran humildad.  
+D. Es rechazado por todos los hombres que permiten a su mujer hacer parte del mundo político. 
+RESPONDA LAS PREGUNTAS 56 A 61 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+56.  ¿Cuál es el tema general de la infografía?  
+ 
+A. Algunas ideas erróneas sobre el cerebro.  
+B. El cerebro humano y sus características.  
+C. Los malos hábitos que afectan al cerebro.  
+D. Diferencias entre hemisferios cerebrales.  
+ 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+23 
+ 
+57. ¿Cuál de las siguientes afirmaciones del texto expresa un prejuicio?  
+ 
+A. “El alcohol entorpece la comunicación".  
+B. “El lado izquierdo se encarga de la lógica".  
+C. “El cerebro de la mujer es más emocional".  
+D. “Tu cerebro usa el 100 % de su capacidad". 
+ 
+ 
+58. En la infografía presentada, ¿qué tipo de relación existe entre el texto y la imagen?  
+ 
+A. Hay una relación de oposición, pues el texto se opone a la imagen para generar extrañeza en el lector.  
+B. Hay una relación de justificación, pues la imagen da evidencias que prueban determinada conclusión.  
+C. Hay una relación de complementariedad, pues las imágenes representan lo que el texto está diciendo.  
+D. Hay una relación de jerarquía, ya que el mensaje del texto depende de lo que muestran las imágenes. 
+ 
+ 
+59. Considere las siguientes afirmaciones sobre el cerebro, tomadas del cuarto recuadro de la infografía:  
+ 
+1. El lado derecho se encarga de la creatividad. El lado izquierdo se encarga de la lógica.  
+2. Ambos hemisferios realizan funciones lógicas y creativas.  
+Seleccione la relación que hay entre 1 y 2:  
+A. 2 es opuesta a 1.  
+B. 2 es semejante a 1.  
+C. 2 es un ejemplo de 1.  
+D. 2 es una evidencia de 1. 
+ 
+60. Considere la siguiente afirmación del tercer recuadro de la infografía:  
+"Aunque hay pequeñas diferencias anatómicas, el cerebro de hombres y mujeres funciona igual”. 
+¿Qué se concluye de esta afirmación? 
+A. Que hombres y mujeres tienen habilidades cognitivas algo diferentes.  
+B. Que hombres y mujeres tienen igual capacidad en cualquier área.  
+C. Que hombres y mujeres tienen un manejo diferente de las emociones.  
+D. Que tanto hombres como mujeres tienen el cerebro del mismo tamaño. 
+ 
+61. Considere la oración "El alcohol entorpece la comunicación entre las neuronas, pero difícilmente llegará 
+a matarlas".  
+¿Cuál es la función del conector "pero" en esta oración? 
+ 
+A. Indicar que las dos ideas de la oración son semejantes.  
+B. Establecer una relación de oposición entre los dos elementos.  
+C. Señalar que la primera idea es un complemento de la segunda . 
+D. Comparar las dos ideas como elementos diferentes. 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+24 
+RESPONDA LAS PREGUNTAS 62 A 65 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN 
+El origen del mal 
+En un bosque vivía un ermitaño que entendía el lenguaje de las fieras y hasta podía conversar con ellas. En una 
+ocasión en que descansaba debajo de un árbol, se cobijaron allí un cuervo, un palomo, un ciervo y una serpiente, 
+y empezaron a discutir sobre el origen del mal.  
+El mal procede del hambre - declaró el cuervo-. Cuando uno come hasta hartarse las cosas se le antojan color 
+rosa. Pero, amigos, si durante días no se prueba bocado, cambia la situación y ya no parece tan hermosa la 
+naturaleza. ¡Qué desasosiego! ¡Qué intranquilidad siente uno! Y si vislumbro un buen pedazo de carne, me 
+abalanzo sobre él, ciegamente. Ni palos ni piedras, ni lobos enfurecidos serían capaces de hacerme soltar la 
+presa. ¡Cuántos perecemos víctimas del hambre! No cabe duda de que es el origen del mal.  
+El palomo intervino: -El mal no proviene del hambre, sino del amor. Si viviéramos solos, sin hembras, 
+sobrellevaríamos las penas. Más ¡ay!, vivimos en pareja y amamos tanto a nuestra compañera que no hallamos 
+un minuto de sosiego, siempre pensando en ella. Y cuando se aleja un poco de nuestro lado, nos sentimos como 
+perdidos y nos tortura la idea de que un gavilán la haya despedazado. Empezamos a buscarla por doquier, con 
+loco afán. Y si desaparece, uno no come ni bebe; no hace más que buscarla y llorar. ¡Cuántos mueren así entre 
+nosotros! Ya ven que todo el mal proviene del amor.  
+No; el mal no viene ni del hambre ni del amor - arguyó la serpiente-. El mal viene de la ira. Si viviésemos tranquilos 
+entonces todo iría bien. Pero, cuando algo se arregla de modo distinto a como quisiéramos, todo nos ofusca. 
+Sólo pensamos en descargar nuestra ira en el primero que encontramos. Entonces, como locos, nos retorcemos 
+tratando de morder a alguien. En tales momentos no se tiene piedad de nadie; mordería uno a su propia madre; 
+podríamos comernos a nosotros mismos. Sin duda alguna, todo el mal viene de la ira.  
+El ciervo no fue de este parecer. -No; no es de la ira ni del amor ni del hambre de donde procede el mal, sino 
+del miedo. Si fuera posible no sentir miedo, todo marcharía bien. Podemos defendernos de un animal pequeño, 
+con nuestros cuernos, y la huida nos preserva de los grandes. Pero es imposible no sentir miedo. Apenas cruje 
+una rama en el bosque o se mueve una hoja, temblamos de terror. El corazón palpita, como si fuera a salirse del 
+pecho, y echamos a correr. Siempre estamos alerta, llenos de terror. No hay modo de disfrutar de un poco de 
+tranquilidad. Por eso el origen del mal está en el miedo.  
+Finalmente intervino el ermitaño:  
+No es el hambre, el amor, la ira ni el miedo, la fuente de nuestros males, sino nuestra propia naturaleza. Ella es 
+la que engendra el hambre, el amor, la ira y el miedo. 
+ Tomado y adaptado de: Tolstoi, L. (s.f.). El origen del mal. Recuperado de https://ciudadseva.com/texto/el-origen-del-mal/ 
+ 
+ 
+62. En el texto, la serpiente intervino luego de que lo hicieran  
+ 
+A. El cuervo y el palomo. 
+B. El cuervo y el ciervo.  
+C. El palomo y el ermitaño.  
+D. El palomo y el ciervo. 
+ 
+ 
+Lectura crítica 
+1.a sesión 
+ 
+ 
+25 
+63. Un enunciado que expresa una opinión similar a la del ermitaño es: 
+  
+A. El hambre, el amor, la ira y el miedo son el origen de todos los males.  
+B. Los males que sufrimos dependen de nuestra historia personal.  
+C. Solamente la experiencia permite conocer el origen del mal.  
+D. El mal es propio de la condición humana. 
+ 
+64. En el texto anterior, los personajes  
+ 
+A. Debaten las consecuencias de guiarse por las emociones.  
+B. Discuten sobre nuestra naturaleza.  
+C. Explican el origen del amor, la ira, el hambre y el miedo.  
+D. Proponen hipótesis sobre la fuente del mal. 
+ 
+65. Con la expresión: "En tales momentos no se tiene piedad de nadie; mordería uno a su propia madre; 
+podríamos comernos a nosotros mismos", la serpiente afirma que la ira es  
+ 
+A. Un acto perjudicial para cualquiera.  
+B. Un sentimiento que deriva en la muerte.  
+C. Una necesidad de daño autoinfligido.  
+D. Una emoción que no mide consecuencias. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+66. En la imagen anterior, los tres personajes de la derecha: 
+ 
+A. Están en busca de un pariente perdido.  
+B. Son primos que no se soportan entre sí.  
+C. Tienen quejas sobre un pariente en común. 
+D. Captan la crítica de los simios a los humanos. 
+Sociales y Ciudadanas 
+1.a sesión 
+ 
+ 
+26 
+SOCIALES Y CIUDADANAS 
+ 
+RESPONDA LAS PREGUNTAS 67 A 69 DE ACUERDO CON LA SIGUINETE INFORMACIÓN 
+En un país latinoamericano se lleva a cabo un debate sobre si la reducción en el consumo de bebidas azucaradas 
+podría mejorar la salud pública. Esta reducción se podría lograr con el aumento de impuestos a este tipo de 
+bebidas. En el debate, podemos encontrar las siguientes posiciones:  
+1. Representantes de las más famosas compañías que producen bebidas azucaradas afirman que la premisa de 
+que el azúcar es nocivo para la salud es falsa, ya que los estudios que ellos han financiado no han mostrado 
+resultados concluyentes sobre los peligros del azúcar.  
+2. Representantes de la OMS (Organización Mundial de la Salud) afirman que las calorías aportadas por las 
+bebidas azucaradas tienen poco valor nutricional y que, además, aumentan la probabilidad de desarrollar 
+problemas de salud graves asociados al sobrepeso, como diabetes e hipertensión. 
+3. Representantes de uno de los partidos políticos más fuertes del país sostienen que, según datos recogidos 
+en varias ciudades del país durante el último semestre del presente año, otros alimentos tienen un mayor impacto 
+en la generación de problemas para la salud que las bebidas azucaradas. 
+4. Representantes de la asociación de diabetes sostienen que, según datos recogidos desde 1990 hasta la 
+actualidad en distintos países latinoamericanos, es posible establecer una relación entre el aumento del consumo 
+de las bebidas azucaradas y el aumento de casos de diabetes. 
+ 
+67. De acuerdo con las posiciones presentadas en el debate, ¿cuál de las siguientes relaciones es correcta? 
+ 
+A. La posición de las compañías de bebidas azucaradas y la de la OMS es contradictoria.  
+B. La posición de la OMS y la de los partidos políticos es semejante.  
+C. La posición de las compañías de bebidas azucaradas y la de los partidos políticos es contradictoria. 
+D. La posición de la asociación de diabetes y la de las compañías de bebidas azucaradas es semejante. 
+ 
+68. Teniendo en cuenta las posiciones descritas, podemos afirmar que las más fiables son: 
+ 
+A. La de la OMS, pues es una institución reconocida mundialmente en asuntos de salud pública, y la del 
+partido político, puesto que sus datos son recientes y provienen de ciudades del país.  
+B. La de las empresas de bebidas azucaradas, pues aportan el dinero necesario para llevar a cabo 
+investigaciones, y la del partido político, puesto que sus datos son recientes y provienen de ciudades 
+del país.  
+C. La de la OMS, pues es una institución reconocida mundialmente en asuntos de salud pública, y de la 
+asociación de diabetes, puesto que sus datos corresponden a un amplio periodo de tiempo y 
+provienen de distintos países.  
+D. La de las empresas de bebidas azucaradas, pues aportan el dinero necesario para llevar a cabo 
+investigaciones, y la de la asociación de diabetes, puesto que sus datos corresponden a un amplio 
+periodo de tiempo y provienen de distintos países. 
+ 
+Sociales y Ciudadanas 
+1.a sesión 
+ 
+ 
+27 
+69. ¿Cuáles de estas posiciones podrían usarse para apoyar el aumento de impuestos a las bebidas 
+azucaradas? 
+ 
+A. La de la OMS y la de los partidos políticos.  
+B. La de la OMS y la de la asociación de diabetes.  
+C. La de las compañías de bebidas azucaradas y la de la asociación de diabetes.  
+D. La de las compañías de bebidas azucaradas y la de los partidos políticos. 
+ 
+ 
+70. Los médicos de un hospital privado decidieron entrar en huelga porque les deben varios meses de salario 
+y, por eso, el hospital solo está prestando el servicio de urgencias. Dada esta situación, las directivas del 
+hospital anunciaron que, siguiendo una orden impartida por los propietarios, quienes estén participando 
+en las jornadas de protesta no recibirán los sueldos correspondientes a esos días.  
+ 
+En esta situación, está vulnerándose el derecho de: 
+ 
+A. Los médicos a reunirse y protestar.  
+B. Los pacientes a contar con servicios de salud.  
+C. Los propietarios a administrar una propiedad privada  
+D. Las directivas a enfrentar las protestas violentas. 
+ 
+ 
+71. En una comunidad rural afectada por el desempleo y la pobreza extrema, el Gobierno decidió 
+implementar un programa de transferencias monetarias que consistió en otorgar a madres de familia 
+desempleadas una suma de dinero mensual, bajo la condición de que sus hijos asistieran a la escuela y 
+a controles médicos. El objetivo de este programa, a largo plazo, era asegurar que los niños lograran un 
+nivel escolar suficientemente alto para permitirles salir de la pobreza a través del empleo, eliminando así 
+la necesidad de que la siguiente generación recibiera este tipo de transferencias monetarias. El programa 
+fue evaluado luego de estar en marcha durante 15 años y se concluyó que se cumplió con el objetivo 
+porque, en la mayoría de los casos, los hijos de las familias beneficiadas lograron obtener un empleo 
+digno y no depender de la asistencia social. 
+ 
+Teniendo en cuenta la descripción anterior, ¿cuál de las siguientes es una condición necesaria para que 
+este programa cumpla ese mismo objetivo a largo plazo en otra comunidad? 
+ 
+A. Que la comunidad en la que se vaya a implementar el programa sea rural.  
+B. Que la efectividad del programa se evalúe antes de que transcurran 15 años desde su 
+implementación. 
+C. Que la oferta laboral existente sea capaz de recibir a los jóvenes beneficiarios del programa.  
+D. Que la transferencia monetaria la reciban las madres cabeza de hogar, porque ellas administran mejor 
+el dinero. 
+ 
+Sociales y Ciudadanas 
+1.a sesión 
+ 
+ 
+28 
+72. En el siguiente fragmento, el escritor y antropólogo mexicano Guillermo Bonfil Batalla defiende la 
+implementación de un sistema educativo multicultural en su país:  
+ 
+"Además de tener un acceso justo a las oportunidades y los bienes que ofrece y posee la sociedad 
+mexicana, los pueblos indios reclaman mayores oportunidades y posibilidades en el marco de su propia 
+cultura: se trata de poder estudiar Biología en la universidad, pero también de que existan las condiciones 
+para desarrollar los conocimientos sobre la naturaleza que forman parte de la propia tradición cultural 
+india. Se trata de poder adquirir dominio sobre nuevas tecnologías, pero también de crear otras a partir 
+de las que se poseen como legado histórico. Solo por esta doble vía puede alcanzarse una relación justa 
+con los pueblos indios, sin caer en el error de confundir desigualdad con diferencia: se trata de eliminar 
+la desigualdad, al mismo tiempo que se defiende el derecho a la diferencia". 
+ 
+Tomado y adaptado de Bonfil Batalla, G. (1988). La pluralidad étnica. Recuperado de https://www.nexos.com.mx/p5250 
+ 
+¿Cuál de las siguientes opciones es una consecuencia de la implementación del modelo educativo que 
+propone el autor del fragmento?  
+ 
+A. La ampliación de la cobertura de Internet en las zonas rurales y apartadas de México.  
+B. El acceso prioritario a becas universitarias para los estudiantes indígenas mexicanos.  
+C. La prohibición de hablar en español en las escuelas de las zonas indígenas del territorio mexicano.  
+D. La publicación de textos escolares en lenguas indígenas mexicanas y en español. 
+ 
+73. A continuación, se presentan apartes de dos constituciones políticas de Colombia:  
+ 
+Fragmento 1: "Se garantiza la libertad de cultos. Toda persona tiene derecho a profesar libremente su 
+religión y a difundirla en forma individual o colectiva. Todas las confesiones religiosas e iglesias son 
+igualmente libres ante la ley".  
+ 
+Fragmento 2: "En nombre de Dios, fuente suprema de toda autoridad, y con el fin de afianzar la unidad 
+nacional [...] la religión católica, Apostólica, Romana es la de la nación: los poderes públicos la protegerán 
+y harán que sea respetada, como esencial elemento del orden social".  
+ 
+A partir de la anterior información, y teniendo en cuenta sus conocimientos sobre la actual Constitución 
+política, ¿cuál de las constituciones fue primero? 
+ 
+A. La del fragmento 2, porque menciona que en ese entonces el Estado negaba la existencia de 
+diferentes creencias; en el fragmento 1 se protege y respeta la pluralidad.   
+B. La del fragmento 1, porque refleja un mayor descuido en las normas que reglamentan las religiones 
+en un Estado; en el fragmento 2 se corrige este factor de desorden institucional.  
+C. La del fragmento 1, porque muestra la enorme influencia de la religión en las instituciones públicas 
+de ese entonces; en el fragmento 2 se limita la participación de la Iglesia en una política más laica.  
+D. La del fragmento 2, porque establece que el sentido del Estado es consolidar la unificación de una 
+nación más moderna; en el fragmento 1 se privilegian las visiones religiosas de la política nacional. 
+ 
+Sociales y Ciudadanas 
+1.a sesión 
+ 
+ 
+29 
+74. La tasa de robos en un municipio ha aumentado considerablemente en el presente año, en comparación 
+con el año anterior. Esta situación preocupa al Gobierno municipal y a sus ciudadanos, por lo que están 
+buscándose alternativas para resolverla.  
+ 
+La policía propone realizar más operativos en los que se decomisen tanto las armas blancas como las de 
+fuego, ya que estas son las principales herramientas que se usan para intimidar a la gente y quitarle sus 
+pertenencias.  
+ 
+El gobernador afirma que la solución es aumentar los permisos para el porte de armas de fuego, de 
+manera que una mayor cantidad de personas las tengan y puedan defenderse de quienes quieran 
+robarlas.  
+ 
+Una líder ciudadana propone entrenar a los habitantes del municipio para que puedan identificar 
+personas sospechosas e informar a las autoridades antes de que éstas cometan algún delito.  
+ 
+Un empresario dice que la solución está en poner cámaras de vigilancia que permitan observar a los 
+ciudadanos en todo momento, de manera que se facilite detectar y judicializar a aquellos que porten 
+armas sin permiso.  
+ 
+De las soluciones propuestas, ¿cuáles son incompatibles y por qué? 
+ 
+A. La de la policía y la del gobernador, porque la policía busca reducir el número de armas que se usan 
+para robar, mientras que el gobernador propone incrementarlo.  
+B. La de la policía y la del empresario, porque el empresario quiere darles libertad a los ciudadanos para 
+usar armas, mientras que la policía propone restringir su porte y uso.  
+C. La del empresario y la de la líder ciudadana, porque la líder propone simplemente prevenir los delitos, 
+mientras que el empresario insiste en que todo sospechoso debe judicializarse.  
+D. La de la líder ciudadana y la del gobernador, porque la líder cree que los habitantes del municipio 
+deben contribuir a la solución del problema, mientras que el gobernador cree que solo las autoridades 
+deben hacerlo. 
+ 
+75. Fray Alonso de Molina escribió un diccionario en náhuatl (lengua de los aztecas) con su traducción al 
+español. Él manifestó en la introducción "La gran necesidad de saber esta lengua [que tienen] los 
+ministros de la iglesia para convertirlos y traerlos a la fe [a los indígenas].  
+ 
+¿En qué contexto histórico se elaboró este diccionario? 
+ 
+A. En la época republicana, pues buscaba que los indígenas perdieran su cultura y se integrarán al 
+Estado nacional como ciudadanos.  
+B. En la época de la independencia, ya que posibilitaba que los indígenas pudieran recibir órdenes en 
+español del ejército independentista.  
+C. En el siglo XVI, porque es un ejemplo de los esfuerzos hechos por los misioneros para llevar la palabra 
+de Dios a los indígenas en América durante la Conquista.  
+D. En el siglo XX, porque solo recientemente se ha reconocido la importancia y el valor de las lenguas 
+indígenas, y se busca resguardarlas en diccionarios y libros impresos. 
+Sociales y Ciudadanas 
+1.a sesión 
+ 
+ 
+30 
+76. Un estudiante universitario afrodescendiente consideraba que había sido víctima de un trato desigual por 
+parte de uno de sus docentes, porque éste hacía chistes estereotipados basados en su color de piel. El 
+estudiante notificó sobre esta irregularidad al consejo académico y a la rectoría de la universidad, pero 
+nunca se tomaron medidas al respecto. Al no obtener una solución, el estudiante interpuso una tutela en 
+contra de la institución educativa. Finalmente, el juzgado que resolvió la tutela le ordenó a la universidad 
+ofrecerle disculpas al estudiante, por medio de acto público, ya que la institución educativa no debió 
+pasar por alto esta situación.  
+ 
+En este caso, de acuerdo con la Constitución Política de Colombia, la decisión tomada por el juzgado 
+busca 
+ 
+A. Aumentar el control a las universidades a través de la imposición de límites a su libertad de cátedra 
+y la conformación de su planta docente. 
+B. Afianzar el respeto a la diversidad étnica, a través de un acto simbólico a favor de la comunidad 
+afrodescendiente.  
+C. Limitar la libertad de expresión, pues vulnera el derecho que tiene el profesor de expresar sus ideas 
+u opiniones.  
+D. Privilegiar a las minorías étnicas, pues pone los derechos de los afrodescendientes por encima de 
+los derechos de otras comunidades. 
+ 
+77. “El respeto al derecho ajeno es la paz". Esta frase, atribuida al político mexicano Benito Juárez, revela 
+una ideología liberal porque: 
+ 
+A. Muestra que la solidaridad entre las personas es la base de cualquier sociedad.  
+B. Presenta los derechos individuales como un valor supremo que debe ser resguardado.  
+C. Plantea que el interés colectivo está por encima de los derechos individuales.  
+D. Concibe la violencia como una forma válida para resolver los conflictos entre individuos. 
+ 
+78. En una región al sur del país, las prácticas de extracción minera artesanal están ampliamente difundidas. 
+La extracción artesanal de oro constituye una fuente de ingresos importante para muchas familias de 
+bajos recursos en la región, y una práctica que se ha transmitido de generación en generación.  
+ 
+No obstante, esta práctica tiene un impacto social y ambiental significativo, pues, en ocasiones, involucra 
+el uso de mercurio. El mercurio que se vierte en los ríos afecta el ecosistema acuático y, sobre todo, 
+causa graves problemas en la salud de las personas, desde enfermedades digestivas hasta daños 
+cognitivos serios. La eliminación del uso del mercurio es, por tanto, una prioridad. 
+ 
+De acuerdo con la descripción anterior, el problema planteado es principalmente de tipo  
+ 
+A. Social, debido a los graves problemas de salud humana asociados al uso de mercurio.  
+B. Ambiental, debido a los daños irreversibles en los ecosistemas acuáticos causados por el mercurio.  
+C. Económico, debido a la inexistencia en la región de actividades económicas diferentes a la minería 
+artesanal.  
+D. Cultural, debido a la costumbre, muy difundida en la población local, del uso de mercurio en la 
+extracción de oro. 
+Sociales y Ciudadanas 
+1.a sesión 
+ 
+ 
+31 
+ 
+79. El Gobierno nacional diseñó una estrategia en el marco de las relaciones económicas bilaterales con los 
+Emiratos Árabes Unidos, con el fin de que este país, ubicado en Oriente Medio, realice una inversión 
+aproximada de 1.000 millones de dólares para la extracción de oro en el páramo de Santurbán, ubicado 
+en la cordillera Oriental de Colombia. El páramo tiene en su territorio parques naturales, biodiversidad, 
+especies de animales nativas y abastece de agua a un sector importante de la región. La noticia fue 
+anunciada a los ciudadanos como una inversión que, además de contribuir al progreso y crecimiento 
+económico, generará empleo e inversión social. 
+ 
+A partir de la información anterior, el proyecto descrito podría ser obstaculizado por la ciudadanía porque 
+ 
+A. La inversión no sería suficiente para solucionar los problemas de empleo en la región.  
+B. El desarrollo agrícola del país que depende del páramo se vería afectado.  
+C. Se podría disminuir el número de visitas anuales de turistas.  
+D. Se podría afectar considerablemente el ecosistema del páramo. 
+ 
+ 
+80. La revista americana International Living fue fundada hace varias décadas con el fin de brindar 
+información sobre destinos turísticos a extranjeros. Entre las clasificaciones que realizan sus usuarios, se 
+calificó a Colombia como el tercer país con el mejor sistema de salud del mundo, y el quinto en el 
+escalafón de mejores lugares para vivir al jubilarse, a causa del clima, el sistema económico y la asistencia 
+sanitaria.  
+ 
+Redacción Nacional (2017, 11 de enero), Colombia tiene el tercer mejor sistema de salud del mundo: 
+International Living. El Espectador. Recuperado de http://www.alespectador.com 
+ 
+Por otra parte, una médica colombiana, quien hizo un análisis del servicio médico y hospitalario del país, 
+plantea que uno de los principales problemas es que el sistema de salud no es equitativo, no brinda 
+atención de la misma manera a todos los colombianos, y que pudiendo ofrecer una atención de mayor 
+calidad, no lo hace.  
+ 
+Redacción Nacional. (2016, 26 de febrero). El sistema de salud en Colombia no es equitativa Marcela Vélez El 
+Espectador. Recuperado de http://www.elespectador.com 
+ 
+Lo afirmado en la revista y lo expresado por la médica son enunciados  
+ 
+A. Complementarios, porque ambos hacen referencia al sistema de salud en Colombia.  
+B. Contradictorios, porque califican de manera opuesta el sistema de salud en Colombia.  
+C. Semejantes, porque ambos califican de manera positiva al sistema de salud en Colombia.  
+D. Coherentes, porque ambos hacen referencia a las desventajas del sistema de salud en Colombia 
+ 
+ 
+ 
+Sociales y Ciudadanas 
+1.a sesión 
+ 
+ 
+32 
+81. El artículo 26 de la Declaración Universal de los Derechos Humanos dice: "Toda persona tiene derecho 
+a la educación. La educación debe ser gratuita, al menos, en lo concerniente a la instrucción elemental 
+y fundamental. La instrucción elemental será obligatoria. La instrucción técnica y profesional habrá de 
+ser generalizada; el acceso a los estudios superiores será igual para todos, en función de los méritos 
+respectivos".  
+En nuestro país, la Constitución política, en su artículo 67, párrafo 1, afirma que: "La educación es un 
+derecho de la persona y un servicio público que tiene una función social: con ella, se busca el acceso al 
+conocimiento, a la ciencia, a la técnica, y a los demás bienes y valores de la cultura”.  
+ 
+¿Cuál de las siguientes afirmaciones describe la semejanza entre los dos artículos? 
+ 
+A. Estudiar es un deber y obligación de todas las personas.  
+B. Que las personas estudien es una obligación del Estado.  
+C. El acceso a la educación es un derecho de toda persona.  
+D. La educación es un servicio público de acceso gratuito. 
+ 
+82. Un proyecto impulsado por el Gobierno nacional busca crear una nueva infraestructura de carreteras 
+por todo el territorio del país. Una de estas iniciativas propone la construcción de un túnel que comunique 
+dos zonas separadas por condiciones topográficas.  
+La creación de este túnel conlleva ahorrar tiempo en el recorrido y también una ganancia económica 
+significativa para la concesión de la construcción de la obra. Sin embargo, para su construcción, se tiene 
+que desviar el cauce de una red hídrica, que es transversal a dos comunidades aledañas, lo que generaría 
+un deterioro en las condiciones hídricas de la zona. Si se examina este ejemplo a la luz de los principios 
+de la Constitución Política de Colombia se puede determinar que, con el proyecto: 
+ 
+A. Se defienden los principios y derechos de la Constitución al libre tránsito ya que se estaría mejorando 
+la infraestructura vial del país.   
+B. Se vulneran los principios y derechos de la Constitución, ya que se viola el derecho al ambiente sano, 
+puesto que se estaría alterando y contaminando el agua de la red hídrica.  
+C. Se defienden los principios y derechos de la Constitución, ya que se estaría asegurando la inversión 
+privada, a través de la concesión de obras viales de infraestructura.  
+D. Se vulneran los principios y derechos de la Constitución, ya que con las obras de infraestructura solo 
+se estaría beneficiando un pequeño sector de la población de la zona. 
+ 
+83. Una moción de censura es un procedimiento con el que cuenta la Rama Legislativa y con el que se puede 
+exigir la separación del cargo de funcionarios de la Rama Ejecutiva. 
+ 
+Según la Constitución Política de Colombia, medidas como la moción de censura aseguran  
+ 
+A. Que exista control recíproco entre los poderes públicos como una práctica que evita la concentración 
+de poder.  
+B. Que el trámite de las leyes en el Congreso de la República se realice de manera transparente.  
+C. Que la Rama Legislativa, integrada por el Senado y la Cámara de Representantes, tenga mayor poder en 
+el Estado colombiano.  
+D. Que la Rama Ejecutiva, integrada por el presidente y los ministros, no puedan presentar proyectos 
+de ley ante la Rama Legislativa. 
+Sociales y Ciudadanas 
+1.a sesión 
+ 
+ 
+33 
+84. Lea con atención la definición del concepto de agencia.  
+ 
+Agencia: "Los individuos construyen su propio curso de vida por medio de las elecciones y acciones que 
+toman, considerando las oportunidades y restricciones que derivan de su situación histórica y social”.  
+ 
+Tomado de: Mora M, y De Oliveira, O. (2014). Los caminos de la vida: acumulación, reproducción o superación de las 
+desventajas sociales en México, pp.81-116. En Revista Mexicana de Ciencias Políticas y Sociales, UNAM, Nueva Época, 
+Allo LIX, enero-abril.  
+ 
+La definición dada explica por qué los individuos: 
+ 
+A. Se bloquean ante los sucesos de la vida sin intentar superarlos. 
+B. Esperan que la solución de sus problemas provenga de otras personas.  
+C. Asumen las situaciones adversas de la vida como parte de un designio divino.  
+D. Identifican las adversidades en sus vidas y buscan formas de mejorar su lugar en el mundo. 
+ 
+85. El clientelismo político es una relación de intercambio de favores entre dos partes que involucra un patrón 
+y un cliente, en la cual, a cambio de apoyo político, fidelidad a un partido o votos, el patrón ofrece al 
+cliente un conjunto de bienes ya sea dinero, protección o alimentos. La distribución de mercados, el 
+ofrecimiento de subsidios o el reparto de empleos durante tiempos de campaña electoral son algunos 
+de los hábitos clientelistas más conocidos, lo que, en muchos casos se hace a través del uso 
+indiscriminado de bienes públicos por parte de las clases políticas.  
+ 
+¿Por qué el concepto de clientelismo es útil para explicar otros fenómenos políticos como los altos índices 
+de corrupción presentes en algunos sistemas democráticos?  
+ 
+A. Porque los políticos tienen la obligación de cumplir sus promesas de campaña, sin importar el medio 
+que utilicen para satisfacer las necesidades de sus electores.  
+B. Porque los políticos involucrados en relaciones clientelistas tienen más éxito electoral que los políticos 
+honrados que no compran votos.  
+C. Porque, en los sistemas democráticos es irremediable la coexistencia del clientelismo y la corrupción 
+entre las clases políticas elegidas por voto popular.  
+D. Porque la falta de control político sobre las relaciones clientelistas favorece la apropiación legal de 
+los recursos públicos, en beneficio de los intereses de sectores privados. 
+ 
+86. En Colombia, como mecanismo para evitar la concentración del poder político en una misma persona u 
+organización: 
+ 
+A. se creó la Contraloría General de la República, para investigar y controlar el uso de los recursos 
+públicos.  
+B. se establecieron elecciones populares, para elegir los funcionarios públicos que ejercen altos cargos 
+en el Estado colombiano.  
+C. se creó la Fiscalía general de la Nación, para velar por la protección de los derechos de los 
+ciudadanos.  
+D. se dividió el poder público en tres ramas, ejecutiva, legislativa y judicial, las cuales se controla 
+recíprocamente. 
+Sociales y Ciudadanas 
+1.a sesión 
+ 
+ 
+34 
+87. Lea con atención los siguientes fragmentos de discursos, sobre la relación Estado-medios de 
+comunicación pronunciados por un político en 1998 y en 2006, respectivamente:  
+ 
+Fragmento 1: "No nacionalizaría ningún medio de comunicación. Basta con los medios que ya tiene el 
+Estado. Hay que repotenciar esos canales y ponerlos a trabajar en función de la educación nacional, de 
+los valores nacionales. Tengo las mejores relaciones con los canales y los medios de comunicación. Los 
+canales deben seguir siendo privados; es más, estamos interesados en que se amplíen y se profundicen" 
+(1998). 
+ 
+Fragmento 2: "Ese canal de televisión [privado], se acaba. Se acaba la concesión cedida por el Gobierno. 
+Ya está redactada la medida, así que vayan preparándose, apagando los equipos. No se va a tolerar aquí 
+ningún medio de comunicación que esté al servicio del golpismo, contra el pueblo, contra la nación, 
+contra la independencia nacional, contra la dignidad de la República" (2006).  
+ 
+El primer fragmento corresponde a una entrevista que el político concedió en 1998 a un medio de 
+comunicación internacional cuando era candidato a la presidencia. El político asumió la presidencia en 
+1999, enfrentó un fallido golpe de Estado en su contra en 2002, y se mantuvo como presidente hasta su 
+muerte en 2013. El segundo fragmento, por tanto, hace parte de un discurso pronunciado en plaza 
+pública en el 2006, cuando estaba en la mitad de su mandato presidencial.  
+ 
+¿Qué argumento explica el cambio de posición del político frente a los medios de comunicación privados 
+en los dos discursos citados? 
+ 
+A. En su condición de candidato a la presidencia, desconocida el poder y la influencia de los medios de 
+comunicación privados sobre la ciudadanía. Siendo presidente, decidió darles un mayor impulso a 
+los medios nacionales.  
+B. En su condición de candidato a la presidencia, no estaba interesado en perder el apoyo electoral de 
+los medios de comunicación privados. Siendo presidente, buscó legitimar su proyecto político 
+censurando a quienes se le opusieran.  
+C. En su condición de candidato a la presidencia, desconocía que los medios de comunicación privados 
+también pueden estar al servicio de los valores nacionales. Siendo presidente estaba interesado en 
+incidir en los contenidos que estos producían.  
+D. En su condición de candidato a la presidencia, tenía como proyecto político sustituir progresivamente 
+los medios de comunicación estatales por medios de comunicación privados. Siendo presidente, 
+reconoció la importancia social de los medios estatales y decidió clausurar la competencia.  
+ 
+88. Actualmente, en varios países del mundo se discute si se debe legalizar o no la eutanasia. Existen 
+posturas que la defienden y otras que la condenan. De los siguientes enunciados, ¿cuál NO es un 
+argumento a favor de la eutanasia? 
+A. Más allá de preservar la vida a toda costa, se debe procurar una buena calidad de vida para todas las 
+personas. 
+B. La vida humana es sagrada y ningún ser humano puede darle muerte a otro de manera consciente y 
+deliberada.  
+C. En algunos casos, la muerte asistida es un acto de compasión y humanidad por la persona que sufre. 
+D. Hay que respetar la autonomía individual mediante la cual cada persona tiene el derecho a decidir 
+sobre su propia vida. 
+Sociales y Ciudadanas 
+1.a sesión 
+ 
+ 
+35 
+ 
+89. Una agencia de noticias publicó la siguiente Información:  
+ 
+En un lujoso conjunto de apartamentos en Chile se fijó un afiche con la imagen caricaturizada de varias 
+"nanas" o asesoras del hogar a modo de The Walking Dead, una serie estadounidense que trata sobre 
+muertos vivientes. En el afiche se ilustraba a varias nanas con apariencia de zombis y se leía: "¿Te 
+imaginas llegar al conjunto y todas las nanas caminando pa' fuera...? Con este cartel se pretendía 
+introducir una serie de medidas privadas para que las "nanas” jardineros y obreros, primero, no circularán 
+por el conjunto si no portaban el uniforme que los identificara como trabajadores; segundo, tuvieran 
+prohibido el “ingreso y salida a pie”; y, tercero, no hablaran con otros trabajadores. Con estas medidas, 
+los administradores del lugar buscaban mejorar la seguridad para los niños y evitar que los trabajadores 
+“entregaran datos sobre los hogares que pudieran ser usados por delincuentes para perpetuar robos en 
+el lugar”.  
+ 
+Teniendo en cuenta el texto anterior, se puede inferir que el afiche y las políticas diseñadas por los 
+administradores del conjunto expresan un discurso que promueve  
+ 
+A. La protección de los derechos y la promoción de políticas de seguridad para los habitantes del 
+conjunto.  
+B. La ridiculización de una serie estadounidense que va en contra de los valores sociales del conjunto. 
+C. La protección de la seguridad laboral de los trabajadores del conjunto y la formalización de sus 
+prácticas laborales. 
+D. La discriminación de los trabajadores del conjunto, porque son catalogados como ciudadanos de 
+segunda categoría. 
+ 
+90. En Colombia, tanto el matrimonio civil (ante juez o notario) como el religioso con efectos civiles protegen 
+los derechos que surgen cuando dos personas conforman una familia, como el reconocimiento del 
+vínculo familiar o los derechos sobre el patrimonio que consiguen. La Constitución política de Colombia, 
+en su artículo 42, define el matrimonio como la unión entre un hombre y una mujer. Sin embargo, en el 
+país también se realizan uniones de parejas del mismo sexo. Estas uniones también se consideran 
+matrimonios civiles de acuerdo con una sentencia del año 2016, expedida por la Corte Constitucional. 
+No obstante, la definición de matrimonio presente en la Constitución política no se modificó.  
+ 
+¿Puede modificarse la definición de matrimonio en la Constitución política de Colombia para que esta 
+incluya las uniones de parejas del mismo sexo? 
+ 
+A. No, porque en Colombia las normas establecidas en la Constitución no pueden modificarse para ese 
+fin.  
+B. No, porque el matrimonio religioso es la figura jurídica en Colombia que garantiza derechos a las 
+parejas.  
+C. Sí, porque el reconocimiento de parejas del mismo sexo garantizaría la sana convivencia entre estas.  
+D. Sí, porque la Constitución puede modificarse para hacerla acorde con las transformaciones sociales. 
+ 
+Sociales y Ciudadanas 
+1.a sesión 
+ 
+ 
+36 
+91. En una ciudad intermedia, los habitantes se encuentran preocupados por el mal estado de los parques, 
+las zonas verdes, los espacios comunales y las áreas de estacionamiento no privado. Para solucionar el 
+Problema, el alcalde decide contratar a un experto que lo asesore, con el fin de entender mejor la 
+situación y contemplar posibles soluciones. El diagnóstico del experto concluye que el problema radica 
+en la gestión y el uso de los bienes destinados a la satisfacción de las necesidades colectivas. En tal 
+sentido, propone que, en lugar de que alcaldía se encargue de restaurar parques y ordenar obras, 
+organice a los ciudadanos para que genere un sentido de pertenencia y sean ellos mismos quienes se 
+involucren en la discusión e implementación de soluciones concretas para cada espacio colectivo que 
+necesite intervención.  
+ 
+El concepto que mejor sintetiza la propuesta del experto es el de:  
+ 
+A. Gestión comunitaria.  
+B. Movimiento político.  
+C. Privatización urbana.  
+D. Política social. 
+ 
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+37 
+CIENCIAS NATURALES 
+ 
+RESPONDA LAS PREGUNTAS 92 A 94 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN 
+ 
+Las autoridades de una localidad desarrollaron una investigación para saber en qué zonas deberían 
+implementarse medidas para mitigar la contaminación acústica (contaminación por ruido). Ellos usaron 
+sonómetros, como el de la imagen, para medir la intensidad del ruido de cada zona de la localidad. Los resultados 
+obtenidos aparecen en la tabla. 
+ 
+  
+ 
+ 
+ 
+  
+ 
+ 
+92. Al construir la tabla, las autoridades olvidaron poner las unidades de medida de niveles de ruido. ¿Qué 
+unidades de medida debe tener la tabla en las columnas Nivel permitido y Nivel medido? 
+A. Decibelios (dB). 
+B. Segundos (s). 
+C. Hercios (Hz). 
+D. Metros (m). 
+ 
+ 
+93. ¿En qué zonas deberían implementarse medidas para mitigar la contaminación acústica? 
+A. En las zonas comercial y residencial. 
+B. En las zonas académica e industrial. 
+C. En las zonas comercial e industrial. 
+D. En las zonas académica y residencial. 
+ 
+ 
+94. Teniendo en cuenta la información anterior, ¿qué tipos de vehículos transitan por las zonas en las que 
+no hay contaminación acústica? 
+A. Vehículos de transporte público y camiones. 
+B. Vehículos familiares y bicicletas. 
+C. Camiones y vehículos familiares. 
+D. Bicicletas y vehículos de transporte público. 
+ 
+ 
+ 
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+38 
+95. Camilo observa un martillo que se encuentra adherido a un eje de giro, el cual golpea un clavo sobre 
+una superficie de madera, tal y como muestra la figura. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Luego de golpear el clavo, el martillo se sube a una altura menor que la del primer golpe, para luego 
+volver a golpear el clavo. Esto lo hace en repetidas ocasiones, hasta que finalmente se detiene.  
+ 
+Teniendo en cuenta la información anterior, ¿cómo es la variación de la energía mecánica del martillo y 
+del clavo cuando el martillo ha regresado a una altura menor? 
+ 
+A. La energía mecánica de martillo ha disminuido y la del clavo ha permanecido constante. 
+B. La energía mecánica del martillo ha aumentado mientras que la del clavo ha disminuido. 
+C. La energía mecánica del clavo y del martillo han aumentado tras cada golpe. 
+D. La energía mecánica que poseen el martillo y el clavo ha permanecido constante. 
+ 
+96. Un grupo de estudiantes se pregunta: ¿Qué sucede con un gas al variar su presión? Para contestarla, 
+realizan un experimento en el cual toman un determinado gas en un recipiente con émbolo móvil, ejercen 
+presión sobre dicho émbolo y observan que el volumen disminuye. 
+ 
+ 
+ 
+ 
+ 
+ 
+                                                            Posición inicial          Posición final 
+ 
+¿Cuál de las siguientes hipótesis se evalúa con este experimento? 
+A. La relación directa entre la presión y el volumen. 
+B. La relación directa entre la presión y la distancia de las moléculas. 
+C. La relación inversa entre el volumen y la distancia de las moléculas. 
+D. La relación inversa entre la presión y el volumen. 
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+39 
+97. Los tensoactivos son moléculas duales, es decir, tienen una cabeza hidrofílica (afín con el agua) y una 
+cola hidrofóbica (que repele el agua, pero es afín con lípidos y grasas), como se muestra a continuación. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Cuando estas moléculas interactúan con grasa forman unas estructuras llamadas micelas, en las que las 
+colas hidrofóbicas rodean, como una especie de burbuja, a las moléculas de grasa. 
+ 
+Teniendo en cuenta la información anterior, ¿cuál de los siguientes modelos representa correctamente 
+una micela? 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+98. Durante los inicios de la química moderna se consideraba al agua como un elemento. No fue hasta los 
+experimentos de Lavoisier (1743 - 1794) que se le empezó a considerar como un compuesto. En estos 
+experimentos Lavoisier tomó hidrógeno y lo mezcló con oxígeno, obteniendo una sustancia líquida que 
+parecía ser agua.  
+¿Por qué estos experimentos llevaron a la conclusión de que el agua no era un elemento? 
+A. Porque se demostró que el agua podía separarse en sustancias más sencillas. 
+B. Porque se demostró que el agua podía obtenerse a partir de elementos. 
+C. Porque se demostró que el agua podía combinarse con otros elementos. 
+D. Porque se demostró que el agua podía combinarse con otros compuestos. 
+ 
+A. 
+ 
+ 
+ 
+B.  
+C.   
+D.  
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+40 
+99. Para un proyecto de investigación, un grupo de estudiantes quiere determinar el porcentaje de humedad 
+de dos tipos de suelos con el fin de establecer cuál de ellos es mejor para el cultivo de hortalizas. Para 
+esto realizaron el siguiente proceso: 
+• 
+Seleccionaron dos sitios (sitio I y sitio II) y en cada uno se tomaron tres puntos de muestreo. 
+• 
+Con ayuda de una pala extrajeron tierra (hasta 5 cm de profundidad). 
+• 
+Cada una de las muestras fue pesada y posteriormente secada en un horno a 110 °C y pesada 
+nuevamente. 
+• 
+Los muestreos fueron realizados durante una semana, en el sitio I a las 6:00 a. m. y en el Sitio II 
+a las 12:00 m. 
+Su profesor revisa el proyecto y les indica que existe un error en el proceso que van a realizar. 
+¿Cuál de los siguientes es el error que están cometiendo los estudiantes en su proceso? 
+A. Los sitios deben tener más de tres puntos de muestreo. 
+B. Las muestras se deben tomar a una misma hora. 
+C. La temperatura del horno debe ser menor a 100 °C. 
+D. Las muestras deben ser de 30 cm de profundidad. 
+ 
+100. El intercambio genético entre nativos europeos, africanos y americanos sucedió hace más de 500 años 
+durante la colonización europea. Algunos genes del ADN de los colombianos actuales conservan alelos 
+de resistencia a la infección de malaria que son originarios de poblaciones africanas, la cual sigue siendo 
+una de las principales causas de muerte en menores de 5 años en África y en América. 
+ 
+Teniendo en cuenta la información anterior, ¿cómo se puede explicar la persistencia de estos alelos de 
+resistencia en el genoma de los colombianos en la actualidad? 
+ 
+A. Porque la malaria, al afectar procesos como la respiración celular, obligó a los colombianos a adquirir 
+nuevos genes que les permitan vivir sin células. 
+B. Porque las personas con genes resistentes a la malaria pudieron sobrevivir a la infección y, al 
+reproducirse, pasaron sus genes a las nuevas generaciones. 
+C. Porque la infección por malaria causa competencia entre los genes de los africanos y los americanos 
+ocasionando que solo persista un único alelo. 
+D. Porque el genoma de todos los colombianos actualmente conserva por azar un tercio de los alelos 
+de europeos, otro de africanos y otro de americanos. 
+  
+101. La hemoglobina es una proteína férrica que se produce en la médula ósea a partir de alimentos ricos 
+en átomos de hierro (Fe), cuya función principal es transportar el oxígeno desde los pulmones hacia los 
+tejidos. Un déficit en esta proteína causa la enfermedad conocida como anemia. De acuerdo con lo 
+anterior, ¿qué efecto podría tener la deficiencia de hierro en el cuerpo humano? 
+ 
+A. Alteración del ciclo circadiano. 
+B. Aumento de la masa corporal. 
+C. Disminución en la oxigenación de las células. 
+D. Cambios en el material genético de las células. 
+ 
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+41 
+102. Una estudiante realiza un experimento para analizar la aceleración inicial de una burbuja de aire dentro 
+de un tubo lleno de aceite, para diferentes ángulos de inclinación del tubo, como se muestra en la figura. 
+Ella obtiene los siguientes resultados que se muestran en la tabla. 
+ 
+ 
+Teniendo en cuenta la información anterior, ¿cómo será la aceleración inicial de la burbuja si el ángulo 
+continúa aumentando? 
+A. Menor, porque la fuerza gravitacional disminuye. 
+B. Mayor, porque se aproximará a la aceleración gravitacional. 
+C. Igual, porque la velocidad de la burbuja no cambia. 
+D. No experimenta aceleración, porque esta se mantiene constante. 
+ 
+ 
+ 
+103. Una mezcla está conformada por dos o más componentes. Las mezclas pueden ser de tipo heterogéneo 
+si sus componentes se diferencian a simple vista o de tipo homogéneo si sus componentes no se 
+diferencian. En la siguiente tabla se encuentran algunos métodos de separación de mezclas. 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+De acuerdo con la información anterior, si se desea separar una mezcla de azúcar disuelto en agua, ¿cuál 
+es el método de separación adecuado? 
+A. Filtración. 
+B. Tamizado. 
+C. Evaporación. 
+D. Decantación. 
+ 
+ 
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+42 
+104. Un productor de leche debe escoger un camión con una capacidad de carga adecuada para transportar 
+cinco vacas. Cada vaca consume aproximadamente 10 kg de comida, principalmente en horas del día, y 
+10 L de agua, principalmente en horas de la noche. Para poder seleccionar el camión adecuado, el 
+productor pesa cada vaca a primera hora de la mañana.  
+ 
+A continuación, se muestran los resultados obtenidos, así como los tipos de camiones existentes según 
+el peso. 
+ 
+Dados estos resultados, ese mismo día en la tarde el productor seleccionó un camión tipo "liviano". Sin 
+embargo, este no pudo arrancar por exceso de peso. 
+ 
+¿Cómo podría mejorar el cálculo del peso total de las vacas para escoger el tipo de camión adecuado? 
+ 
+A. Pesar cada vaca a última hora de la noche en vez de en la mañana y sumar los pesos de cada vaca. 
+B. Pesar cada vaca en varios momentos a lo largo del día y sumar los pesos máximos de cada vaca. 
+C. Pesar cada vaca usando una balanza digital de mayor precisión y sumar los pesos de cada vaca.  
+D. Pesar cada vaca varios días a primera hora de la mañana y sumar los pesos máximos de cada vaca. 
+ 
+105. Un estudio muestra que en una ciudad ha aumentado la tasa de enfermedades respiratorias por 
+contaminación del aire con material particulado respirable (MP 10). Ahora bien, para este estudio, se 
+evaluó la relación entre la concentración de MP10 y el porcentaje de área dedicada a dos actividades: 
+industria y urbanización, en cuatro zonas diferentes de la ciudad. 
+De acuerdo con la información y la gráfica, ¿cuál es una 
+posible solución para disminuir la incidencia de enfermedades 
+respiratorias en esta ciudad? 
+A. Reducir la actividad de la industria y distribuir las áreas 
+industriales de manera equitativa por toda la ciudad. 
+B. Regular el crecimiento urbano y capacitar a los 
+ciudadanos 
+en 
+prácticas 
+que 
+generen 
+menos 
+contaminación. 
+C. Regular el crecimiento industrial y realizar actividades de 
+prevención en las zonas de mayor contaminación. 
+D. Regular el crecimiento urbano y aumentar el área 
+industrial para que se genere menos contaminación. 
+ 
+ 
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+43 
+RESPONDE LAS PREGUNTAS 106 A 108 DE ACUERDO CON LA SIGUIENTE INFORMACIÓN 
+Actualmente, algunos productos tecnológicos en buen estado se convierten en residuos electrónicos, 
+principalmente los equipos de telecomunicaciones e informática, como televisores, radios, teléfonos celulares y 
+computadores. En la siguiente gráfica se muestra la composición potencial de estos residuos electrónicos. 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+En un colegio, una encuesta muestra que el 82 % de los estudiantes almacenan sus residuos electrónicos en 
+sus casas, pues no saben qué hacer con ellos, y un tratamiento inadecuado puede ocasionar graves impactos 
+en el ambiente. Como estrategia de educación ambiental, en el colegio se va a realizar una jornada de 
+clasificación de desechos electrónicos, para aprovechar los metales presentes y facilitar su disposición 
+adecuada por parte de la empresa de recolección de basuras. 
+ 
+106. Después de la jornada de clasificación de residuos electrónicos, un estudiante propone quemar allí 
+mismo el material excedente para extraer los metales. ¿La anterior propuesta es ambientalmente 
+correcta? 
+ 
+A. Sí, porque de esta manera los residuos electrónicos se pueden usar como combustible para 
+reemplazar el carbón. 
+B. No, porque en el proceso de quema se pueden generar reacciones en otros materiales que pueden 
+ser contaminantes. 
+C. Sí, porque las pantallas y plásticos son residuos aprovechables y los residuos de la quema se podrían 
+usar como fertilizantes. 
+D. No, porque a los estudiantes se les dificulta desprenderse de sus residuos electrónicos y prefieren 
+darle un uso aprovechable en su casa. 
+ 
+ 
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+44 
+107. De los metales que componen los residuos electrónicos, el cobre es el mejor conductor de corriente 
+eléctrica. ¿La anterior conclusión cuenta con las evidencias suficientes para ser respaldada? 
+ 
+A. No, porque no se dan a conocer las propiedades eléctricas de los metales. 
+B. Sí, porque los porcentajes están relacionados con las propiedades eléctricas. 
+C. No, porque otro metal tiene propiedades similares en los residuos electrónicos. 
+D. Sí, porque el cobre es el metal que más se encuentra en los residuos electrónicos. 
+ 
+ 
+108. Teniendo en cuenta los metales que componen los residuos electrónicos, ¿qué relación existe entre la 
+cantidad de masa que se puede recuperar de algunos de ellos? 
+ 
+A. Que la cantidad de masa de plata y cobalto es menor que la de aluminio. 
+B. Que la cantidad de masa es similar en el aluminio y metales tóxicos. 
+C. Que la cantidad de masa de hierro y cobre es mayor que la de "Otros metales". 
+D. Que la cantidad de masa es similar en el oro y la plata. 
+ 
+ 
+109. Las algas se caracterizan por tener un metabolismo mixotrofo lo que les da la capacidad de obtener 
+energía, tanto de la luz como de los compuestos orgánicos. En este sentido, en un laboratorio desean 
+producir algas suministrándoles los nutrientes orgánicos necesarios para su crecimiento, manteniendo 
+la luz y la temperatura constantes.  
+ 
+Uno de los investigadores olvidó adicionar los nutrientes orgánicos a uno de los dos cultivos que tenía a 
+su cargo y, al regresar, encontró los siguientes resultados: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Según la información anterior, ¿por qué crecieron las algas en el cultivo 2 si estas no contaban con 
+adición de compuestos orgánicos en su medio? 
+ 
+A. Porque al mantenerse la temperatura constante, las algas pudieron crecer. 
+B. Porque las algas estaban inhibiendo su crecimiento con los compuestos orgánicos. 
+C. Porque las algas utilizaron los nutrientes excretados por ellas mismas para crecer. 
+D. Porque las algas utilizaron la luz para producir energía por la fotosíntesis y crecer. 
+ 
+ 
+ 
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+45 
+110. El gerente de una industria debe presentar una gráfica de los datos obtenidos en la medida del índice 
+de viscosidad de cinco tipos de aceite para carro, es decir, la variación de la viscosidad de cada aceite 
+con respecto a la variación de temperatura desde los 21 °C hasta la temperatura mínima a la que puede 
+fluir el aceite. Los datos quedaron registrados en la siguiente tabla. 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+¿Cuál de las siguientes gráficas ilustra los datos de la tabla? 
+ 
+ 
+A. 
+ 
+ 
+ 
+B.  
+C.   
+D.  
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+46 
+111. Un estudiante viene realizando un control a la producción de los residuos mensuales generados en su 
+institución educativa. Los resultados de su labor se muestran en la siguiente tabla. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+La alcaldía del municipio solicita a la institución reducir a la mitad la producción de residuos que se 
+generan. De acuerdo con lo solicitado por la alcaldía, ¿cuál de las siguientes propuestas le permitirá 
+solucionar la problemática al estudiante? 
+ 
+A. Iniciar un programa de compostaje para aprovechar el material orgánico, papel y cartón. 
+B. Eliminar las canecas de reciclaje para evitar la producción de plástico, latas, papel y cartón. 
+C. Prohibir la venta de plásticos de un solo uso, botellas de vidrio y latas en la tienda escolar. 
+D. Realizar campañas en la comunidad que promuevan la reducción de material no reciclable. 
+ 
+112. Un estudiante lee el periódico local, y las siguientes noticias llaman su atención:  
+ 
+1) En la orilla de la quebrada, cerca de un pueblo, la comunidad ha visto que recientemente se han 
+encontrado peces muertos. 
+2) Se publica un informe en el que se denuncia a una fábrica de pinturas que queda cerca a la quebrada 
+del pueblo, porque el tratamiento de los desechos no es el adecuado y el vertimiento de aguas 
+residuales se hace a las fuentes hídricas cercanas. 
+ 
+De acuerdo con lo anterior, ¿cuál de las siguientes explicaciones relaciona ambas noticias? 
+ 
+A. El tratamiento inadecuado de los desechos y el vertimiento de las aguas residuales de la fábrica 
+de pinturas no afecta la vida de los peces. 
+B. La aparición de los peces muertos no tiene nada que ver con las aguas residuales, ya que no son 
+dañinas para el medio ambiente. 
+C. Los peces tienen menor cantidad de nutrientes disponibles, porque la fábrica de pinturas usa el 
+agua de la quebrada en sus procesos industriales. 
+D. El agua de la quebrada se afecta por el vertimiento de desechos y aguas residuales de la fábrica, 
+impactando negativamente la vida de los peces. 
+ 
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+47 
+113. En general, la materia se clasifica según la siguiente tabla. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Para la producción de un medicamento, se mezcla un principio activo (molécula con actividad biológica) 
+con distintos excipientes (compuestos en forma sólida o líquida) que mejoran su distribución y liberación 
+en el organismo. De acuerdo con la tabla, ¿cómo se clasifican el principio activo y los excipientes del 
+medicamento? 
+ 
+A. Ambas son sustancias puras. 
+B. Ambos son mezclas homogéneas. 
+C. Ambos son mezclas heterogéneas. 
+D. Ambos son elementos. 
+ 
+114. La electronegatividad es la capacidad de un elemento para atraer los electrones que lo enlazan con otro 
+elemento. Esta propiedad periódica nos permite predecir el tipo de enlace, ya sea covalente, dado por una 
+pequeña diferencia de electronegatividad, o iónico, debido a una gran diferencia de electronegatividad. A 
+continuación, se observa cómo varía esta propiedad periódica dependiendo de la posición de los elementos 
+en la tabla periódica. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De acuerdo con la anterior información, ¿qué tipo de enlaces se forma entre el elemento Cl y el elemento 
+Cs? 
+A. lónico, ya que el Cl tiene una alta electronegatividad respecto a Cs. 
+B. Covalente, ya que el Cl tiene una alta electronegatividad respecto a Cs. 
+C. lónico, ya que el Cl tiene una baja electronegatividad respecto a Cs. 
+D. Covalente, ya que el Cl y el Cs están separados en la tabla periódica. 
+ 
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+48 
+ 
+115. Un estudiante realiza el siguiente experimento: coloca dos cuerpos cilíndricos pequeños con igual carga 
+positiva en los extremos de un palo de madera. Después, acerca una pequeña esfera cargada 
+positivamente. Luego, el estudiante dibuja la magnitud y dirección de la fuerza ejercida por el cilindro 2 
+sobre la esfera, como se muestra en la siguiente figura. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+¿Cuál es la magnitud y dirección de la fuerza que ejerce el cilindro 1 sobre la esfera, en relación con la 
+fuerza que ejerce el cilindro 2? 
+ 
+A. Mayor que la magnitud de la fuerza generada por el cilindro 2 y hacia arriba de la esfera. 
+B. Igual magnitud de la fuerza generada por el cilindro 2 y hacia la izquierda de la esfera. 
+C. Igual a la magnitud de la fuerza generada por el cilindro 2 y hacia debajo de la esfera. 
+D. Menor que la magnitud de la fuerza generada por el cilindro 2 y hacia la derecha de la esfera. 
+ 
+116. En la tabla, se muestran las variaciones de presión de una cantidad fija de un gas en un recipiente 
+cerrado variando la temperatura, pero manteniendo las demás condiciones sin variar.  
+ 
+ 
+ 
+ 
+Un estudiante quiere explicar este comportamiento y recurre a la ley de los gases ideales: 
+PV=nRT 
+Donde P es la presión, V es el volumen, n es el número de moles, R es la constante de los gases 
+ideales y T es la temperatura. 
+Con base en la Información anterior, y teniendo en cuenta la ley de los gases ideales, ¿cómo cambia el 
+comportamiento del gas cuando aumenta la temperatura en el recipiente? 
+A. Aumenta el número de moles del gas. 
+B. Disminuye el volumen del gas. 
+C. Aumenta la presión del gas. 
+D. Disminuye la densidad del gas. 
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+49 
+117. Un profesor explica que la inducción electromagnética se genera cuando existe un cambio en el campo 
+magnético. Para probarlo, utiliza una bobina de cobre con un bombillo led, a la cual le pasa por el centro 
+un imán; al hacerlo, el led se enciende, pero cuando deja quieto el imán el led se apaga, tal y como indica 
+la figura. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+¿Por qué el led deja de emitir luz cuando el imán se encuentra estático? 
+ 
+A. Porque cuando un campo magnético se encuentra estático no genera el campo eléctrico que 
+enciende el bombillo led. 
+B. Porque la bobina pierde las propiedades de conductividad eléctrica cuando el campo magnético se 
+encuentra estático. 
+C. Porque el campo magnético del imán pierde sus propiedades magnéticas cuando deja de moverse 
+continuamente. 
+D. Porque el campo eléctrico que produce la bobina se cancela con el campo magnético del imán 
+cuando este está quieto.  
+ 
+118. Los órganos de los sentidos permiten recibir la información aportada por el exterior y el interior de un 
+organismo vivo. Los órganos fotorreceptores dan información sobre lo que ocurre en el exterior del 
+cuerpo en relación con los cambios de luz. La figura muestra a un gato recibiendo un estímulo lumínico. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Si el gato perdiera su órgano fotorreceptor, ¿cuál de los siguientes estímulos no podría percibir? 
+ 
+A. Los cambios en la textura. 
+B. Los cambios de luz. 
+C. Los cambios de olor y sabor. 
+D. Los cambios de sonido.  
+ 
+ 
+Ciencias Naturales 
+1.a sesión 
+ 
+ 
+50 
+119. Un grupo de investigadores realizó mediciones de la temperatura promedio anual en una región, 
+durante 5 años consecutivos. Se observa un aumento de al menos 1 °C en la temperatura promedio 
+después del quinto año. 
+ 
+El grupo quiere conocer los fenómenos que causaron este aumento de temperatura en la región. 
+ 
+¿Cuál de las siguientes preguntas puede resolverse mediante una investigación, según el campo de las 
+Ciencias Naturales? 
+  
+A. ¿Cuál es el efecto del aumento de la temperatura en las finanzas del gobierno de la región? 
+B. ¿Cuál será el partido político beneficiado en las próximas elecciones debido al aumento de la 
+temperatura? 
+C. ¿El aumento de temperatura ha favorecido el desplazamiento de personas de la región? 
+D. ¿Ha variado la intensidad de luz emitida por el Sol durante los últimos 5 años, lo cual causa el aumento 
+de temperatura? 
+ 
+ 
+120. Un estudiante plantea un experimento para reconocer el efecto de la presión en el volumen de un gas, 
+a una temperatura constante. A continuación, se presenta el proceso y una gráfica con los resultados 
+obtenidos. 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De acuerdo con lo anterior, el estudiante concluye que, al aumentar la presión, el volumen del gas: 
+A. Aumenta, porque a mayor presión las moléculas se demoran más tiempo en chocar con las paredes 
+del recipiente. 
+B. Disminuye, porque a mayor presión las moléculas tienen menor tamaño. 
+C. Aumenta, porque a mayor presión las moléculas tienen mayor tamaño. 
+D. Disminuye, porque a mayor presión se reduce el espacio en el que las moléculas de gas se mueven. 
+ 
+ 

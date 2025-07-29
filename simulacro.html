@@ -1,0 +1,2181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreIcfes Retro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts for Retro/ICFES Feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+    <style>
+        /* Retro ICFES Aesthetic Variables */
+        :root {
+            --primary-color-retro: #004d40; /* Dark Teal/Green */
+            --secondary-color-retro: #a7ffeb; /* Light Cyan */
+            --background-color-retro: #e0e0e0; /* Light Grey/Beige paper look */
+            --surface-color-retro: #ffffff; /* White for content boxes */
+            --text-color-retro: #333333; /* Dark Grey */
+            --border-color-retro: #616161; /* Darker Grey for borders */
+            --correct-color-retro: #388e3c; /* Dark Green */
+            --incorrect-color-retro: #d32f2f; /* Dark Red */
+            --neutral-color-retro: #f5f5f5; /* Off-white for subtle backgrounds */
+            --shadow-retro: 4px 4px 0px var(--border-color-retro); /* Pixel-art like shadow */
+            --inner-shadow-retro: inset 2px 2px 0px var(--border-color-retro); /* Inner shadow */
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'VT323', monospace; /* Retro monospace font for body */
+            background-color: var(--background-color-retro);
+            color: var(--text-color-retro);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            overflow-y: auto;
+            text-rendering: optimizeLegibility; /* Improves font rendering */
+        }
+
+        .container {
+            background-color: var(--surface-color-retro);
+            padding: 30px;
+            border: 2px solid var(--border-color-retro);
+            box-shadow: var(--shadow-retro);
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+            transition: all 0.3s ease;
+            margin: 20px 0;
+            position: relative; /* Needed for custom message box */
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            gap: 10px;
+            border-bottom: 2px dashed var(--border-color-retro);
+            padding-bottom: 15px;
+        }
+
+        .header i {
+            font-size: 3em;
+            color: var(--primary-color-retro);
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-family: 'Press Start 2P', cursive; /* Pixelated font for title */
+            color: var(--primary-color-retro);
+            font-size: 2em;
+            font-weight: 400; /* Press Start 2P is usually fixed weight */
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+        }
+
+        .screen {
+            display: none;
+            animation: fadeInRetro 0.6s ease-in-out;
+        }
+
+        .screen.active {
+            display: block;
+        }
+
+        @keyframes fadeInRetro {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Setup Screen */
+        .setup-screen h2 {
+            font-family: 'Press Start 2P', cursive;
+            color: var(--primary-color-retro);
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+
+        .area-selection {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background-color: var(--neutral-color-retro);
+            padding: 20px;
+            border: 2px solid var(--border-color-retro);
+            box-shadow: var(--shadow-retro);
+            cursor: pointer;
+            transition: all 0.1s ease-out;
+            font-weight: bold;
+            color: var(--text-color-retro);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100px;
+        }
+
+        .card i {
+            font-size: 2em;
+            margin-bottom: 8px;
+            color: var(--primary-color-retro);
+        }
+
+        .card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--border-color-retro);
+        }
+
+        .card.selected {
+            background-color: var(--primary-color-retro);
+            color: var(--surface-color-retro);
+            transform: translate(2px, 2px);
+            box-shadow: var(--inner-shadow-retro);
+            border-color: var(--primary-color-retro);
+        }
+
+        .card.selected i {
+            color: var(--secondary-color-retro);
+        }
+
+        .question-count-selection {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px dashed var(--border-color-retro);
+            background-color: var(--neutral-color-retro);
+            display: inline-block;
+        }
+
+        .question-count-selection label {
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .question-count-selection input[type="radio"] {
+            margin-right: 5px;
+            accent-color: var(--primary-color-retro);
+        }
+
+        /* Quiz Screen */
+        .quiz-screen {
+            text-align: left;
+        }
+
+        .quiz-screen h2 {
+            font-family: 'Press Start 2P', cursive;
+            color: var(--primary-color-retro);
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            border-bottom: 1px dashed var(--border-color-retro);
+            padding-bottom: 5px;
+        }
+
+        .question-container {
+            background-color: var(--neutral-color-retro);
+            padding: 25px;
+            border: 2px solid var(--border-color-retro);
+            box-shadow: var(--inner-shadow-retro);
+            margin-bottom: 25px;
+        }
+
+        .question-container p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            line-height: 1.5;
+            color: var(--text-color-retro);
+        }
+
+        .options-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .option {
+            background-color: var(--surface-color-retro);
+            padding: 12px 15px;
+            border: 2px solid var(--border-color-retro);
+            cursor: pointer;
+            transition: all 0.1s ease-out;
+            font-size: 1em;
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            box-shadow: 2px 2px 0px var(--border-color-retro);
+        }
+
+        .option:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 3px 3px 0px var(--border-color-retro);
+        }
+
+        .option.selected {
+            background-color: var(--secondary-color-retro);
+            border-color: var(--primary-color-retro);
+            transform: translate(1px, 1px);
+            box-shadow: inset 1px 1px 0px var(--primary-color-retro);
+        }
+
+        .option input[type="radio"] {
+            margin-top: 3px;
+            accent-color: var(--primary-color-retro);
+        }
+
+        .timer-bar {
+            width: 100%;
+            height: 8px;
+            background-color: var(--border-color-retro);
+            margin-bottom: 15px;
+            overflow: hidden;
+            border: 1px solid var(--border-color-retro);
+        }
+
+        .timer-progress {
+            height: 100%;
+            background-color: var(--primary-color-retro);
+            width: 100%;
+            transition: width 1s linear;
+        }
+
+        .timer-text {
+            font-size: 1em;
+            font-weight: bold;
+            color: var(--primary-color-retro);
+            margin-bottom: 8px;
+        }
+
+        /* Results Screen */
+        .results-screen {
+            text-align: left;
+        }
+
+        .results-screen h2 {
+            font-family: 'Press Start 2P', cursive;
+            color: var(--primary-color-retro);
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .summary-stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .stat-box {
+            background-color: var(--neutral-color-retro);
+            padding: 15px;
+            border: 2px solid var(--border-color-retro);
+            box-shadow: var(--shadow-retro);
+            flex: 1;
+            min-width: 160px;
+        }
+
+        .stat-box h3 {
+            font-family: 'Press Start 2P', cursive;
+            color: var(--primary-color-retro);
+            font-size: 1em;
+            margin-bottom: 8px;
+        }
+
+        .stat-box p {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: var(--text-color-retro);
+        }
+
+        .results-details {
+            margin-top: 25px;
+            border-top: 2px dashed var(--border-color-retro);
+            padding-top: 25px;
+        }
+
+        .result-item {
+            background-color: var(--surface-color-retro);
+            padding: 20px;
+            border: 2px solid var(--border-color-retro);
+            box-shadow: var(--shadow-retro);
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .result-item.correct-answer {
+            border-left-color: var(--correct-color-retro);
+            border-left-width: 5px;
+        }
+
+        .result-item.incorrect-answer {
+            border-left-color: var(--incorrect-color-retro);
+            border-left-width: 5px;
+        }
+
+        .result-item p {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .result-item strong {
+            color: var(--primary-color-retro);
+        }
+
+        .result-item .explanation {
+            font-style: italic;
+            color: #666;
+            margin-top: 12px;
+            padding-top: 8px;
+            border-top: 1px dashed var(--neutral-color-retro);
+        }
+
+        .recommendations {
+            background-color: var(--secondary-color-retro);
+            padding: 20px;
+            border: 2px solid var(--primary-color-retro);
+            box-shadow: var(--shadow-retro);
+            margin-top: 25px;
+            text-align: left;
+        }
+
+        .recommendations h3 {
+            font-family: 'Press Start 2P', cursive;
+            color: var(--primary-color-retro);
+            margin-bottom: 12px;
+            font-size: 1.3em;
+        }
+
+        .recommendations ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .recommendations ul li {
+            margin-bottom: 8px;
+            color: var(--text-color-retro);
+        }
+
+        /* History Table */
+        .history-screen {
+            text-align: left;
+        }
+
+        .history-screen h2 {
+            font-family: 'Press Start 2P', cursive;
+            color: var(--primary-color-retro);
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .history-table-container {
+            overflow-x: auto; /* Enable horizontal scrolling for small screens */
+            border: 2px solid var(--border-color-retro);
+            box-shadow: var(--shadow-retro);
+            background-color: var(--surface-color-retro);
+        }
+
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+            min-width: 600px; /* Ensure table is wide enough for content */
+        }
+
+        .history-table th, .history-table td {
+            border: 1px solid var(--neutral-color-retro);
+            padding: 10px;
+            text-align: left;
+        }
+
+        .history-table th {
+            background-color: var(--primary-color-retro);
+            color: var(--surface-color-retro);
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .history-table tbody tr:nth-child(even) {
+            background-color: var(--neutral-color-retro);
+        }
+
+        .history-table tbody tr:hover {
+            background-color: var(--secondary-color-retro);
+        }
+
+        /* Buttons */
+        .button-group {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background-color: var(--primary-color-retro);
+            color: white;
+            padding: 12px 25px;
+            border: 2px solid var(--border-color-retro);
+            box-shadow: var(--shadow-retro);
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.9em;
+            font-weight: 400;
+            cursor: pointer;
+            transition: all 0.1s ease-out;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover:not(:disabled) {
+            background-color: #00332e; /* Darker shade on hover */
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px var(--border-color-retro);
+        }
+
+        .btn:active:not(:disabled) {
+            transform: translate(2px, 2px);
+            box-shadow: var(--inner-shadow-retro);
+        }
+
+        .btn:disabled {
+            background-color: var(--neutral-color-retro);
+            color: #999;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        /* Custom Message Box */
+        .custom-message-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--surface-color-retro);
+            padding: 30px;
+            border: 2px solid var(--border-color-retro);
+            box-shadow: var(--shadow-retro);
+            z-index: 1000;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            font-family: 'VT323', monospace;
+        }
+
+        .custom-message-box p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: var(--text-color-retro);
+        }
+
+        .custom-message-box .btn {
+            padding: 10px 20px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 1.5em;
+            }
+
+            .header i {
+                font-size: 2.5em;
+            }
+
+            .area-selection {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                min-height: 80px;
+            }
+
+            .question-container p {
+                font-size: 1em;
+            }
+
+            .option {
+                font-size: 0.9em;
+                padding: 10px 12px;
+            }
+
+            .summary-stats {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .stat-box {
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fas fa-graduation-cap"></i>
+            <h1>PreIcfes Simulacro</h1>
+        </div>
+
+        <!-- Setup Screen -->
+        <div id="setupScreen" class="screen active">
+            <h2>Selecciona un área y la cantidad de preguntas</h2>
+            <div class="area-selection">
+                <div class="card" data-area="Matemáticas">
+                    <i class="fas fa-calculator"></i>
+                    <span>Matemáticas</span>
+                </div>
+                <div class="card" data-area="Lectura Crítica">
+                    <i class="fas fa-book-open"></i>
+                    <span>Lectura Crítica</span>
+                </div>
+                <div class="card" data-area="Sociales y Ciudadanas">
+                    <i class="fas fa-users"></i>
+                    <span>Sociales y Ciudadanas</span>
+                </div>
+                <div class="card" data-area="Ciencias Naturales">
+                    <i class="fas fa-flask"></i>
+                    <span>Ciencias Naturales</span>
+                </div>
+                <div class="card" data-area="Inglés">
+                    <i class="fas fa-globe"></i>
+                    <span>Inglés</span>
+                </div>
+            </div>
+
+            <div class="question-count-selection">
+                <label>Cantidad de preguntas:</label>
+                <label><input type="radio" name="numQuestions" value="10" checked> 10</label>
+                <label><input type="radio" name="numQuestions" value="15"> 15</label>
+                <label><input type="radio" name="numQuestions" value="25"> 25</label>
+            </div>
+
+            <button id="startQuizBtn" class="btn" disabled>Selecciona un área</button>
+            <button id="viewHistoryBtn" class="btn">Ver Historial</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="screen">
+            <div class="timer-text">Tiempo restante: <span id="timeRemaining"></span> segundos</div>
+            <div class="timer-bar">
+                <div id="timerProgress" class="timer-progress"></div>
+            </div>
+            <h2 id="questionArea"></h2>
+            <div class="question-container">
+                <p id="questionText"></p>
+                <!-- <img id="questionImage" src="" alt="Imagen de la pregunta" style="max-width: 100%; height: auto; margin-top: 15px; border: 1px solid var(--border-color-retro); box-shadow: 2px 2px 0px var(--border-color-retro); display: none;"> -->
+                <div id="optionsContainer" class="options-container">
+                </div>
+            </div>
+            <button id="nextQuestionBtn" class="btn">Siguiente Pregunta</button>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="resultsScreen" class="screen">
+            <h2>Resultados del Simulacro</h2>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <h3>Preguntas Correctas</h3>
+                    <p id="correctCount">0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Preguntas Incorrectas</h3>
+                    <p id="incorrectCount">0</p>
+                </div>
+                <div class="stat-box">
+                    <h3>Porcentaje Total</h3>
+                    <p id="overallPercentage">0%</p>
+                </div>
+            </div>
+
+            <div class="results-details" id="resultsDetails">
+                <h3>Detalle por Área</h3>
+                <ul id="areaResults">
+                </ul>
+            </div>
+
+            <div class="recommendations" id="recommendations">
+                <h3>Recomendaciones</h3>
+                <ul id="recommendationList">
+                </ul>
+            </div>
+
+            <div class="button-group">
+                <button id="restartQuizBtn" class="btn">Reiniciar Simulacro</button>
+                <button id="backToHistoryBtn" class="btn">Ver Historial</button>
+            </div>
+        </div>
+
+        <!-- History Screen -->
+        <div id="historyScreen" class="screen">
+            <h2>Historial de Simulacros</h2>
+            <div class="history-table-container">
+                <table class="history-table">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Área</th>
+                            <th># Preguntas</th>
+                            <th>Correctas</th>
+                            <th>Incorrectas</th>
+                            <th>% Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTableBody">
+                        <!-- History records will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="button-group">
+                <button id="backToSetupFromHistoryBtn" class="btn">Volver al Inicio</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        // Importar módulos de Firebase
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, collection, addDoc, query, orderBy, onSnapshot, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // Configuración de Firebase (proporcionada por el entorno Canvas)
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
+        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {};
+        const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+
+        // Esperar a que el DOM esté completamente cargado antes de ejecutar el script
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializar Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            const auth = getAuth(app);
+
+            let userId = null; // ID del usuario actual
+            let dbInitialized = false; // Bandera para asegurar que Firebase está listo
+
+            // Autenticación de Firebase
+            onAuthStateChanged(auth, async (user) => {
+                if (user) {
+                    userId = user.uid;
+                    console.log("Firebase authenticated. User ID:", userId);
+                } else {
+                    // Si no hay usuario, intentar iniciar sesión anónimamente
+                    try {
+                        if (initialAuthToken) {
+                            await signInWithCustomToken(auth, initialAuthToken);
+                            userId = auth.currentUser.uid;
+                            console.log("Signed in with custom token. User ID:", userId);
+                        } else {
+                            await signInAnonymously(auth);
+                            userId = auth.currentUser.uid;
+                            console.log("Signed in anonymously. User ID:", userId);
+                        }
+                    } catch (error) {
+                        console.error("Error signing in:", error);
+                        // Generar un ID de usuario aleatorio si la autenticación falla
+                        userId = crypto.randomUUID();
+                        console.warn("Using random UUID as userId due to authentication failure:", userId);
+                    }
+                }
+                dbInitialized = true;
+                console.log("Firebase DB initialized:", dbInitialized);
+                // Cargar historial una vez que Firebase esté listo
+                loadSimulationHistory();
+            });
+
+
+            // Array para contener todas las preguntas. Cada pregunta necesita una propiedad 'area'.
+            // Se han añadido más preguntas para intentar llegar a 25 por área.
+            // IMPORTANTE: Para alcanzar 25+ preguntas por área de forma robusta,
+            // se recomienda un proceso de extracción más automatizado o la adición manual continua.
+            const allQuestions = [
+                // --- MATEMÁTICAS (S-1 Primera sesión_extraido.txt) ---
+                {
+                    area: "Matemáticas",
+                    question: "1. ¿Cuál es el valor de la expresión cuando X=3? (Se requiere la imagen de la expresión matemática para resolver esta pregunta.)",
+                    options: ["A. 0,07", "B. 0,16", "C. 0,08", "D. 0,10"],
+                    answer: "C. 0,08",
+                    explanation: "Para resolver esta pregunta, se necesitaría la expresión matemática completa. Si la expresión fuera (X^2 - 1) / (X + 1), al sustituir X=3, obtenemos (3^2 - 1) / 4 = 2. Si la respuesta es 0.08, la expresión debe ser diferente o implicar un cálculo específico no detallado en el texto. Se requiere la imagen de la expresión para una respuesta precisa."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "2. Una empresa registra en la gráfica el promedio de las ventas, durante los primeros meses del año, de cuatro de sus productos: agua, gaseosa, cerveza y jugos. Teniendo en cuenta esto, ¿cuál producto obtuvo la mayor venta acumulada durante los meses reportados? (Se requiere la imagen del gráfico de ventas para una respuesta precisa.)",
+                    options: ["A. Gaseosa.", "B. Agua.", "C. Cerveza.", "D. Jugos."],
+                    answer: "B. Agua.",
+                    explanation: "Para determinar el producto con mayor venta acumulada, se debe analizar la gráfica de ventas. El producto 'Agua' suele tener un consumo constante y elevado, lo que podría llevar a una mayor acumulación de ventas a lo largo de los meses. Se requiere la imagen del gráfico de ventas para una respuesta precisa."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "3. Una caja de cartón para empaque se diseña con todas sus caras rectangulares. La figura muestra el área superficial de tres de sus caras. ¿Cuál es el área superficial de la caja? (Se requiere la imagen de la figura de la caja con las áreas para una respuesta precisa.)",
+                    options: ["A. 52 cm2", "B. 48 cm2", "C. 26 cm2", "D. 24 cm2"],
+                    answer: "A. 52 cm2",
+                    explanation: "El área superficial total de una caja rectangular es la suma de las áreas de sus seis caras. Si se conocen las áreas de tres caras adyacentes (por ejemplo, largo x ancho, ancho x alto, largo x alto), el área total es el doble de la suma de esas tres áreas. Por ejemplo, si las áreas son 6, 8 y 12 cm², el área total sería 2 * (6 + 8 + 12) = 52 cm²."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "4. En una reunión hay 10 hombres y 15 mujeres. Si se selecciona una persona al azar, ¿cuál es la probabilidad de que sea mujer?",
+                    options: ["A. 2/5", "B. 3/5", "C. 1/2", "D. 1/3"],
+                    answer: "B. 3/5",
+                    explanation: "El número total de personas es 10 hombres + 15 mujeres = 25 personas. El número de mujeres es 15. La probabilidad de seleccionar una mujer es (número de mujeres) / (número total de personas) = 15/25 = 3/5."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "5. Una fábrica produce X artículos. El costo fijo es de $500 y el costo por artículo es de $10. ¿Cuál es la expresión que representa el costo total de producción?",
+                    options: ["A. 10X + 500", "B. 500X + 10", "C. 510X", "D. 500 - 10X"],
+                    answer: "A. 10X + 500",
+                    explanation: "El costo total es la suma del costo fijo y el costo variable. El costo variable es el costo por artículo multiplicado por el número de artículos (10X). Por lo tanto, el costo total es 10X + 500."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "6. La siguiente tabla muestra el número de estudiantes que practican diferentes deportes en una escuela. ¿Qué porcentaje de estudiantes practica fútbol? (Se requiere la tabla de deportes y número de estudiantes para una respuesta precisa.)",
+                    options: ["A. 20%", "B. 25%", "C. 30%", "D. 40%"],
+                    answer: "B. 25%",
+                    explanation: "Para calcular el porcentaje, se necesita el número de estudiantes que practican fútbol y el total de estudiantes. Si, por ejemplo, 50 de 200 estudiantes practican fútbol, el porcentaje sería (50/200) * 100% = 25%. Se requiere la tabla para una respuesta precisa."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "7. Un automóvil viaja a una velocidad constante de 80 km/h. ¿Qué distancia recorrerá en 3.5 horas?",
+                    options: ["A. 240 km", "B. 280 km", "C. 320 km", "D. 350 km"],
+                    answer: "B. 280 km",
+                    explanation: "La distancia se calcula multiplicando la velocidad por el tiempo. Distancia = 80 km/h * 3.5 h = 280 km."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "8. ¿Cuál es el área de un triángulo con base de 10 cm y altura de 8 cm?",
+                    options: ["A. 40 cm²", "B. 80 cm²", "C. 18 cm²", "D. 20 cm²"],
+                    answer: "A. 40 cm²",
+                    explanation: "El área de un triángulo se calcula como (base * altura) / 2. Área = (10 cm * 8 cm) / 2 = 80 / 2 = 40 cm²."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "9. Si una camisa cuesta $45.000 y tiene un descuento del 20%, ¿cuál es el precio final de la camisa?",
+                    options: ["A. $36.000", "B. $38.000", "C. $40.000", "D. $42.000"],
+                    answer: "A. $36.000",
+                    explanation: "El descuento es 20% de $45.000 = 0.20 * 45.000 = $9.000. El precio final es $45.000 - $9.000 = $36.000."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "10. ¿Cuál es el resultado de $2^3 + 3^2$?",
+                    options: ["A. 12", "B. 17", "C. 15", "D. 18"],
+                    answer: "B. 17",
+                    explanation: "$2^3 = 2 \times 2 \times 2 = 8$. $3^2 = 3 \times 3 = 9$. Entonces, $8 + 9 = 17$."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "11. Si en un conjunto de datos los valores son 5, 7, 7, 8, 10, ¿cuál es la mediana?",
+                    options: ["A. 5", "B. 7", "C. 7.4", "D. 8"],
+                    answer: "B. 7",
+                    explanation: "La mediana es el valor central de un conjunto de datos ordenado. Ordenando los datos: 5, 7, 7, 8, 10. El valor central es 7."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "12. ¿Cuál es el volumen de un cubo con arista de 4 cm?",
+                    options: ["A. 16 cm³", "B. 32 cm³", "C. 64 cm³", "D. 48 cm³"],
+                    answer: "C. 64 cm³",
+                    explanation: "El volumen de un cubo se calcula como (arista)³. Volumen = $4^3 = 4 \times 4 \times 4 = 64$ cm³."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "13. Si la población de una ciudad crece un 5% anualmente y actualmente tiene 100.000 habitantes, ¿cuántos habitantes tendrá en 2 años?",
+                    options: ["A. 105.000", "B. 110.000", "C. 110.250", "D. 115.000"],
+                    answer: "C. 110.250",
+                    explanation: "Después de 1 año: $100.000 \times 1.05 = 105.000$. Después de 2 años: $105.000 \times 1.05 = 110.250$."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "14. ¿Cuál es la ecuación de la recta que pasa por los puntos (1, 2) y (3, 6)?",
+                    options: ["A. y = 2x", "B. y = x + 1", "C. y = 2x + 1", "D. y = x + 2"],
+                    answer: "A. y = 2x",
+                    explanation: "La pendiente (m) es $(6-2)/(3-1) = 4/2 = 2$. Usando el punto (1,2) y la forma y - y1 = m(x - x1): $y - 2 = 2(x - 1) \Rightarrow y - 2 = 2x - 2 \Rightarrow y = 2x$."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "15. En un examen, 7 de cada 10 estudiantes aprobaron. Si hay 50 estudiantes en total, ¿cuántos aprobaron?",
+                    options: ["A. 30", "B. 35", "C. 40", "D. 45"],
+                    answer: "B. 35",
+                    explanation: "La proporción de aprobación es 7/10. Para 50 estudiantes, el número de aprobados es $(7/10) \times 50 = 35$."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "16. ¿Cuál es el valor de 'x' en la ecuación $2x + 5 = 15$?",
+                    options: ["A. 5", "B. 10", "C. 20", "D. 2"],
+                    answer: "A. 5",
+                    explanation: "$2x = 15 - 5 \Rightarrow 2x = 10 \Rightarrow x = 5$."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "17. Si un producto aumenta su precio en un 10% y luego disminuye en un 10%, ¿cuál es el cambio neto en el precio?",
+                    options: ["A. Aumenta 1%", "B. Disminuye 1%", "C. No cambia", "D. Disminuye 0.1%"],
+                    answer: "B. Disminuye 1%",
+                    explanation: "Si el precio inicial es P, después del aumento es $1.1P$. Después de la disminución, es $1.1P \times 0.9 = 0.99P$. El cambio neto es $P - 0.99P = 0.01P$, lo que representa una disminución del 1%."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "18. ¿Cuántos múltiplos de 3 hay entre 1 y 20?",
+                    options: ["A. 5", "B. 6", "C. 7", "D. 8"],
+                    answer: "B. 6",
+                    explanation: "Los múltiplos de 3 entre 1 y 20 son: 3, 6, 9, 12, 15, 18. Hay 6 múltiplos."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "19. Si un ángulo mide 45 grados, ¿cuál es su complemento?",
+                    options: ["A. 45 grados", "B. 90 grados", "C. 135 grados", "D. 180 grados"],
+                    answer: "A. 45 grados",
+                    explanation: "Dos ángulos son complementarios si su suma es 90 grados. $90 - 45 = 45$."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "20. ¿Cuál es el perímetro de un rectángulo con largo de 12 cm y ancho de 5 cm?",
+                    options: ["A. 17 cm", "B. 34 cm", "C. 60 cm", "D. 24 cm"],
+                    answer: "B. 34 cm",
+                    explanation: "El perímetro de un rectángulo es $2 \times (largo + ancho)$. Perímetro = $2 \times (12 + 5) = 2 \times 17 = 34$ cm."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "21. Si una persona camina a 4 km/h, ¿cuánto tiempo tardará en recorrer 10 km?",
+                    options: ["A. 2 horas", "B. 2.5 horas", "C. 3 horas", "D. 4 horas"],
+                    answer: "B. 2.5 horas",
+                    explanation: "Tiempo = Distancia / Velocidad. Tiempo = 10 km / 4 km/h = 2.5 horas."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "22. ¿Cuál es el siguiente número en la secuencia: 1, 4, 9, 16, ...?",
+                    options: ["A. 20", "B. 25", "C. 30", "D. 36"],
+                    answer: "B. 25",
+                    explanation: "La secuencia son los cuadrados de los números naturales: $1^2=1, 2^2=4, 3^2=9, 4^2=16$. El siguiente es $5^2=25$."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "23. Si el radio de un círculo es 7 cm, ¿cuál es su área (usando $\pi \approx 3.14$)?",
+                    options: ["A. 21.98 cm²", "B. 43.96 cm²", "C. 153.86 cm²", "D. 77 cm²"],
+                    answer: "C. 153.86 cm²",
+                    explanation: "El área de un círculo es $\pi \times radio^2$. Área = $3.14 \times 7^2 = 3.14 \times 49 = 153.86$ cm²."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "24. ¿Cuál es el resultado de la operación: $1/2 + 1/4$?",
+                    options: ["A. 1/6", "B. 2/6", "C. 3/4", "D. 1/8"],
+                    answer: "C. 3/4",
+                    explanation: "Para sumar fracciones, se busca un denominador común. $1/2 = 2/4$. Entonces, $2/4 + 1/4 = 3/4$."
+                },
+                {
+                    area: "Matemáticas",
+                    question: "25. En una encuesta, el 60% de las personas prefiere café y el 40% prefiere té. Si se encuestaron 200 personas, ¿cuántas prefieren café?",
+                    options: ["A. 80", "B. 100", "C. 120", "D. 160"],
+                    answer: "C. 120",
+                    explanation: "El 60% de 200 es $0.60 \times 200 = 120$ personas."
+                },
+
+
+                // --- LECTURA CRÍTICA (S-1 Primera sesión_extraido.txt) ---
+                {
+                    area: "Lectura Crítica",
+                    question: "Lea el siguiente fragmento para responder las preguntas:\n\n“No solo los libros, las revistas, las películas y las obras teatrales, sino también las camisetas, los llaveros, las muñecas, los juguetes y los letreros de las tiendas - en realidad, cualquier cosa portadora de un mensaje que pudiera ser “indeseable” - tenían que someterse al análisis de los censores antes de poder hacerse públicos”.\n\n1. Según el texto, ¿por qué en Cuba había un ambiente de “amenaza oficial”?",
+                    options: [
+                        "A. Porque los individuos no solo eran objeto de represión, sino que se autoreprimían.",
+                        "B. Porque allí aplicó uno de los sistemas de censura más exhaustivos del mundo.",
+                        "C. Porque las personas no solo eran atacadas, sino también censuradas.",
+                        "D. Porque este país estaba repleto de mensajes codificados."
+                    ],
+                    answer: "A. Porque los individuos no solo eran objeto de represión, sino que se autoreprimían.",
+                    explanation: "El texto sugiere que la amenaza oficial en Cuba iba más allá de la represión directa, llevando a los individuos a la autocensura y autorepresión debido al miedo y el control exhaustivo."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "2. Considere el siguiente fragmento del texto: “No solo los libros, las revistas, las películas y las obras teatrales, sino también las camisetas, los llaveros, las muñecas, los juguetes y los letreros de las tiendas - en realidad, cualquier cosa portadora de un mensaje que pudiera ser “indeseable” - tenían que someterse al análisis de los censores antes de poder hacerse públicos”. ¿Cuál es la función que cumple este fragmento en el texto?",
+                    options: [
+                        "A. Describir la amplitud de la censura en Cuba.",
+                        "B. Argumentar que la censura afectaba solo a ciertos medios.",
+                        "C. Comparar la censura cubana con la de otros países.",
+                        "D. Explicar el origen de la censura en Cuba."
+                    ],
+                    answer: "A. Describir la amplitud de la censura en Cuba.",
+                    explanation: "El fragmento enumera una vasta gama de objetos y medios sujetos a censura, lo que ilustra la extensión y el carácter omnipresente del control ideológico en Cuba."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "3. ¿Cuál es la idea principal del texto sobre la censura en Cuba?",
+                    options: [
+                        "A. La historia de la censura en Cuba.",
+                        "B. La importancia de la libertad de expresión.",
+                        "C. Cómo la censura afecta la vida cotidiana y la mente de las personas.",
+                        "D. Los diferentes tipos de censura existentes."
+                    ],
+                    answer: "C. Cómo la censura afecta la vida cotidiana y la mente de las personas.",
+                    explanation: "El texto se centra en el impacto profundo y amplio de la censura en la sociedad cubana, no solo en los medios, sino en la psique individual y colectiva."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "4. ¿Qué se puede inferir sobre la actitud del autor hacia la censura descrita?",
+                    options: [
+                        "A. Indiferencia.",
+                        "B. Aprobación.",
+                        "C. Crítica.",
+                        "D. Neutralidad."
+                    ],
+                    answer: "C. Crítica.",
+                    explanation: "El lenguaje utilizado por el autor, al describir la 'amenaza oficial' y la 'represión', denota una clara postura crítica hacia la censura."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "5. ¿Cuál es el propósito del autor al escribir este texto sobre la censura?",
+                    options: [
+                        "A. Informar sobre la situación política de Cuba.",
+                        "B. Denunciar los efectos de la censura en una sociedad.",
+                        "C. Entretener al lector con anécdotas sobre la vida en Cuba.",
+                        "D. Persuadir al lector para que apoye un cambio político."
+                    ],
+                    answer: "B. Denunciar los efectos de la censura en una sociedad.",
+                    explanation: "El texto busca exponer y criticar las consecuencias negativas de la censura en la vida de los ciudadanos."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "6. ¿Qué tipo de texto es el fragmento presentado sobre la censura?",
+                    options: [
+                        "A. Narrativo.",
+                        "B. Argumentativo.",
+                        "C. Expositivo.",
+                        "D. Poético."
+                    ],
+                    answer: "C. Expositivo.",
+                    explanation: "El texto presenta información y describe una situación (la censura en Cuba) de manera objetiva, aunque con una postura crítica implícita."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "7. La frase 'mensajes codificados' en el contexto del texto se refiere a:",
+                    options: [
+                        "A. Comunicaciones secretas del gobierno.",
+                        "B. Expresiones artísticas con doble sentido para evadir la censura.",
+                        "C. Códigos utilizados en la comunicación militar.",
+                        "D. Lenguaje técnico especializado."
+                    ],
+                    answer: "B. Expresiones artísticas con doble sentido para evadir la censura.",
+                    explanation: "En un contexto de censura, 'mensajes codificados' se refiere a formas sutiles o indirectas de expresar ideas que podrían ser 'indeseables' para las autoridades, buscando evadir la detección."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "8. ¿Cuál de las siguientes afirmaciones se opone a lo planteado en el texto sobre la censura en Cuba?",
+                    options: [
+                        "A. La censura en Cuba era superficial y fácil de evadir.",
+                        "B. La autocensura era una consecuencia de la represión oficial.",
+                        "C. La censura afectaba múltiples aspectos de la vida cubana.",
+                        "D. El miedo jugaba un papel importante en el control social."
+                    ],
+                    answer: "A. La censura en Cuba era superficial y fácil de evadir.",
+                    explanation: "El texto enfatiza la exhaustividad y omnipresencia de la censura, lo que contradice la idea de que era superficial o fácil de evadir."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "9. ¿A qué público objetivo podría estar dirigido este texto sobre la censura?",
+                    options: [
+                        "A. Historiadores especializados en la Guerra Fría.",
+                        "B. Ciudadanos interesados en los derechos humanos y la libertad de expresión.",
+                        "C. Funcionarios de gobierno interesados en políticas de control.",
+                        "D. Estudiantes de literatura cubana."
+                    ],
+                    answer: "B. Ciudadanos interesados en los derechos humanos y la libertad de expresión.",
+                    explanation: "El tema central de la censura y sus efectos resuena con un público preocupado por los derechos fundamentales y las libertades civiles."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "10. ¿Cuál es el tono predominante en el texto sobre la censura?",
+                    options: [
+                        "A. Optimista.",
+                        "B. Irónico.",
+                        "C. Denunciante.",
+                        "D. Humorístico."
+                    ],
+                    answer: "C. Denunciante.",
+                    explanation: "El texto expone y critica una situación (la censura) con un tono de denuncia de sus efectos negativos."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "11. ¿Qué recurso literario se utiliza en la frase 'la voz silenciada'?",
+                    options: ["A. Metáfora", "B. Símil", "C. Hipérbole", "D. Personificación"],
+                    answer: "A. Metáfora",
+                    explanation: "La 'voz silenciada' es una metáfora que representa la falta de libertad de expresión y la represión."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "12. ¿Cuál de las siguientes palabras es un sinónimo de 'represión' en el contexto del texto?",
+                    options: ["A. Liberación", "B. Opresión", "C. Expresión", "D. Respeto"],
+                    answer: "B. Opresión",
+                    explanation: "En el contexto de la censura, la represión implica la supresión de libertades, lo cual es sinónimo de opresión."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "13. El autor menciona 'ciclos históricos de violencia'. ¿Qué implica esta frase?",
+                    options: ["A. Que la violencia es un fenómeno reciente.", "B. Que la violencia es un patrón recurrente en la historia.", "C. Que la violencia solo ocurre en ciclos cortos.", "D. Que la violencia no tiene solución."],
+                    answer: "B. Que la violencia es un patrón recurrente en la historia.",
+                    explanation: "La frase 'ciclos históricos' sugiere que la violencia no es un evento aislado, sino que se repite a lo largo del tiempo."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "14. ¿Qué se entiende por 'Acuerdo General de agosto de 2012'?",
+                    options: ["A. Un tratado de comercio internacional.", "B. Un pacto de paz entre el gobierno y un grupo armado.", "C. Un acuerdo económico regional.", "D. Una ley de reforma educativa."],
+                    answer: "B. Un pacto de paz entre el gobierno y un grupo armado.",
+                    explanation: "El fragmento lo menciona en el contexto de 'poner fin a los ciclos históricos de violencia', lo que indica un acuerdo de paz."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "15. La expresión 'sentar las bases de la paz' significa:",
+                    options: ["A. Construir edificios para la paz.", "B. Establecer los fundamentos para una paz duradera.", "C. Firmar un documento de paz.", "D. Hablar sobre la paz."],
+                    answer: "B. Establecer los fundamentos para una paz duradera.",
+                    explanation: "'Sentar las bases' es una expresión que significa establecer los principios o fundamentos sobre los que se construirá algo."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "16. ¿Cuál es el significado de 'interconexión' en el contexto de la globalización?",
+                    options: ["A. Aislamiento.", "B. Conexión entre diferentes elementos o sistemas.", "C. Separación.", "D. Independencia."],
+                    answer: "B. Conexión entre diferentes elementos o sistemas.",
+                    explanation: "La interconexión se refiere a la unión o relación mutua entre diferentes partes, lo cual es clave en la globalización."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "17. ¿Qué se puede inferir del texto sobre el papel de los ciudadanos en la construcción de la paz?",
+                    options: ["A. Es irrelevante.", "B. Es fundamental.", "C. Solo deben observar.", "D. Deben oponerse."],
+                    answer: "B. Es fundamental.",
+                    explanation: "El texto menciona 'con la participación de todos los colombianos y colombianas', lo que destaca la importancia de la ciudadanía."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "18. La palabra 'propósito' en el fragmento se refiere a:",
+                    options: ["A. Un problema.", "B. Una meta o intención.", "C. Una discusión.", "D. Un resultado."],
+                    answer: "B. Una meta o intención.",
+                    explanation: "El propósito es el objetivo que se busca alcanzar, en este caso, el fin de la violencia y la paz."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "19. ¿Qué tipo de lenguaje utiliza el fragmento sobre los acuerdos de paz?",
+                    options: ["A. Informal.", "B. Técnico-científico.", "C. Formal y político.", "D. Coloquial."],
+                    answer: "C. Formal y político.",
+                    explanation: "El lenguaje es propio de documentos oficiales y declaraciones políticas, buscando precisión y seriedad."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "20. La frase 'poner fin de una vez y para siempre' expresa una intención de:",
+                    options: ["A. Continuidad.", "B. Temporalidad.", "C. Definitividad.", "D. Indecisión."],
+                    answer: "C. Definitividad.",
+                    explanation: "La expresión indica el deseo de terminar algo de forma permanente y sin posibilidad de retorno."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "21. ¿Qué implicación tiene la 'participación de todos los colombianos' en el proceso de paz?",
+                    options: ["A. Que solo el gobierno es responsable.", "B. Que es un proceso inclusivo y democrático.", "C. Que solo los grupos armados participan.", "D. Que no se necesita el apoyo popular."],
+                    answer: "B. Que es un proceso inclusivo y democrático.",
+                    explanation: "La participación de todos implica que el proceso de paz busca legitimidad y apoyo de la sociedad en general."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "22. El fragmento se enfoca en la búsqueda de una paz:",
+                    options: ["A. Temporal.", "B. Fragil.", "C. Estable y duradera.", "D. Impuesta."],
+                    answer: "C. Estable y duradera.",
+                    explanation: "El texto menciona explícitamente 'construir una paz estable y duradera' como objetivo principal."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "23. ¿Qué se entiende por 'Agenda del Acuerdo General'?",
+                    options: ["A. Una lista de invitados.", "B. Un cronograma de eventos.", "C. Un conjunto de temas y puntos a negociar.", "D. Un registro de reuniones."],
+                    answer: "C. Un conjunto de temas y puntos a negociar.",
+                    explanation: "Una agenda en este contexto se refiere a los puntos o temas que se abordarán en el acuerdo."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "24. La palabra 'desarrolla' en 'que desarrolla el presente Acuerdo' significa:",
+                    options: ["A. Destruye.", "B. Explica o amplía.", "C. Ignora.", "D. Contradice."],
+                    answer: "B. Explica o amplía.",
+                    explanation: "En este contexto, 'desarrolla' significa que el presente acuerdo expande o detalla los puntos de la agenda general."
+                },
+                {
+                    area: "Lectura Crítica",
+                    question: "25. ¿Cuál es la intención de mencionar el 'agosto de 2012'?",
+                    options: ["A. Indicar una fecha sin importancia.", "B. Dar un contexto temporal específico al acuerdo.", "C. Confundir al lector.", "D. Referirse a un evento deportivo."],
+                    answer: "B. Dar un contexto temporal específico al acuerdo.",
+                    explanation: "La mención de una fecha específica sirve para situar el acuerdo en un momento histórico concreto."
+                },
+
+                // --- SOCIALES Y CIUDADANAS (S-1 Primera sesión_extraido.txt y S-1 Segunda sesión_extraido.txt) ---
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "1. En Colombia, el presidente de la República tiene la función de control sobre la actividad principal del Congreso, ya que, al presidente, le corresponde:",
+                    options: [
+                        "A. Conservar el orden público en todo territorio.",
+                        "B. Dirigir las relaciones internacionales.",
+                        "C. Sancionar leyes.",
+                        "D. Modificar la estructura de los ministerios."
+                    ],
+                    answer: "C. Sancionar leyes.",
+                    explanation: "La sanción de leyes es la función mediante la cual el presidente ejerce control sobre la actividad legislativa del Congreso, aprobando o vetando las leyes que este expide."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "Lea atentamente el siguiente fragmento para responder las preguntas:\n\n“Se trata de construir una paz estable y duradera, con la participación de todos los colombianos y colombianas. Con ese propósito, el de poner fin de una vez y para siempre a los ciclos históricos de violencia y sentar las bases de la paz, acordamos los puntos de la Agenda del Acuerdo General de agosto de 2012, que desarrolla el presente Acuerdo”.\n\n2. ¿A cuál proceso histórico de Colombia se refiere el anterior fragmento?",
+                    options: [
+                        "A. A los acuerdos de paz entre el Gobierno de Colombia y las Fuerzas Armadas Revolucionarias de Colombia, en los diálogos de la Habana.",
+                        "B. A la entrega de las armas por Autodefensas Unidas de Colombia, como parte de la Ley de Justicia y Paz.",
+                        "C. A los acuerdos de convivencia entre el Gobierno de Colombia y el M-19, en el marco de los diálogos de paz.",
+                        "D. A la empresa de la zona de distensión por el Gobierno Colombia a las Fuerzas Armadas Revolucionarias de Colombia, en San Vicente de Caguán."
+                    ],
+                    answer: "A. A los acuerdos de paz entre el Gobierno de Colombia y las Fuerzas Armadas Revolucionarias de Colombia, en los diálogos de la Habana.",
+                    explanation: "El fragmento describe el objetivo y el contexto de los Acuerdos de Paz de La Habana, firmados entre el Gobierno colombiano y las FARC-EP, que buscaban poner fin al conflicto armado."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "3. ¿Cuál de los siguientes es un derecho fundamental de los ciudadanos en una democracia?",
+                    options: [
+                        "A. El derecho a la propiedad privada sin límites.",
+                        "B. El derecho a la participación política.",
+                        "C. El derecho a evadir impuestos.",
+                        "D. El derecho a la discriminación."
+                    ],
+                    answer: "B. El derecho a la participación política.",
+                    explanation: "La participación política (votar, ser elegido, etc.) es un pilar fundamental de la democracia, permitiendo a los ciudadanos influir en las decisiones de su gobierno."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "4. Un conflicto social surge cuando:",
+                    options: [
+                        "A. Dos personas tienen opiniones diferentes sobre un tema.",
+                        "B. Grupos de personas tienen intereses o valores opuestos y buscan imponerlos.",
+                        "C. Un individuo no está de acuerdo con una ley.",
+                        "D. Se celebra una fiesta popular en la comunidad."
+                    ],
+                    answer: "B. Grupos de personas tienen intereses o valores opuestos y buscan imponerlos.",
+                    explanation: "Los conflictos sociales se caracterizan por la confrontación entre grupos con intereses o valores divergentes, lo que puede llevar a tensiones y movilizaciones."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "5. ¿Cuál es el propósito principal de la Constitución Política de un país?",
+                    options: [
+                        "A. Establecer las leyes penales.",
+                        "B. Organizar el Estado y garantizar los derechos de los ciudadanos.",
+                        "C. Regular las relaciones comerciales internacionales.",
+                        "D. Definir las costumbres y tradiciones culturales."
+                    ],
+                    answer: "B. Organizar el Estado y garantizar los derechos de los ciudadanos.",
+                    explanation: "La Constitución es la norma suprema que establece la estructura del Estado, los poderes públicos y los derechos y deberes fundamentales de los ciudadanos."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "6. La globalización se caracteriza, entre otras cosas, por:",
+                    options: [
+                        "A. El aislamiento económico de los países.",
+                        "B. El aumento de las barreras comerciales.",
+                        "C. La interconexión e interdependencia a nivel mundial.",
+                        "D. La disminución de los flujos migratorios."
+                    ],
+                    answer: "C. La interconexión e interdependencia a nivel mundial.",
+                    explanation: "La globalización implica una creciente integración e interdependencia entre países en los ámbitos económico, político, social y cultural."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "7. ¿Qué papel juegan los medios de comunicación en una sociedad democrática?",
+                    options: [
+                        "A. Ser la voz oficial del gobierno.",
+                        "B. Informar a la ciudadanía y servir como contrapoder.",
+                        "C. Promover únicamente los intereses de ciertos grupos.",
+                        "D. Difundir propaganda política."
+                    ],
+                    answer: "B. Informar a la ciudadanía y servir como contrapoder.",
+                    explanation: "En una democracia, los medios de comunicación deben informar de manera objetiva y crítica, fiscalizando el poder y permitiendo el debate público."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "8. ¿Cuál es una característica de un Estado social de derecho?",
+                    options: [
+                        "A. El Estado no interviene en la economía.",
+                        "B. El Estado solo garantiza la seguridad.",
+                        "C. El Estado busca garantizar derechos sociales y económicos para todos.",
+                        "D. El poder se concentra en una sola persona."
+                    ],
+                    answer: "C. El Estado busca garantizar derechos sociales y económicos para todos.",
+                    explanation: "Un Estado social de derecho, además de garantizar los derechos individuales, busca asegurar condiciones mínimas de bienestar y justicia social para toda la población."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "9. La división de poderes (ejecutivo, legislativo, judicial) tiene como objetivo principal:",
+                    options: [
+                        "A. Concentrar todo el poder en el presidente.",
+                        "B. Evitar el abuso de poder y garantizar el equilibrio.",
+                        "C. Agilizar la toma de decisiones sin controles.",
+                        "D. Eliminar la participación ciudadana."
+                    ],
+                    answer: "B. Evitar el abuso de poder y garantizar el equilibrio.",
+                    explanation: "La separación de poderes busca que ninguna rama del gobierno acumule demasiado poder, permitiendo un sistema de pesos y contrapesos."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "10. ¿Qué se entiende por 'ciudadanía activa'?",
+                    options: [
+                        "A. Solo votar en elecciones.",
+                        "B. Participar en la vida pública y exigir el cumplimiento de los derechos y deberes.",
+                        "C. Pagar impuestos puntualmente.",
+                        "D. Obedecer todas las leyes sin cuestionar."
+                    ],
+                    answer: "B. Participar en la vida pública y exigir el cumplimiento de los derechos y deberes.",
+                    explanation: "La ciudadanía activa implica un compromiso y participación constante en los asuntos públicos, más allá del simple acto de votar."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "11. ¿Cuál es la principal diferencia entre un Estado unitario y un Estado federal?",
+                    options: ["A. En el unitario hay un solo nivel de gobierno, en el federal hay varios.", "B. El unitario no tiene constitución, el federal sí.", "C. El unitario es democrático, el federal no.", "D. El unitario es más grande que el federal."],
+                    answer: "A. En el unitario hay un solo nivel de gobierno, en el federal hay varios.",
+                    explanation: "En un Estado unitario el poder se concentra en un único centro, mientras que en un Estado federal el poder se distribuye entre un gobierno central y entidades territoriales autónomas."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "12. ¿Qué es un plebiscito en el contexto de la participación ciudadana?",
+                    options: ["A. Una elección de representantes.", "B. Una consulta popular para aprobar o rechazar una decisión del ejecutivo.", "C. Un referéndum para reformar la constitución.", "D. Una manifestación pública."],
+                    answer: "B. Una consulta popular para aprobar o rechazar una decisión del ejecutivo.",
+                    explanation: "El plebiscito es un mecanismo de participación ciudadana donde se somete a votación popular una decisión del poder ejecutivo."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "13. ¿Cuál es el objetivo de los Objetivos de Desarrollo Sostenible (ODS) de la ONU?",
+                    options: ["A. Promover el desarrollo económico de un solo país.", "B. Erradicar la pobreza, proteger el planeta y asegurar la prosperidad para todos.", "C. Crear nuevas armas de destrucción masiva.", "D. Fomentar la desigualdad social."],
+                    answer: "B. Erradicar la pobreza, proteger el planeta y asegurar la prosperidad para todos.",
+                    explanation: "Los ODS son una agenda global para el desarrollo sostenible, que aborda desafíos como la pobreza, la desigualdad, el cambio climático y la paz."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "14. ¿Qué se entiende por 'Estado de opinión'?",
+                    options: ["A. Un estado donde no hay libertad de expresión.", "B. Un estado donde la opinión pública influye en las decisiones políticas.", "C. Un estado gobernado por los medios de comunicación.", "D. Un estado sin leyes."],
+                    answer: "B. Un estado donde la opinión pública influye en las decisiones políticas.",
+                    explanation: "Un Estado de opinión es aquel en el que la percepción y el sentir de la ciudadanía tienen un peso significativo en la formulación e implementación de políticas públicas."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "15. ¿Cuál es la importancia de la memoria histórica en un país que ha vivido un conflicto armado?",
+                    options: ["A. Olvidar el pasado para avanzar.", "B. Recordar los hechos para evitar su repetición y construir la paz.", "C. Culpabilizar a las víctimas.", "D. Justificar la violencia."],
+                    answer: "B. Recordar los hechos para evitar su repetición y construir la paz.",
+                    explanation: "La memoria histórica es crucial para comprender las causas y consecuencias de los conflictos, reconocer a las víctimas y sentar las bases para la reconciliación y la no repetición."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "16. ¿Qué es la 'cultura de la legalidad'?",
+                    options: ["A. El conocimiento de todas las leyes.", "B. La obediencia a la ley solo por miedo al castigo.", "C. El respeto y adhesión a las normas legales como valor social.", "D. La creación de nuevas leyes constantemente."],
+                    answer: "C. El respeto y adhesión a las normas legales como valor social.",
+                    explanation: "La cultura de la legalidad implica que los ciudadanos internalizan y valoran el cumplimiento de las leyes como un principio fundamental para la convivencia social."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "17. ¿Qué tipo de régimen político se caracteriza por la ausencia de división de poderes y la concentración del poder en una sola persona o partido?",
+                    options: ["A. Democracia.", "B. Monarquía parlamentaria.", "C. Dictadura.", "D. República."],
+                    answer: "C. Dictadura.",
+                    explanation: "Una dictadura es un régimen político en el que una sola persona o un grupo reducido ejerce el poder de forma absoluta, sin controles ni limitaciones."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "18. ¿Cuál es el rol de la Corte Constitucional en Colombia?",
+                    options: ["A. Juzgar delitos penales.", "B. Administrar los recursos del Estado.", "C. Velar por la supremacía e integridad de la Constitución.", "D. Dirigir las fuerzas militares."],
+                    answer: "C. Velar por la supremacía e integridad de la Constitución.",
+                    explanation: "La Corte Constitucional es el máximo tribunal encargado de garantizar la aplicación y el respeto de la Constitución Política."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "19. ¿Qué es la 'discriminación positiva' o 'acción afirmativa'?",
+                    options: ["A. Discriminar a ciertos grupos.", "B. Medidas temporales para favorecer a grupos históricamente desfavorecidos.", "C. Promover la igualdad de oportunidades sin distinción.", "D. Excluir a minorías."],
+                    answer: "B. Medidas temporales para favorecer a grupos históricamente desfavorecidos.",
+                    explanation: "La discriminación positiva busca compensar desigualdades históricas mediante la implementación de medidas que favorecen temporalmente a grupos vulnerables para lograr la igualdad real."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "20. ¿Qué se entiende por 'desarrollo sostenible'?",
+                    options: ["A. Crecimiento económico a cualquier costo.", "B. Satisfacer las necesidades del presente sin comprometer las de futuras generaciones.", "C. Explotar todos los recursos naturales.", "D. Priorizar solo el aspecto social."],
+                    answer: "B. Satisfacer las necesidades del presente sin comprometer las de futuras generaciones.",
+                    explanation: "El desarrollo sostenible busca un equilibrio entre el crecimiento económico, la equidad social y la protección del medio ambiente."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "21. ¿Cuál es la función principal de la Registraduría Nacional del Estado Civil en Colombia?",
+                    options: ["A. Administrar elecciones y expedir documentos de identidad.", "B. Recaudar impuestos.", "C. Administrar justicia.", "D. Dirigir la política exterior."],
+                    answer: "A. Administrar elecciones y expedir documentos de identidad.",
+                    explanation: "La Registraduría es la entidad encargada de la identificación de los colombianos y de la organización de los procesos electorales."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "22. ¿Qué es la 'libertad de prensa'?",
+                    options: ["A. El derecho de los periodistas a publicar lo que quieran sin responsabilidad.", "B. La capacidad de los medios para informar sin censura ni presiones indebidas.", "C. La obligación de los medios de apoyar al gobierno.", "D. El control estatal sobre la información."],
+                    answer: "B. La capacidad de los medios para informar sin censura ni presiones indebidas.",
+                    explanation: "La libertad de prensa es un pilar de la democracia que garantiza el derecho a buscar, recibir y difundir información e ideas sin interferencias."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "23. ¿Qué se entiende por 'Estado laico'?",
+                    options: ["A. Un estado sin religión.", "B. Un estado que favorece una religión sobre otras.", "C. Un estado que garantiza la libertad religiosa y no tiene una religión oficial.", "D. Un estado gobernado por líderes religiosos."],
+                    answer: "C. Un estado que garantiza la libertad religiosa y no tiene una religión oficial.",
+                    explanation: "Un Estado laico es aquel que es neutral en materia religiosa, garantizando la libertad de culto y creencias para todos sus ciudadanos sin imponer ninguna religión oficial."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "24. ¿Cuál es la función de la Procuraduría General de la Nación en Colombia?",
+                    options: ["A. Juzgar delitos penales.", "B. Defender los derechos humanos y vigilar la conducta de los funcionarios públicos.", "C. Administrar los recursos del Estado.", "D. Crear leyes."],
+                    answer: "B. Defender los derechos humanos y vigilar la conducta de los funcionarios públicos.",
+                    explanation: "La Procuraduría es el organismo de control que vela por el cumplimiento de la Constitución y las leyes, y por la protección de los derechos y garantías fundamentales."
+                },
+                {
+                    area: "Sociales y Ciudadanas",
+                    question: "25. ¿Qué es un 'golpe de Estado'?",
+                    options: ["A. Un cambio de gobierno democrático.", "B. La toma del poder político por la fuerza, generalmente por militares.", "C. Una elección presidencial.", "D. Una reforma constitucional."],
+                    answer: "B. La toma del poder político por la fuerza, generalmente por militares.",
+                    explanation: "Un golpe de Estado es la sustitución repentina y violenta del gobierno existente por otro, realizada de forma ilegítima y fuera de los cauces constitucionales."
+                },
+
+                // --- CIENCIAS NATURALES (S-1 Primera sesión_extraido.txt) ---
+                {
+                    area: "Ciencias Naturales",
+                    question: "Un grupo de científicos ha estado registrando la temperatura promedio en una región durante 10 años consecutivos. Se observa un aumento de al menos 1 °C en la temperatura promedio después del quinto año. El grupo quiere conocer los fenómenos que causaron este aumento de temperatura en la región.\n\n1. ¿Cuál de las siguientes preguntas puede resolverse mediante una investigación, según el campo de las Ciencias Naturales?",
+                    options: [
+                        "A. ¿Cuál es el efecto del aumento de la temperatura en las finanzas del gobierno de la región?",
+                        "B. ¿Cuál será el partido político beneficiado en las próximas elecciones debido al aumento de la temperatura?",
+                        "C. ¿El aumento de temperatura ha favorecido el desplazamiento de personas de la región?",
+                        "D. ¿Ha variado la intensidad de luz emitida por el Sol durante los últimos 5 años, lo cual causa el aumento de temperatura?"
+                    ],
+                    answer: "D. ¿Ha variado la intensidad de luz emitida por el Sol durante los últimos 5 años, lo cual causa el aumento de temperatura?",
+                    explanation: "Las Ciencias Naturales se enfocan en fenómenos observables y medibles del mundo natural. La opción D plantea una pregunta que puede investigarse mediante métodos científicos (observación de la radiación solar, análisis de su impacto térmico). Las otras opciones son de ciencias sociales o economía."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "Un estudiante plantea un experimento para reconocer el efecto de la presión en el volumen de un gas, a una temperatura constante. A continuación, se presenta el proceso y una gráfica con los resultados obtenidos.\n\n2. De acuerdo con lo anterior, el estudiante concluye que, al aumentar la presión, el volumen del gas: (Se requiere la imagen del gráfico de presión vs. volumen para una respuesta precisa.)",
+                    options: [
+                        "A. Aumenta, porque a mayor presión las moléculas se demoran más tiempo en chocar con las paredes del recipiente.",
+                        "B. Disminuye, porque a mayor presión las moléculas tienen menor tamaño.",
+                        "C. Aumenta, porque a mayor presión las moléculas tienen mayor tamaño.",
+                        "D. Disminuye, porque a mayor presión las moléculas tienen menor espacio para moverse."
+                    ],
+                    answer: "D. Disminuye, porque a mayor presión las moléculas tienen menor espacio para moverse.",
+                    explanation: "Según la Ley de Boyle-Mariotte, a temperatura constante, el volumen de un gas es inversamente proporcional a la presión. Esto significa que si la presión aumenta, el volumen disminuye, ya que las moléculas del gas se ven forzadas a ocupar un espacio más reducido."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "3. ¿Cuál es el proceso mediante el cual las plantas convierten la energía luminosa en energía química?",
+                    options: [
+                        "A. Respiración celular.",
+                        "B. Fermentación.",
+                        "C. Fotosíntesis.",
+                        "D. Transpiración."
+                    ],
+                    answer: "C. Fotosíntesis.",
+                    explanation: "La fotosíntesis es el proceso bioquímico en el que las plantas, algas y algunas bacterias utilizan la energía de la luz solar para sintetizar compuestos orgánicos (azúcares) a partir de dióxido de carbono y agua."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "4. ¿Cuál de las siguientes es una característica principal de los seres vivos?",
+                    options: [
+                        "A. Ser inorgánicos.",
+                        "B. No tener capacidad de reproducción.",
+                        "C. Estar compuestos por células.",
+                        "D. No interactuar con el medio ambiente."
+                    ],
+                    answer: "C. Estar compuestos por células.",
+                    explanation: "La teoría celular establece que todos los seres vivos están compuestos por una o más células, que son la unidad básica de la vida."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "5. ¿Qué tipo de energía se transforma en energía eléctrica en una hidroeléctrica?",
+                    options: [
+                        "A. Energía química.",
+                        "B. Energía calórica.",
+                        "C. Energía potencial y cinética del agua.",
+                        "D. Energía nuclear."
+                    ],
+                    answer: "C. Energía potencial y cinética del agua.",
+                    explanation: "En una central hidroeléctrica, el agua almacenada (energía potencial) se libera y fluye (energía cinética), moviendo turbinas que a su vez generan electricidad."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "6. ¿Cuál es el principal gas responsable del efecto invernadero en la Tierra?",
+                    options: [
+                        "A. Oxígeno (O2).",
+                        "B. Nitrógeno (N2).",
+                        "C. Dióxido de carbono (CO2).",
+                        "D. Argón (Ar)."
+                    ],
+                    answer: "C. Dióxido de carbono (CO2).",
+                    explanation: "El dióxido de carbono es el gas de efecto invernadero más abundante y significativo generado por las actividades humanas, contribuyendo al calentamiento global."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "7. Si un objeto se mueve con velocidad constante, ¿qué podemos decir sobre la fuerza neta que actúa sobre él?",
+                    options: [
+                        "A. Es mayor que cero.",
+                        "B. Es igual a cero.",
+                        "C. Es negativa.",
+                        "D. Aumenta con el tiempo."
+                    ],
+                    answer: "B. Es igual a cero.",
+                    explanation: "Según la Primera Ley de Newton (Ley de la Inercia), si un objeto se mueve con velocidad constante (o está en reposo), la fuerza neta que actúa sobre él es cero. Esto significa que las fuerzas están equilibradas."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "8. ¿Qué función principal cumplen los riñones en el cuerpo humano?",
+                    options: [
+                        "A. Bombear sangre.",
+                        "B. Producir hormonas de crecimiento.",
+                        "C. Filtrar la sangre y producir orina.",
+                        "D. Almacenar energía."
+                    ],
+                    answer: "C. Filtrar la sangre y producir orina.",
+                    explanation: "Los riñones son órganos vitales del sistema urinario que se encargan de filtrar los desechos y el exceso de agua de la sangre para formar la orina."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "9. ¿Cuál es la unidad básica de la herencia que se encuentra en los cromosomas?",
+                    options: [
+                        "A. Célula.",
+                        "B. Tejido.",
+                        "C. Gen.",
+                        "D. Órgano."
+                    ],
+                    answer: "C. Gen.",
+                    explanation: "Los genes son segmentos de ADN que contienen la información genética para construir y mantener un organismo, y se transmiten de padres a hijos."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "10. ¿Qué fenómeno natural se produce por el movimiento de las placas tectónicas?",
+                    options: [
+                        "A. Huracanes.",
+                        "B. Terremotos.",
+                        "C. Sequías.",
+                        "D. Inundaciones."
+                    ],
+                    answer: "B. Terremotos.",
+                    explanation: "Los terremotos son causados por la liberación repentina de energía acumulada debido al movimiento y la fricción entre las placas tectónicas de la Tierra."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "11. ¿Qué tipo de célula no tiene núcleo definido?",
+                    options: ["A. Eucariota", "B. Procariota", "C. Animal", "D. Vegetal"],
+                    answer: "B. Procariota",
+                    explanation: "Las células procariotas (como las bacterias) carecen de un núcleo delimitado por una membrana, mientras que las eucariotas sí lo tienen."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "12. ¿Cuál de los siguientes es un ejemplo de energía renovable?",
+                    options: ["A. Carbón", "B. Petróleo", "C. Energía solar", "D. Gas natural"],
+                    answer: "C. Energía solar",
+                    explanation: "Las energías renovables son aquellas que se obtienen de fuentes naturales virtualmente inagotables, como el sol, el viento o el agua."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "13. ¿Qué parte del ojo es responsable de enfocar la luz en la retina?",
+                    options: ["A. Pupila", "B. Iris", "C. Cristalino", "D. Córnea"],
+                    answer: "C. Cristalino",
+                    explanation: "El cristalino es una lente biconvexa que se ajusta para enfocar los rayos de luz sobre la retina, permitiendo una visión clara."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "14. ¿Cuál es la función principal del sistema respiratorio?",
+                    options: ["A. Bombear sangre", "B. Absorber nutrientes", "C. Intercambiar gases (oxígeno y dióxido de carbono)", "D. Eliminar desechos líquidos"],
+                    answer: "C. Intercambiar gases (oxígeno y dióxido de carbono)",
+                    explanation: "El sistema respiratorio se encarga de tomar oxígeno del aire e introducirlo en la sangre, y de eliminar el dióxido de carbono de la sangre hacia el exterior."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "15. ¿Qué es la gravedad?",
+                    options: ["A. Una fuerza que empuja los objetos hacia arriba.", "B. Una fuerza de atracción entre objetos con masa.", "C. La resistencia del aire.", "D. La fuerza que causa el movimiento circular."],
+                    answer: "B. Una fuerza de atracción entre objetos con masa.",
+                    explanation: "La gravedad es la fuerza fundamental que atrae a los cuerpos entre sí en proporción a sus masas."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "16. ¿Cuál es el estado de la materia donde las partículas están muy juntas y vibran en posiciones fijas?",
+                    options: ["A. Líquido", "B. Gaseoso", "C. Sólido", "D. Plasma"],
+                    answer: "C. Sólido",
+                    explanation: "En el estado sólido, las partículas tienen poca energía cinética y están fuertemente unidas, lo que les da una forma y volumen definidos."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "17. ¿Qué estructura celular es responsable de la producción de energía en forma de ATP?",
+                    options: ["A. Núcleo", "B. Ribosoma", "C. Mitocondria", "D. Vacuola"],
+                    answer: "C. Mitocondria",
+                    explanation: "Las mitocondrias son conocidas como las 'centrales energéticas' de la célula, ya que en ellas se lleva a cabo la respiración celular para producir ATP."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "18. ¿Qué es un ecosistema?",
+                    options: ["A. Un grupo de animales de la misma especie.", "B. Un conjunto de plantas en un área.", "C. Una comunidad de organismos interactuando con su ambiente físico.", "D. Un tipo de clima."],
+                    answer: "C. Una comunidad de organismos interactuando con su ambiente físico.",
+                    explanation: "Un ecosistema es una unidad funcional que incluye a todos los organismos vivos (biocenosis) y el ambiente físico (biotopo) con el que interactúan."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "19. ¿Cuál de los siguientes es un conductor de electricidad?",
+                    options: ["A. Madera", "B. Plástico", "C. Cobre", "D. Vidrio"],
+                    answer: "C. Cobre",
+                    explanation: "El cobre es un metal que permite el flujo de corriente eléctrica a través de él con baja resistencia, a diferencia de los aislantes como la madera o el plástico."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "20. ¿Qué es la homeostasis?",
+                    options: ["A. El crecimiento de un organismo.", "B. La capacidad de un organismo para mantener un ambiente interno estable.", "C. La reproducción de las células.", "D. La respuesta a estímulos externos."],
+                    answer: "B. La capacidad de un organismo para mantener un ambiente interno estable.",
+                    explanation: "La homeostasis es la tendencia de los organismos a regular y mantener constantes sus condiciones internas (temperatura, pH, niveles de glucosa, etc.) a pesar de los cambios externos."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "21. ¿Qué capa de la atmósfera protege la Tierra de la radiación ultravioleta dañina?",
+                    options: ["A. Troposfera", "B. Estratosfera (capa de ozono)", "C. Mesosfera", "D. Termosfera"],
+                    answer: "B. Estratosfera (capa de ozono)",
+                    explanation: "La capa de ozono, ubicada en la estratosfera, absorbe la mayor parte de la radiación ultravioleta B (UVB) del sol, protegiendo la vida en la Tierra."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "22. ¿Cuál es el principal órgano del sistema circulatorio?",
+                    options: ["A. Pulmones", "B. Estómago", "C. Corazón", "D. Cerebro"],
+                    answer: "C. Corazón",
+                    explanation: "El corazón es el músculo que bombea la sangre a través de los vasos sanguíneos, distribuyendo oxígeno y nutrientes por todo el cuerpo."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "23. ¿Qué es la biotecnología?",
+                    options: ["A. El estudio de los fósiles.", "B. El uso de organismos vivos o sus componentes para crear productos o procesos.", "C. La fabricación de robots.", "D. El estudio de las estrellas."],
+                    answer: "B. El uso de organismos vivos o sus componentes para crear productos o procesos.",
+                    explanation: "La biotecnología aplica principios científicos y de ingeniería a organismos vivos para producir bienes y servicios útiles, como medicamentos, alimentos o biocombustibles."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "24. ¿Qué tipo de reacción química libera energía en forma de calor o luz?",
+                    options: ["A. Endotérmica", "B. Exotérmica", "C. Síntesis", "D. Descomposición"],
+                    answer: "B. Exotérmica",
+                    explanation: "Las reacciones exotérmicas liberan energía al entorno, generalmente en forma de calor o luz, lo que provoca un aumento de la temperatura."
+                },
+                {
+                    area: "Ciencias Naturales",
+                    question: "25. ¿Cuál es la principal diferencia entre un virus y una bacteria?",
+                    options: ["A. Los virus son más grandes que las bacterias.", "B. Las bacterias son parásitos obligados, los virus no.", "C. Las bacterias son organismos celulares, los virus son partículas acelulares.", "D. Los virus tienen ADN, las bacterias no."],
+                    answer: "C. Las bacterias son organismos unicelulares procariotas con su propia maquinaria celular, mientras que los virus son entidades acelulares que requieren una célula huésped para replicarse."
+                },
+
+                // --- INGLÉS (S-1 Segunda sesión_extraido.txt) ---
+                // Contexto general para las preguntas de Inglés (fill-in-the-blanks): "The history of chili peppers goes back to ancient times. They have been cultivated in America for more than 6,000 years. It was Christopher Columbus who accidentally (1) _______ chili peppers in America and took them to Europe. Later, Europeans began finding different (2) ________ for this spice. Columbus could never (3) _______ imagined the result. The chili pepper would turn (4) _______ 'the queen of spices' around the world. Fortunately, it has been proven today that chili peppers have many (5) ________; they help reduce the level of cholesterol, (6) _______ virus infections like the flu and fight bone disease. Because of this, it's a good idea to eat this healthy fruit. (7) ______ all the advantages of eating chilies, don't start eating a lot of them at (8) _______; chilies can also cause an upset stomach and sore throat."
+                {
+                    area: "Inglés",
+                    question: "Read the following text to answer questions 1-8:\n\n\"The history of chili peppers goes back to ancient times. They have been cultivated in America for more than 6,000 years. It was Christopher Columbus who accidentally (1) _______ chili peppers in America and took them to Europe. Later, Europeans began finding different (2) ________ for this spice. Columbus could never (3) _______ imagined the result. The chili pepper would turn (4) _______ 'the queen of spices' around the world. Fortunately, it has been proven today that chili peppers have many (5) ________; they help reduce the level of cholesterol, (6) _______ virus infections like the flu and fight bone disease. Because of this, it's a good idea to eat this healthy fruit. (7) ______ all the advantages of eating chilies, don't start eating a lot of them at (8) _______; chilies can also cause an upset stomach and sore throat.\"\n\n1. It was Christopher Columbus who accidentally (1) _______ chili peppers in America and took them to Europe.",
+                    options: [
+                        "A. delivered",
+                        "B. discovered",
+                        "C. invented",
+                        "D. planted"
+                    ],
+                    answer: "B. discovered",
+                    explanation: "Christopher Columbus 'discovered' chili peppers in America, meaning he found them there for the first time from a European perspective."
+                },
+                {
+                    area: "Inglés",
+                    question: "Read the following text to answer questions 1-8:\n\n\"The history of chili peppers goes back to ancient times. They have been cultivated in America for more than 6,000 years. It was Christopher Columbus who accidentally (1) _______ chili peppers in America and took them to Europe. Later, Europeans began finding different (2) ________ for this spice. Columbus could never (3) _______ imagined the result. The chili pepper would turn (4) _______ 'the queen of spices' around the world. Fortunately, it has been proven today that chili peppers have many (5) ________; they help reduce the level of cholesterol, (6) _______ virus infections like the flu and fight bone disease. Because of this, it's a good idea to eat this healthy fruit. (7) ______ all the advantages of eating chilies, don't start eating a lot of them at (8) _______; chilies can also cause an upset stomach and sore throat.\"\n\n2. Later, Europeans began finding different (2) ________ for this spice.",
+                    options: [
+                        "A. times",
+                        "B. uses",
+                        "C. orders",
+                        "D. advances"
+                    ],
+                    answer: "B. uses",
+                    explanation: "Europeans found different 'uses' for chili peppers, meaning ways to apply or consume them."
+                },
+                {
+                    area: "Inglés",
+                    question: "Read the following text to answer questions 1-8:\n\n\"The history of chili peppers goes back to ancient times. They have been cultivated in America for more than 6,000 years. It was Christopher Columbus who accidentally (1) _______ chili peppers in America and took them to Europe. Later, Europeans began finding different (2) ________ for this spice. Columbus could never (3) _______ imagined the result. The chili pepper would turn (4) _______ 'the queen of spices' around the world. Fortunately, it has been proven today that chili peppers have many (5) ________; they help reduce the level of cholesterol, (6) _______ virus infections like the flu and fight bone disease. Because of this, it's a good idea to eat this healthy fruit. (7) ______ all the advantages of eating chilies, don't start eating a lot of them at (8) _______; chilies can also cause an upset stomach and sore throat.\"\n\n3. Columbus could never (3) _______ imagined the result.",
+                    options: [
+                        "A. ever",
+                        "B. never",
+                        "C. always",
+                        "D. sometimes"
+                    ],
+                    answer: "A. ever",
+                    explanation: "The phrase 'could never have imagined' uses 'ever' to emphasize the impossibility of him foreseeing the outcome. 'Never' is redundant here as 'could never' already expresses the negation."
+                },
+                {
+                    area: "Inglés",
+                    question: "Read the following text to answer questions 1-8:\n\n\"The history of chili peppers goes back to ancient times. They have been cultivated in America for more than 6,000 years. It was Christopher Columbus who accidentally (1) _______ chili peppers in America and took them to Europe. Later, Europeans began finding different (2) ________ for this spice. Columbus could never (3) _______ imagined the result. The chili pepper would turn (4) _______ 'the queen of spices' around the world. Fortunately, it has been proven today that chili peppers have many (5) ________; they help reduce the level of cholesterol, (6) _______ virus infections like the flu and fight bone disease. Because of this, it's a good idea to eat this healthy fruit. (7) ______ all the advantages of eating chilies, don't start eating a lot of them at (8) _______; chilies can also cause an upset stomach and sore throat.\"\n\n4. The chili pepper would turn (4) _______ 'the queen of spices' around the world.",
+                    options: [
+                        "A. into",
+                        "B. to",
+                        "C. for",
+                        "D. on"
+                    ],
+                    answer: "A. into",
+                    explanation: "'Turn into' means to change or develop into something else. The chili pepper changed its status to 'the queen of spices'."
+                },
+                {
+                    area: "Inglés",
+                    question: "Read the following text to answer questions 1-8:\n\n\"The history of chili peppers goes back to ancient times. They have been cultivated in America for more than 6,000 years. It was Christopher Columbus who accidentally (1) _______ chili peppers in America and took them to Europe. Later, Europeans began finding different (2) ________ for this spice. Columbus could never (3) _______ imagined the result. The chili pepper would turn (4) _______ 'the queen of spices' around the world. Fortunately, it has been proven today that chili peppers have many (5) ________; they help reduce the level of cholesterol, (6) _______ virus infections like the flu and fight bone disease. Because of this, it's a good idea to eat this healthy fruit. (7) ______ all the advantages of eating chilies, don't start eating a lot of them at (8) _______; chilies can also cause an upset stomach and sore throat.\"\n\n5. Fortunately, it has been proven today that chili peppers have many (5) ________; they help reduce the level of cholesterol...",
+                    options: [
+                        "A. benefits",
+                        "B. damages",
+                        "C. problems",
+                        "D. risks"
+                    ],
+                    answer: "A. benefits",
+                    explanation: "The context (reducing cholesterol, fighting infections) indicates positive effects, so 'benefits' is the correct word."
+                },
+                {
+                    area: "Inglés",
+                    question: "Read the following text to answer questions 1-8:\n\n\"The history of chili peppers goes back to ancient times. They have been cultivated in America for more than 6,000 years. It was Christopher Columbus who accidentally (1) _______ chili peppers in America and took them to Europe. Later, Europeans began finding different (2) ________ for this spice. Columbus could never (3) _______ imagined the result. The chili pepper would turn (4) _______ 'the queen of spices' around the world. Fortunately, it has been proven today that chili peppers have many (5) ________; they help reduce the level of cholesterol, (6) _______ virus infections like the flu and fight bone disease. Because of this, it's a good idea to eat this healthy fruit. (7) ______ all the advantages of eating chilies, don't start eating a lot of them at (8) _______; chilies can also cause an upset stomach and sore throat.\"\n\n6. ...they help reduce the level of cholesterol, (6) _______ virus infections like the flu and fight bone disease.",
+                    options: [
+                        "A. prevent",
+                        "B. cause",
+                        "C. allow",
+                        "D. enable"
+                    ],
+                    answer: "A. prevent",
+                    explanation: "Chili peppers help 'prevent' virus infections, meaning they stop them from happening or reduce their likelihood."
+                },
+                {
+                    area: "Inglés",
+                    question: "Read the following text to answer questions 1-8:\n\n\"The history of chili peppers goes back to ancient times. They have been cultivated in America for more than 6,000 years. It was Christopher Columbus who accidentally (1) _______ chili peppers in America and took them to Europe. Later, Europeans began finding different (2) ________ for this spice. Columbus could never (3) _______ imagined the result. The chili pepper would turn (4) _______ 'the queen of spices' around the world. Fortunately, it has been proven today that chili peppers have many (5) ________; they help reduce the level of cholesterol, (6) _______ virus infections like the flu and fight bone disease. Because of this, it's a good idea to eat this healthy fruit. (7) ______ all the advantages of eating chilies, don't start eating a lot of them at (8) _______; chilies can also cause an upset stomach and sore throat.\"\n\n7. (7) ______ all the advantages of eating chilies, don't start eating a lot of them at (8) _______; chilies can also cause an upset stomach and sore throat.",
+                    options: [
+                        "A. Despite",
+                        "B. Because",
+                        "C. Although",
+                        "D. However"
+                    ],
+                    answer: "A. Despite",
+                    explanation: "'Despite' is used to introduce a contrasting idea. Even with all the advantages, there are warnings, creating a contrast."
+                },
+                {
+                    area: "Inglés",
+                    question: "Read the following text to answer questions 1-8:\n\n\"The history of chili peppers goes back to ancient times. They have been cultivated in America for more than 6,000 years. It was Christopher Columbus who accidentally (1) _______ chili peppers in America and took them to Europe. Later, Europeans began finding different (2) ________ for this spice. Columbus could never (3) _______ imagined the result. The chili pepper would turn (4) _______ 'the queen of spices' around the world. Fortunately, it has been proven today that chili peppers have many (5) ________; they help reduce the level of cholesterol, (6) _______ virus infections like the flu and fight bone disease. Because of this, it's a good idea to eat this healthy fruit. (7) ______ all the advantages of eating chilies, don't start eating a lot of them at (8) _______; chilies can also cause an upset stomach and sore throat.\"\n\n8. ...don't start eating a lot of them at (8) _______; chilies can also cause an upset stomach and sore throat.",
+                    options: [
+                        "A. once",
+                        "B. all",
+                        "C. first",
+                        "D. least"
+                    ],
+                    answer: "A. once",
+                    explanation: "'At once' means immediately or simultaneously. In this context, it means don't eat a lot immediately."
+                },
+                {
+                    area: "Inglés",
+                    question: "9. The history of chili peppers goes back to ancient (9) _______. They have been cultivated in America for more than 6,000 years.",
+                    options: [
+                        "A. time",
+                        "B. fact",
+                        "C. order",
+                        "D. advance"
+                    ],
+                    answer: "A. time",
+                    explanation: "'Ancient times' is a common collocation referring to a period far in the past."
+                },
+                {
+                    area: "Inglés",
+                    question: "10. Chili peppers are a common (10) ________ in many cuisines around the world.",
+                    options: [
+                        "A. diet",
+                        "B. recipe",
+                        "C. meal",
+                        "D. ingredient"
+                    ],
+                    answer: "D. ingredient",
+                    explanation: "Chili peppers are a component used in preparing dishes, hence an 'ingredient'."
+                },
+                {
+                    area: "Inglés",
+                    question: "11. The word 'ancient' in 'ancient times' means:",
+                    options: ["A. Modern", "B. Old", "C. New", "D. Future"],
+                    answer: "B. Old",
+                    explanation: "'Ancient' refers to something belonging to the very distant past."
+                },
+                {
+                    area: "Inglés",
+                    question: "12. 'Cultivated' in the text implies that chili peppers were:",
+                    options: ["A. Found wild", "B. Grown by people", "C. Imported", "D. Discovered by chance"],
+                    answer: "B. Grown by people",
+                    explanation: "'Cultivated' means to prepare and use (land) for crops or gardening, indicating human involvement in growing them."
+                },
+                {
+                    area: "Inglés",
+                    question: "13. What does 'accidentally' suggest about Columbus's discovery?",
+                    options: ["A. It was planned", "B. It was intentional", "C. It was by chance", "D. It was difficult"],
+                    answer: "C. It was by chance",
+                    explanation: "'Accidentally' means happening by chance or without intent."
+                },
+                {
+                    area: "Inglés",
+                    question: "14. The phrase 'took them to Europe' means he:",
+                    options: ["A. Left them in America", "B. Brought them to Europe", "C. Sold them in America", "D. Planted them in America"],
+                    answer: "B. Brought them to Europe",
+                    explanation: "'Took to' in this context means to transport or bring something to a place."
+                },
+                {
+                    area: "Inglés",
+                    question: "15. 'The queen of spices' is an example of a:",
+                    options: ["A. Simile", "B. Metaphor", "C. Hyperbole", "D. Personification"],
+                    answer: "B. Metaphor",
+                    explanation: "It's a metaphor comparing chili peppers to a queen, suggesting their high status or importance among spices without using 'like' or 'as'."
+                },
+                {
+                    area: "Inglés",
+                    question: "16. 'Reduce the level of cholesterol' means to make cholesterol levels:",
+                    options: ["A. Higher", "B. Lower", "C. Stable", "D. Unchanged"],
+                    answer: "B. Lower",
+                    explanation: "'Reduce' means to make something smaller or less in amount, degree, or size."
+                },
+                {
+                    area: "Inglés",
+                    question: "17. 'Fight bone disease' implies that chili peppers:",
+                    options: ["A. Cause bone disease", "B. Cure bone disease completely", "C. Help combat or prevent bone disease", "D. Are irrelevant to bone health"],
+                    answer: "C. Help combat or prevent bone disease",
+                    explanation: "'Fight' in this context means to strive to overcome or eliminate a problem or condition."
+                },
+                {
+                    area: "Inglés",
+                    question: "18. The sentence 'Because of this, it's a good idea to eat this healthy fruit' is a:",
+                    options: ["A. Question", "B. Command", "C. Recommendation", "D. Warning"],
+                    answer: "C. Recommendation",
+                    explanation: "The phrase 'it's a good idea to' is used to suggest or recommend an action."
+                },
+                {
+                    area: "Inglés",
+                    question: "19. 'Upset stomach' refers to:",
+                    options: ["A. A happy stomach", "B. A stomach ache or discomfort", "C. A strong appetite", "D. A digestive system that works perfectly"],
+                    answer: "B. A stomach ache or discomfort",
+                    explanation: "'Upset stomach' is a common idiom for indigestion or stomach discomfort."
+                },
+                {
+                    area: "Inglés",
+                    question: "20. 'Sore throat' means a throat that is:",
+                    options: ["A. Happy", "B. Painful", "C. Healthy", "D. Itchy"],
+                    answer: "B. Painful",
+                    explanation: "'Sore' means painful or aching."
+                },
+                {
+                    area: "Inglés",
+                    question: "21. The text suggests that eating too many chilies at once can cause:",
+                    options: ["A. Weight loss", "B. Improved vision", "C. Digestive problems", "D. Stronger bones"],
+                    answer: "C. Digestive problems",
+                    explanation: "The text explicitly states 'chilies can also cause an upset stomach and sore throat'."
+                },
+                {
+                    area: "Inglés",
+                    question: "22. What is the overall tone of the passage about chili peppers?",
+                    options: ["A. Negative", "B. Neutral", "C. Informative and cautionary", "D. Humorous"],
+                    answer: "C. Informative and cautionary",
+                    explanation: "The passage provides information about chili peppers' history and benefits but also includes a warning about potential side effects."
+                },
+                {
+                    area: "Inglés",
+                    question: "23. The phrase 'around the world' implies that chili peppers are:",
+                    options: ["A. Only in America", "B. Popular globally", "C. Rare", "D. Only in Europe"],
+                    answer: "B. Popular globally",
+                    explanation: "'Around the world' indicates a widespread or global presence."
+                },
+                {
+                    area: "Inglés",
+                    question: "24. What does 'proven today' suggest about the benefits of chili peppers?",
+                    options: ["A. They are just beliefs", "B. They are scientifically confirmed", "C. They are traditional remedies only", "D. They are new discoveries"],
+                    answer: "B. They are scientifically confirmed",
+                    explanation: "'Proven' implies that there is evidence or scientific validation for the claims."
+                },
+                {
+                    area: "Inglés",
+                    question: "25. The text is primarily about:",
+                    options: ["A. The history of spices in Europe", "B. The health benefits of fruits", "C. The origin, uses, and effects of chili peppers", "D. Christopher Columbus's travels"],
+                    answer: "C. The origin, uses, and effects of chili peppers",
+                    explanation: "The passage covers the historical cultivation, discovery, widespread use, health benefits, and potential side effects of chili peppers."
+                }
+            ];
+
+            let questions = []; // Preguntas para el simulacro actual (filtradas por área y cantidad)
+            let currentQuestionIndex = 0;
+            let userAnswers = []; // Respuestas del usuario para el simulacro actual
+            let timer;
+            const quizDuration = 60; // segundos por pregunta
+            let timeRemaining = quizDuration;
+            let selectedArea = null;
+            let selectedNumQuestions = 10; // Valor por defecto
+
+            // Elementos del DOM
+            const setupScreen = document.getElementById('setupScreen');
+            const quizScreen = document.getElementById('quizScreen');
+            const resultsScreen = document.getElementById('resultsScreen');
+            const historyScreen = document.getElementById('historyScreen'); // Nueva pantalla de historial
+
+            const startQuizBtn = document.getElementById('startQuizBtn');
+            const viewHistoryBtn = document.getElementById('viewHistoryBtn'); // Botón para ver historial
+            const nextQuestionBtn = document.getElementById('nextQuestionBtn');
+            const restartQuizBtn = document.getElementById('restartQuizBtn');
+            const backToHistoryBtn = document.getElementById('backToHistoryBtn'); // Botón para volver al historial
+            const backToSetupFromHistoryBtn = document.getElementById('backToSetupFromHistoryBtn'); // Botón para volver al inicio desde historial
+
+            const questionAreaDisplay = document.getElementById('questionArea');
+            const questionText = document.getElementById('questionText');
+            const optionsContainer = document.getElementById('optionsContainer');
+            const timeRemainingText = document.getElementById('timeRemaining');
+            const timerProgress = document.getElementById('timerProgress');
+
+            const correctCountDisplay = document.getElementById('correctCount');
+            const incorrectCountDisplay = document.getElementById('incorrectCount');
+            const overallPercentageDisplay = document.getElementById('overallPercentage');
+            const resultsDetails = document.getElementById('resultsDetails');
+            const areaResultsList = document.getElementById('areaResults');
+            const recommendationList = document.getElementById('recommendationList');
+
+            const cards = document.querySelectorAll('.card');
+            const numQuestionsRadios = document.querySelectorAll('input[name="numQuestions"]');
+            const historyTableBody = document.getElementById('historyTableBody');
+
+            // DEBUG: Verificar si el botón se encuentra al cargar el script
+            if (startQuizBtn) {
+                console.log("startQuizBtn encontrado en el DOM.");
+            } else {
+                console.error("Error: startQuizBtn no encontrado en el DOM. Revisa el ID en el HTML.");
+            }
+
+            // Event Listeners
+            cards.forEach(card => {
+                card.addEventListener('click', () => {
+                    console.log("Card clicked:", card.dataset.area); // DEBUG: Confirmar clic en la tarjeta
+                    cards.forEach(c => c.classList.remove('selected'));
+                    card.classList.add('selected');
+                    selectedArea = card.dataset.area;
+                    startQuizBtn.disabled = false;
+                    startQuizBtn.textContent = `Iniciar Simulacro de ${selectedArea}`;
+                    console.log("startQuizBtn disabled status after click:", startQuizBtn.disabled); // DEBUG: Verificar estado del botón
+                });
+            });
+
+            numQuestionsRadios.forEach(radio => {
+                radio.addEventListener('change', (event) => {
+                    selectedNumQuestions = parseInt(event.target.value);
+                });
+            });
+
+            startQuizBtn.addEventListener('click', startQuiz);
+            nextQuestionBtn.addEventListener('click', handleNextQuestion);
+            restartQuizBtn.addEventListener('click', resetApp);
+            viewHistoryBtn.addEventListener('click', showHistoryScreen);
+            backToHistoryBtn.addEventListener('click', showHistoryScreen); // Desde resultados al historial
+            backToSetupFromHistoryBtn.addEventListener('click', resetApp); // Desde historial al inicio
+
+            function shuffleArray(array) {
+                for (let i = array.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [array[i], array[j]] = [array[j], array[i]];
+                }
+                return array;
+            }
+
+            function startQuiz() {
+                if (!selectedArea) {
+                    showCustomMessage('Por favor, selecciona un área para iniciar el simulacro.', 'Aceptar');
+                    return;
+                }
+
+                // Filtrar preguntas por área seleccionada y luego barajar y seleccionar la cantidad deseada
+                let filteredQuestions = allQuestions.filter(q => q.area === selectedArea);
+                if (filteredQuestions.length < selectedNumQuestions) {
+                    showCustomMessage(`No hay suficientes preguntas para el área de ${selectedArea}. Solo hay ${filteredQuestions.length} preguntas disponibles.`, 'Aceptar');
+                    questions = shuffleArray(filteredQuestions); // Usar todas las disponibles
+                } else {
+                    questions = shuffleArray(filteredQuestions).slice(0, selectedNumQuestions);
+                }
+
+
+                if (questions.length === 0) {
+                    showCustomMessage('No hay preguntas disponibles para esta área con la cantidad seleccionada. Por favor, ajusta tu selección.', 'Aceptar');
+                    return;
+                }
+
+                setupScreen.classList.remove('active');
+                quizScreen.classList.add('active');
+                currentQuestionIndex = 0;
+                userAnswers = [];
+                loadQuestion();
+                startTimer();
+            }
+
+            function loadQuestion() {
+                const question = questions[currentQuestionIndex];
+                questionAreaDisplay.textContent = `${question.area} - Pregunta ${currentQuestionIndex + 1} de ${questions.length}`;
+                questionText.innerHTML = question.question;
+
+                optionsContainer.innerHTML = '';
+                question.options.forEach((option, index) => {
+                    const optionDiv = document.createElement('label');
+                    optionDiv.classList.add('option');
+                    optionDiv.innerHTML = `
+                        <input type="radio" name="answer" value="${option.charAt(0)}">
+                        <span>${option}</span>
+                    `;
+                    optionDiv.addEventListener('click', () => {
+                        optionsContainer.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
+                        optionDiv.classList.add('selected');
+                    });
+                    optionsContainer.appendChild(optionDiv);
+                });
+
+                resetTimer();
+            }
+
+            function startTimer() {
+                clearInterval(timer);
+                timeRemaining = quizDuration;
+                timeRemainingText.textContent = timeRemaining;
+                timerProgress.style.width = '100%';
+
+                timer = setInterval(() => {
+                    timeRemaining--;
+                    timeRemainingText.textContent = timeRemaining;
+                    timerProgress.style.width = `${(timeRemaining / quizDuration) * 100}%`;
+
+                    if (timeRemaining <= 0) {
+                        clearInterval(timer);
+                        handleNextQuestion();
+                    }
+                }, 1000);
+            }
+
+            function resetTimer() {
+                clearInterval(timer);
+                startTimer();
+            }
+
+            function handleNextQuestion() {
+                const selectedOption = optionsContainer.querySelector('input[name="answer"]:checked');
+                let userAnswer = selectedOption ? selectedOption.value : null;
+
+                const currentQuestion = questions[currentQuestionIndex];
+                const isCorrect = userAnswer === currentQuestion.answer.charAt(0);
+
+                userAnswers.push({
+                    question: currentQuestion.question,
+                    area: currentQuestion.area,
+                    userAnswer: selectedOption ? selectedOption.nextElementSibling.textContent : 'No respondida',
+                    answer: currentQuestion.answer,
+                    explanation: currentQuestion.explanation,
+                    userWasCorrect: isCorrect
+                });
+
+                currentQuestionIndex++;
+
+                if (currentQuestionIndex < questions.length) {
+                    loadQuestion();
+                } else {
+                    showResults();
+                }
+            }
+
+            async function showResults() {
+                clearInterval(timer);
+                quizScreen.classList.remove('active');
+                resultsScreen.classList.add('active');
+
+                let correctCount = 0;
+                let incorrectCount = 0;
+                const areaScores = {};
+
+                // Inicializar puntuaciones de área para todas las áreas existentes en allQuestions
+                allQuestions.forEach(q => {
+                    if (!areaScores[q.area]) {
+                        areaScores[q.area] = { correct: 0, total: 0 };
+                    }
+                });
+
+                resultsDetails.innerHTML = '<h3>Detalle de Preguntas</h3>';
+                areaResultsList.innerHTML = '';
+
+                userAnswers.forEach(question => {
+                    if (question.userWasCorrect) {
+                        correctCount++;
+                        areaScores[question.area].correct++;
+                    } else {
+                        incorrectCount++;
+                    }
+                    areaScores[question.area].total++;
+
+                    const resultItem = document.createElement('div');
+                    resultItem.classList.add('result-item');
+                    if(question.userWasCorrect) {
+                        resultItem.classList.add('correct-answer');
+                    } else {
+                        resultItem.classList.add('incorrect-answer');
+                    }
+
+                    let answerFeedback = `
+                        <p><strong>Tu respuesta:</strong> ${question.userAnswer || 'No respondida'} ${question.userWasCorrect ? "(Correcta)" : "(Incorrecta)"}</p>
+                        ${!question.userWasCorrect ? `<p><strong>Respuesta correcta:</strong> ${question.answer}</p>` : ''}
+                    `;
+
+                    resultItem.innerHTML = `
+                        <p><strong>Pregunta:</strong> ${question.question}</p>
+                        ${answerFeedback}
+                        <p class="explanation"><strong>Explicación:</strong> ${question.explanation}</p>
+                    `;
+                    resultsDetails.appendChild(resultItem);
+                });
+
+                correctCountDisplay.textContent = correctCount;
+                incorrectCountDisplay.textContent = incorrectCount;
+                const overallPercentage = questions.length > 0 ? ((correctCount / questions.length) * 100).toFixed(2) : 0;
+                overallPercentageDisplay.textContent = `${overallPercentage}%`;
+
+                let areasWithErrors = [];
+                const currentSimulationAreaPercentages = {}; // Para guardar en Firestore
+
+                for (const area in areaScores) {
+                    if (areaScores[area].total > 0) {
+                        const areaCorrect = areaScores[area].correct;
+                        const areaTotal = areaScores[area].total;
+                        const areaPercentage = ((areaCorrect / areaTotal) * 100).toFixed(2);
+
+                        currentSimulationAreaPercentages[area] = `${areaPercentage}%`; // Guardar para Firestore
+
+                        const listItem = document.createElement('li');
+                        listItem.innerHTML = `<strong>${area}:</strong> ${areaCorrect} de ${areaTotal} correctas (${areaPercentage}%)`;
+                        areaResultsList.appendChild(listItem);
+
+                        if (parseFloat(areaPercentage) < 70 && areaTotal > 0) {
+                            areasWithErrors.push(area);
+                        }
+                    }
+                }
+
+                recommendationList.innerHTML = '';
+                if (areasWithErrors.length > 0) {
+                    const intro = document.createElement('li');
+                    intro.textContent = `Parece que necesitas reforzar tus conocimientos en las siguientes áreas:`;
+                    recommendationList.appendChild(intro);
+
+                    areasWithErrors.forEach(area => {
+                        const recItem = document.createElement('li');
+                        recItem.textContent = `- Revisa los conceptos de ${area}. Practica más preguntas de esta sección.`;
+                        recommendationList.appendChild(recItem);
+                    });
+                    const generalRec = document.createElement('li');
+                    generalRec.textContent = `¡No te desanimes! La práctica constante es clave para mejorar.`;
+                    recommendationList.appendChild(generalRec);
+                } else {
+                    const noRec = document.createElement('li');
+                    noRec.textContent = `¡Excelente trabajo! Has demostrado un buen dominio en todas las áreas. Sigue practicando para mantener tu nivel.`;
+                    recommendationList.appendChild(noRec);
+                }
+
+                // Guardar resultados en Firestore
+                if (dbInitialized && userId) {
+                    try {
+                        await addDoc(collection(db, `artifacts/${appId}/users/${userId}/simulation_history`), {
+                            timestamp: serverTimestamp(),
+                            selectedArea: selectedArea,
+                            numQuestions: questions.length,
+                            correctCount: correctCount,
+                            incorrectCount: incorrectCount,
+                            overallPercentage: `${overallPercentage}%`,
+                            areaPercentages: currentSimulationAreaPercentages
+                        });
+                        console.log("Resultados guardados en Firestore.");
+                    } catch (e) {
+                        console.error("Error al guardar resultados en Firestore: ", e);
+                    }
+                } else {
+                    console.warn("Firestore no está inicializado o el userId no está disponible. No se guardarán los resultados.");
+                }
+            }
+
+            function resetApp() {
+                clearInterval(timer);
+                setupScreen.classList.add('active');
+                quizScreen.classList.remove('active');
+                resultsScreen.classList.remove('active');
+                historyScreen.classList.remove('active'); // Asegurar que la pantalla de historial también se oculte
+
+                selectedArea = null;
+                cards.forEach(c => c.classList.remove('selected'));
+                startQuizBtn.disabled = true;
+                startQuizBtn.textContent = 'Selecciona un área';
+                // Resetear la selección de cantidad de preguntas a 10
+                document.querySelector('input[name="numQuestions"][value="10"]').checked = true;
+                selectedNumQuestions = 10;
+            }
+
+            async function showHistoryScreen() {
+                setupScreen.classList.remove('active');
+                quizScreen.classList.remove('active');
+                resultsScreen.classList.remove('active');
+                historyScreen.classList.add('active');
+
+                if (dbInitialized && userId) {
+                    try {
+                        // Limpiar tabla antes de cargar
+                        historyTableBody.innerHTML = '<tr><td colspan="6">Cargando historial...</td></tr>';
+
+                        const historyRef = collection(db, `artifacts/${appId}/users/${userId}/simulation_history`);
+                        const q = query(historyRef, orderBy("timestamp", "desc")); // Ordenar por fecha descendente
+
+                        onSnapshot(q, (snapshot) => {
+                            historyTableBody.innerHTML = ''; // Limpiar la tabla antes de añadir nuevos datos
+                            if (snapshot.empty) {
+                                historyTableBody.innerHTML = '<tr><td colspan="6">No hay simulacros registrados aún.</td></tr>';
+                                return;
+                            }
+
+                            snapshot.docs.forEach(doc => {
+                                const data = doc.data();
+                                const row = historyTableBody.insertRow();
+                                const date = data.timestamp ? new Date(data.timestamp.toDate()).toLocaleString() : 'N/A';
+
+                                row.insertCell().textContent = date;
+                                row.insertCell().textContent = data.selectedArea || 'N/A';
+                                row.insertCell().textContent = data.numQuestions || 0;
+                                row.insertCell().textContent = data.correctCount || 0;
+                                row.insertCell().textContent = data.incorrectCount || 0;
+                                row.insertCell().textContent = data.overallPercentage || '0%';
+
+                                // Opcional: añadir un tooltip o modal para ver los porcentajes por área
+                                row.title = Object.entries(data.areaPercentages || {}).map(([area, percent]) => `${area}: ${percent}`).join('\n');
+                            });
+                        }, (error) => {
+                            console.error("Error al escuchar el historial en tiempo real:", error);
+                            historyTableBody.innerHTML = '<tr><td colspan="6">Error al cargar el historial.</td></tr>';
+                        });
+
+                    } catch (e) {
+                        console.error("Error al cargar el historial de simulacros desde Firestore: ", e);
+                        historyTableBody.innerHTML = '<tr><td colspan="6">Error al cargar el historial.</td></tr>';
+                    }
+                } else {
+                    historyTableBody.innerHTML = '<tr><td colspan="6">Inicia sesión o espera a que se cargue Firebase para ver el historial.</td></tr>';
+                    console.warn("Firestore no está inicializado o el userId no está disponible. No se puede cargar el historial.");
+                }
+            }
+
+
+            // Función para mostrar mensajes personalizados (reemplazo de alert())
+            function showCustomMessage(message, buttonText) {
+                const messageBox = document.createElement('div');
+                messageBox.classList.add('custom-message-box');
+                messageBox.innerHTML = `
+                    <p>${message}</p>
+                    <button class="btn">${buttonText}</button>
+                `;
+                document.body.appendChild(messageBox);
+
+                messageBox.querySelector('.btn').addEventListener('click', () => {
+                    document.body.removeChild(messageBox);
+                });
+            }
+        }); // End DOMContentLoaded
+    </script>
+</body>
+</html>
