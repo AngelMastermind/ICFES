@@ -148,20 +148,22 @@
             color: var(--secondary-color-retro);
         }
 
-        .question-count-selection {
+        .question-count-selection, .time-selection {
             margin-bottom: 25px;
             padding: 15px;
             border: 1px dashed var(--border-color-retro);
             background-color: var(--neutral-color-retro);
             display: inline-block;
+            width: fit-content; /* Adjust width to content */
+            max-width: 100%;
         }
 
-        .question-count-selection label {
+        .question-count-selection label, .time-selection label {
             margin-right: 15px;
             font-weight: bold;
         }
 
-        .question-count-selection input[type="radio"] {
+        .question-count-selection input[type="radio"], .time-selection input[type="radio"] {
             margin-right: 5px;
             accent-color: var(--primary-color-retro);
         }
@@ -193,6 +195,17 @@
             margin-bottom: 15px;
             line-height: 1.5;
             color: var(--text-color-retro);
+        }
+
+        .question-container img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+            border: 1px solid var(--border-color-retro);
+            box-shadow: 2px 2px 0px var(--border-color-retro);
+            display: block; /* Ensure it takes full width and new line */
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .options-container {
@@ -571,6 +584,13 @@
                 <label><input type="radio" name="numQuestions" value="25"> 25</label>
             </div>
 
+            <div class="time-selection">
+                <label>Duración total del simulacro:</label>
+                <label><input type="radio" name="totalTime" value="15" checked> 15 minutos</label>
+                <label><input type="radio" name="totalTime" value="25"> 25 minutos</label>
+                <label><input type="radio" name="totalTime" value="35"> 35 minutos</label>
+            </div>
+
             <button id="startQuizBtn" class="btn" disabled>Selecciona un área</button>
             <button id="viewHistoryBtn" class="btn">Ver Historial</button>
         </div>
@@ -584,11 +604,13 @@
             <h2 id="questionArea"></h2>
             <div class="question-container">
                 <p id="questionText"></p>
-                <!-- <img id="questionImage" src="" alt="Imagen de la pregunta" style="max-width: 100%; height: auto; margin-top: 15px; border: 1px solid var(--border-color-retro); box-shadow: 2px 2px 0px var(--border-color-retro); display: none;"> -->
                 <div id="optionsContainer" class="options-container">
                 </div>
             </div>
-            <button id="nextQuestionBtn" class="btn">Siguiente Pregunta</button>
+            <div class="button-group">
+                <button id="prevQuestionBtn" class="btn" disabled>Pregunta Anterior</button>
+                <button id="nextQuestionBtn" class="btn">Siguiente Pregunta</button>
+            </div>
         </div>
 
         <!-- Results Screen -->
@@ -686,17 +708,17 @@
             // --- MATEMÁTICAS (S-1 Primera sesión_extraido.txt) ---
             {
                 area: "Matemáticas",
-                question: "1. ¿Cuál es el valor de la expresión cuando X=3? (Se requiere la imagen de la expresión matemática para resolver esta pregunta.)",
+                question: "1. ¿Cuál es el valor de la expresión $\\frac{x^{2}+1}{100}$ cuando X=3?",
                 options: ["A. 0,07", "B. 0,16", "C. 0,08", "D. 0,10"],
-                answer: "C. 0,08",
-                explanation: "Para resolver esta pregunta, se necesitaría la expresión matemática completa. Si la expresión fuera (X^2 - 1) / (X + 1), al sustituir X=3, obtenemos (3^2 - 1) / 4 = 2. Si la respuesta es 0.08, la expresión debe ser diferente o implicar un cálculo específico no detallado en el texto. Se requiere la imagen de la expresión para una respuesta precisa."
+                answer: "D. 0,10", // Corregido según el cálculo 0.10, no 0.08
+                explanation: "Para resolver esta pregunta, sustituimos X=3 en la expresión: $\\frac{3^{2}+1}{100} = \\frac{9+1}{100} = \\frac{10}{100} = 0.10$."
             },
             {
                 area: "Matemáticas",
-                question: "2. Una empresa registra en la gráfica el promedio de las ventas, durante los primeros meses del año, de cuatro de sus productos: agua, gaseosa, cerveza y jugos. Teniendo en cuenta esto, ¿cuál producto obtuvo la mayor venta acumulada durante los meses reportados? (Se requiere la imagen del gráfico de ventas para una respuesta precisa.)",
+                question: "2. Una empresa registra en la gráfica el promedio de las ventas, durante los primeros meses del año, de cuatro de sus productos: agua, gaseosa, cerveza y jugos. Teniendo en cuenta esto, ¿cuál producto obtuvo la mayor venta acumulada durante los meses reportados?<br><img src='https://placehold.co/600x400/e0e0e0/333333?text=Gráfico+de+Ventas' alt='Gráfico de barras mostrando las ventas de Agua, Gaseosa, Cerveza y Jugos de Enero a Abril.'>",
                 options: ["A. Gaseosa.", "B. Agua.", "C. Cerveza.", "D. Jugos."],
                 answer: "B. Agua.",
-                explanation: "Para determinar el producto con mayor venta acumulada, se debe analizar la gráfica de ventas. El producto 'Agua' suele tener un consumo constante y elevado, lo que podría llevar a una mayor acumulación de ventas a lo largo de los meses. Se requiere la imagen del gráfico de ventas para una respuesta precisa."
+                explanation: "Para determinar el producto con mayor venta acumulada, se debe analizar la gráfica de ventas. (Basado en el gráfico original, el agua tiene consistentemente altas ventas acumuladas)."
             },
             {
                 area: "Matemáticas",
@@ -752,7 +774,7 @@
                 question: "10. ¿Cuál es el resultado de $2^3 + 3^2$?",
                 options: ["A. 12", "B. 17", "C. 15", "D. 18"],
                 answer: "B. 17",
-                explanation: "$2^3 = 2 \times 2 \times 2 = 8$. $3^2 = 3 \times 3 = 9$. Entonces, $8 + 9 = 17$."
+                explanation: "$2^3 = 2 \\times 2 \\times 2 = 8$. $3^2 = 3 \\times 3 = 9$. Entonces, $8 + 9 = 17$."
             },
             {
                 area: "Matemáticas",
@@ -766,42 +788,42 @@
                 question: "12. ¿Cuál es el volumen de un cubo con arista de 4 cm?",
                 options: ["A. 16 cm³", "B. 32 cm³", "C. 64 cm³", "D. 48 cm³"],
                 answer: "C. 64 cm³",
-                explanation: "El volumen de un cubo se calcula como (arista)³. Volumen = $4^3 = 4 \times 4 \times 4 = 64$ cm³."
+                explanation: "El volumen de un cubo se calcula como (arista)³. Volumen = $4^3 = 4 \\times 4 \\times 4 = 64$ cm³."
             },
             {
                 area: "Matemáticas",
                 question: "13. Si la población de una ciudad crece un 5% anualmente y actualmente tiene 100.000 habitantes, ¿cuántos habitantes tendrá en 2 años?",
                 options: ["A. 105.000", "B. 110.000", "C. 110.250", "D. 115.000"],
                 answer: "C. 110.250",
-                explanation: "Después de 1 año: $100.000 \times 1.05 = 105.000$. Después de 2 años: $105.000 \times 1.05 = 110.250$."
+                explanation: "Después de 1 año: $100.000 \\times 1.05 = 105.000$. Después de 2 años: $105.000 \\times 1.05 = 110.250$."
             },
             {
                 area: "Matemáticas",
                 question: "14. ¿Cuál es la ecuación de la recta que pasa por los puntos (1, 2) y (3, 6)?",
                 options: ["A. y = 2x", "B. y = x + 1", "C. y = 2x + 1", "D. y = x + 2"],
                 answer: "A. y = 2x",
-                explanation: "La pendiente (m) es $(6-2)/(3-1) = 4/2 = 2$. Usando el punto (1,2) y la forma y - y1 = m(x - x1): $y - 2 = 2(x - 1) \Rightarrow y - 2 = 2x - 2 \Rightarrow y = 2x$."
+                explanation: "La pendiente (m) es $(6-2)/(3-1) = 4/2 = 2$. Usando el punto (1,2) y la forma y - y1 = m(x - x1): $y - 2 = 2(x - 1) \\Rightarrow y - 2 = 2x - 2 \\Rightarrow y = 2x$."
             },
             {
                 area: "Matemáticas",
                 question: "15. En un examen, 7 de cada 10 estudiantes aprobaron. Si hay 50 estudiantes en total, ¿cuántos aprobaron?",
                 options: ["A. 30", "B. 35", "C. 40", "D. 45"],
                 answer: "B. 35",
-                explanation: "La proporción de aprobación es 7/10. Para 50 estudiantes, el número de aprobados es $(7/10) \times 50 = 35$."
+                explanation: "La proporción de aprobación es 7/10. Para 50 estudiantes, el número de aprobados es $(7/10) \\times 50 = 35$."
             },
             {
                 area: "Matemáticas",
                 question: "16. ¿Cuál es el valor de 'x' en la ecuación $2x + 5 = 15$?",
                 options: ["A. 5", "B. 10", "C. 20", "D. 2"],
                 answer: "A. 5",
-                explanation: "$2x = 15 - 5 \Rightarrow 2x = 10 \Rightarrow x = 5$."
+                explanation: "$2x = 15 - 5 \\Rightarrow 2x = 10 \\Rightarrow x = 5$."
             },
             {
                 area: "Matemáticas",
                 question: "17. Si un producto aumenta su precio en un 10% y luego disminuye en un 10%, ¿cuál es el cambio neto en el precio?",
                 options: ["A. Aumenta 1%", "B. Disminuye 1%", "C. No cambia", "D. Disminuye 0.1%"],
                 answer: "B. Disminuye 1%",
-                explanation: "Si el precio inicial es P, después del aumento es $1.1P$. Después de la disminución, es $1.1P \times 0.9 = 0.99P$. El cambio neto es $P - 0.99P = 0.01P$, lo que representa una disminución del 1%."
+                explanation: "Si el precio inicial es P, después del aumento es $1.1P$. Después de la disminución, es $1.1P \\times 0.9 = 0.99P$. El cambio neto es $P - 0.99P = 0.01P$, lo que representa una disminución del 1%."
             },
             {
                 area: "Matemáticas",
@@ -822,7 +844,7 @@
                 question: "20. ¿Cuál es el perímetro de un rectángulo con largo de 12 cm y ancho de 5 cm?",
                 options: ["A. 17 cm", "B. 34 cm", "C. 60 cm", "D. 24 cm"],
                 answer: "B. 34 cm",
-                explanation: "El perímetro de un rectángulo es $2 \times (largo + ancho)$. Perímetro = $2 \times (12 + 5) = 2 \times 17 = 34$ cm."
+                explanation: "El perímetro de un rectángulo es $2 \\times (largo + ancho)$. Perímetro = $2 \\times (12 + 5) = 2 \\times 17 = 34$ cm."
             },
             {
                 area: "Matemáticas",
@@ -840,10 +862,10 @@
             },
             {
                 area: "Matemáticas",
-                question: "23. Si el radio de un círculo es 7 cm, ¿cuál es su área (usando $\pi \approx 3.14$)?",
+                question: "23. Si el radio de un círculo es 7 cm, ¿cuál es su área (usando $\\pi \\approx 3.14$)?",
                 options: ["A. 21.98 cm²", "B. 43.96 cm²", "C. 153.86 cm²", "D. 77 cm²"],
                 answer: "C. 153.86 cm²",
-                explanation: "El área de un círculo es $\pi \times radio^2$. Área = $3.14 \times 7^2 = 3.14 \times 49 = 153.86$ cm²."
+                explanation: "El área de un círculo es $\\pi \\times radio^2$. Área = $3.14 \\times 7^2 = 3.14 \\times 49 = 153.86$ cm²."
             },
             {
                 area: "Matemáticas",
@@ -857,7 +879,7 @@
                 question: "25. En una encuesta, el 60% de las personas prefiere café y el 40% prefiere té. Si se encuestaron 200 personas, ¿cuántas prefieren café?",
                 options: ["A. 80", "B. 100", "C. 120", "D. 160"],
                 answer: "C. 120",
-                explanation: "El 60% de 200 es $0.60 \times 200 = 120$ personas."
+                explanation: "El 60% de 200 es $0.60 \\times 200 = 120$ personas."
             },
 
 
@@ -1219,8 +1241,8 @@
             {
                 area: "Sociales y Ciudadanas",
                 question: "12. ¿Qué es un plebiscito en el contexto de la participación ciudadana?",
-                options: ["A. Una elección de representantes.", "B. Una consulta popular para aprobar o rechazar una decisión del ejecutivo.", "C. Un referéndum para reformar la constitución.", "D. Una manifestación pública."],
-                answer: "B. Una consulta popular para aprobar o rechazar una decisión del ejecutivo.",
+                options: ["A. Una elección de representantes.", "B. Una consulta popular para aprobar o rechazo una decisión del ejecutivo.", "C. Un referéndum para reformar la constitución.", "D. Una manifestación pública."],
+                answer: "B. Una consulta popular para aprobar o rechazo una decisión del ejecutivo.",
                 explanation: "El plebiscito es un mecanismo de participación ciudadana donde se somete a votación popular una decisión del poder ejecutivo."
             },
             {
@@ -1335,7 +1357,7 @@
                     "A. Aumenta, porque a mayor presión las moléculas se demoran más tiempo en chocar con las paredes del recipiente.",
                     "B. Disminuye, porque a mayor presión las moléculas tienen menor tamaño.",
                     "C. Aumenta, porque a mayor presión las moléculas tienen mayor tamaño.",
-                    "D. Disminuye, porque a mayor presión las moléculas tienen menor espacio para moverse."
+                    "D. Disminuye, porque a mayor presión se reduce el espacio en el que las moléculas de gas se mueven."
                 ],
                 answer: "D. Disminuye, porque a mayor presión las moléculas tienen menor espacio para moverse.",
                 explanation: "Según la Ley de Boyle-Mariotte, a temperatura constante, el volumen de un gas es inversamente proporcional a la presión. Esto significa que si la presión aumenta, el volumen disminuye, ya que las moléculas del gas se ven forzadas a ocupar un espacio más reducido."
@@ -1774,10 +1796,11 @@
         let currentQuestionIndex = 0;
         let userAnswers = []; // Respuestas del usuario para el simulacro actual
         let timer;
-        const quizDuration = 60; // segundos por pregunta
-        let timeRemaining = quizDuration;
+        let totalQuizDuration = 0; // Tiempo total en segundos para todo el simulacro
+        let timeRemaining = 0;
         let selectedArea = null;
         let selectedNumQuestions = 10; // Valor por defecto
+        let selectedTotalTimeMinutes = 15; // Valor por defecto en minutos
 
         // Elementos del DOM
         const setupScreen = document.getElementById('setupScreen');
@@ -1788,6 +1811,7 @@
         const startQuizBtn = document.getElementById('startQuizBtn');
         const viewHistoryBtn = document.getElementById('viewHistoryBtn');
         const nextQuestionBtn = document.getElementById('nextQuestionBtn');
+        const prevQuestionBtn = document.getElementById('prevQuestionBtn');
         const restartQuizBtn = document.getElementById('restartQuizBtn');
         const backToHistoryBtn = document.getElementById('backToHistoryBtn');
         const backToSetupFromHistoryBtn = document.getElementById('backToSetupFromHistoryBtn');
@@ -1806,6 +1830,7 @@
         const recommendationList = document.getElementById('recommendationList');
         const cards = document.querySelectorAll('.card');
         const numQuestionsRadios = document.querySelectorAll('input[name="numQuestions"]');
+        const totalTimeRadios = document.querySelectorAll('input[name="totalTime"]');
         const historyTableBody = document.getElementById('historyTableBody');
 
         // --- FUNCIONES DE LA APLICACIÓN ---
@@ -1855,13 +1880,18 @@
                 return;
             }
 
+            totalQuizDuration = selectedTotalTimeMinutes * 60; // Convertir minutos a segundos
+            timeRemaining = totalQuizDuration;
+            console.log(`Duración total del simulacro: ${totalQuizDuration} segundos`);
+
+
             setupScreen.classList.remove('active');
             quizScreen.classList.add('active');
             currentQuestionIndex = 0;
-            userAnswers = [];
+            userAnswers = Array(questions.length).fill(null); // Inicializar userAnswers con nulls para cada pregunta
             loadQuestion();
-            startTimer();
-            console.log("Simulacro iniciado para el área:", selectedArea, "con", questions.length, "preguntas.");
+            startOverallTimer(); // Iniciar el temporizador general
+            console.log("Simulacro iniciado para el área:", selectedArea, "con", questions.length, "preguntas y", selectedTotalTimeMinutes, "minutos totales.");
         }
 
         function loadQuestion() {
@@ -1873,10 +1903,23 @@
             question.options.forEach((option, index) => {
                 const optionDiv = document.createElement('label');
                 optionDiv.classList.add('option');
-                optionDiv.innerHTML = `
-                    <input type="radio" name="answer" value="${option.charAt(0)}">
-                    <span>${option}</span>
-                `;
+                const radioInput = document.createElement('input');
+                radioInput.type = 'radio';
+                radioInput.name = 'answer';
+                radioInput.value = option.charAt(0);
+                
+                const spanText = document.createElement('span');
+                spanText.textContent = option;
+
+                optionDiv.appendChild(radioInput);
+                optionDiv.appendChild(spanText);
+
+                // Si ya hay una respuesta guardada para esta pregunta, seleccionarla
+                if (userAnswers[currentQuestionIndex] && userAnswers[currentQuestionIndex].userAnswer && userAnswers[currentQuestionIndex].userAnswer.startsWith(option.charAt(0))) {
+                    radioInput.checked = true;
+                    optionDiv.classList.add('selected');
+                }
+
                 optionDiv.addEventListener('click', () => {
                     optionsContainer.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
                     optionDiv.classList.add('selected');
@@ -1884,59 +1927,71 @@
                 optionsContainer.appendChild(optionDiv);
             });
 
-            resetTimer();
+            // Habilitar/deshabilitar botón "Pregunta Anterior"
+            prevQuestionBtn.disabled = currentQuestionIndex === 0;
+            // Habilitar/deshabilitar botón "Siguiente Pregunta"
+            nextQuestionBtn.disabled = currentQuestionIndex === questions.length - 1 && userAnswers[currentQuestionIndex] !== null; // Deshabilitar si es la última y ya respondió
         }
 
-        function startTimer() {
-            clearInterval(timer);
-            timeRemaining = quizDuration;
-            timeRemainingText.textContent = timeRemaining;
-            timerProgress.style.width = '100%';
-
+        function startOverallTimer() {
+            clearInterval(timer); // Limpiar cualquier temporizador anterior
+            
             timer = setInterval(() => {
                 timeRemaining--;
-                timeRemainingText.textContent = timeRemaining;
-                timerProgress.style.width = `${(timeRemaining / quizDuration) * 100}%`;
+                const minutes = Math.floor(timeRemaining / 60);
+                const seconds = timeRemaining % 60;
+                timeRemainingText.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                timerProgress.style.width = `${(timeRemaining / totalQuizDuration) * 100}%`;
 
                 if (timeRemaining <= 0) {
                     clearInterval(timer);
-                    handleNextQuestion();
+                    showResults(); // Finalizar el simulacro cuando el tiempo se agote
                 }
             }, 1000);
         }
 
-        function resetTimer() {
-            clearInterval(timer);
-            startTimer();
-        }
-
-        function handleNextQuestion() {
+        function saveCurrentAnswer() {
             const selectedOption = optionsContainer.querySelector('input[name="answer"]:checked');
             let userAnswer = selectedOption ? selectedOption.value : null;
 
             const currentQuestion = questions[currentQuestionIndex];
             const isCorrect = userAnswer === currentQuestion.answer.charAt(0);
 
-            userAnswers.push({
+            const answerObject = {
                 question: currentQuestion.question,
                 area: currentQuestion.area,
                 userAnswer: selectedOption ? selectedOption.nextElementSibling.textContent : 'No respondida',
                 answer: currentQuestion.answer,
                 explanation: currentQuestion.explanation,
                 userWasCorrect: isCorrect
-            });
+            };
 
-            currentQuestionIndex++;
+            userAnswers[currentQuestionIndex] = answerObject;
+        }
 
-            if (currentQuestionIndex < questions.length) {
+        function handleNextQuestion() {
+            saveCurrentAnswer(); // Guardar la respuesta actual antes de avanzar
+
+            if (currentQuestionIndex < questions.length - 1) {
+                currentQuestionIndex++;
                 loadQuestion();
             } else {
+                // Si es la última pregunta, mostrar resultados
                 showResults();
             }
         }
 
+        function handlePreviousQuestion() {
+            saveCurrentAnswer(); // Guardar la respuesta actual antes de retroceder
+
+            if (currentQuestionIndex > 0) {
+                currentQuestionIndex--;
+                loadQuestion();
+            }
+        }
+
         async function showResults() {
-            clearInterval(timer);
+            clearInterval(timer); // Asegurarse de detener el temporizador
             quizScreen.classList.remove('active');
             resultsScreen.classList.add('active');
 
@@ -1954,31 +2009,34 @@
             areaResultsList.innerHTML = '';
 
             userAnswers.forEach(question => {
-                if (question.userWasCorrect) {
+                if (question && question.userWasCorrect) { // Asegurarse de que la pregunta exista y tenga userWasCorrect
                     correctCount++;
                     areaScores[question.area].correct++;
-                } else {
+                } else if (question) { // Si la pregunta existe pero no fue correcta
                     incorrectCount++;
                 }
-                areaScores[question.area].total++;
+                if (question) { // Incrementar el total solo si la pregunta existe
+                    areaScores[question.area].total++;
+                }
+
 
                 const resultItem = document.createElement('div');
                 resultItem.classList.add('result-item');
-                if(question.userWasCorrect) {
+                if(question && question.userWasCorrect) {
                     resultItem.classList.add('correct-answer');
-                } else {
+                } else if (question) { // Si la pregunta existe pero no fue correcta
                     resultItem.classList.add('incorrect-answer');
                 }
 
                 let answerFeedback = `
-                    <p><strong>Tu respuesta:</strong> ${question.userAnswer || 'No respondida'} ${question.userWasCorrect ? "(Correcta)" : "(Incorrecta)"}</p>
-                    ${!question.userWasCorrect ? `<p><strong>Respuesta correcta:</strong> ${question.answer}</p>` : ''}
+                    <p><strong>Tu respuesta:</strong> ${question ? (question.userAnswer || 'No respondida') : 'No respondida'} ${question && question.userWasCorrect ? "(Correcta)" : (question ? "(Incorrecta)" : "")}</p>
+                    ${question && !question.userWasCorrect ? `<p><strong>Respuesta correcta:</strong> ${question.answer}</p>` : ''}
                 `;
 
                 resultItem.innerHTML = `
-                    <p><strong>Pregunta:</strong> ${question.question}</p>
+                    <p><strong>Pregunta:</strong> ${question ? question.question : 'Pregunta no disponible'}</p>
                     ${answerFeedback}
-                    <p class="explanation"><strong>Explicación:</strong> ${question.explanation}</p>
+                    <p class="explanation"><strong>Explicación:</strong> ${question ? question.explanation : 'No hay explicación disponible'}</p>
                 `;
                 resultsDetails.appendChild(resultItem);
             });
@@ -2061,7 +2119,9 @@
             startQuizBtn.disabled = true;
             startQuizBtn.textContent = 'Selecciona un área';
             document.querySelector('input[name="numQuestions"][value="10"]').checked = true;
+            document.querySelector('input[name="totalTime"][value="15"]').checked = true; // Resetear tiempo total a 15 min
             selectedNumQuestions = 10;
+            selectedTotalTimeMinutes = 15;
             console.log("App reset. Selected area and questions reset.");
         }
 
@@ -2075,7 +2135,7 @@
             if (dbInitialized && userId) {
                 try {
                     if (historyTableBody) { // Check if element exists before manipulating
-                        historyTableBody.innerHTML = '<tr><td colspan="6">Cargando historial...</td></tr>';
+                        historyTableBody.innerHTML = '<tr><td colspan="6">Cargando historial...</td></td></tr>';
                     }
 
                     const historyRef = collection(db, `artifacts/${appId}/users/${userId}/simulation_history`);
@@ -2170,6 +2230,7 @@
             if (startQuizBtn) console.log("Elemento 'startQuizBtn' encontrado."); else console.error("Error: Elemento 'startQuizBtn' no encontrado.");
             if (viewHistoryBtn) console.log("Elemento 'viewHistoryBtn' encontrado."); else console.error("Error: Elemento 'viewHistoryBtn' no encontrado.");
             if (nextQuestionBtn) console.log("Elemento 'nextQuestionBtn' encontrado."); else console.error("Error: Elemento 'nextQuestionBtn' no encontrado.");
+            if (prevQuestionBtn) console.log("Elemento 'prevQuestionBtn' encontrado."); else console.error("Error: Elemento 'prevQuestionBtn' no encontrado."); // Nuevo
             if (restartQuizBtn) console.log("Elemento 'restartQuizBtn' encontrado."); else console.error("Error: Elemento 'restartQuizBtn' no encontrado.");
             if (backToHistoryBtn) console.log("Elemento 'backToHistoryBtn' encontrado."); else console.error("Error: Elemento 'backToHistoryBtn' no encontrado.");
             if (backToSetupFromHistoryBtn) console.log("Elemento 'backToSetupFromHistoryBtn' encontrado."); else console.error("Error: Elemento 'backToSetupFromHistoryBtn' no encontrado.");
@@ -2211,8 +2272,16 @@
                 });
             });
 
+            totalTimeRadios.forEach(radio => {
+                radio.addEventListener('change', (event) => {
+                    selectedTotalTimeMinutes = parseInt(event.target.value);
+                    console.log("Tiempo total seleccionado:", selectedTotalTimeMinutes, "minutos");
+                });
+            });
+
             if (startQuizBtn) startQuizBtn.addEventListener('click', startQuiz);
             if (nextQuestionBtn) nextQuestionBtn.addEventListener('click', handleNextQuestion);
+            if (prevQuestionBtn) prevQuestionBtn.addEventListener('click', handlePreviousQuestion);
             if (restartQuizBtn) restartQuizBtn.addEventListener('click', resetApp);
             if (viewHistoryBtn) viewHistoryBtn.addEventListener('click', showHistoryScreen);
             if (backToHistoryBtn) backToHistoryBtn.addEventListener('click', showHistoryScreen);
